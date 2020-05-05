@@ -1,0 +1,136 @@
+############################################################
+# Global variables
+title: "Jehee Cheon"
+blog:
+  author: "Jehee Cheon"
+  profile: "/assets/img/pooh.jpg"
+  logo: "/assets/img/pooh.jpg"
+favicon: "/assets/img/favicon.ico"
+############################################################
+############################################################
+# gems
+# Auto image
+image: "/assets/img/business-2717063_1920.jpg"
+
+# Admin
+jekyll_admin:
+  hidden_links:
+    # - posts
+    - pages
+    # - staticfiles
+    # - datafiles
+    - configuration
+
+# Paginate-v2
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: "/page/:num/" # Pages are index.html inside this folder (default)
+  #permalink: '/page/:num.html' # Pages are simple html files
+  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+  title: ":title"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+  collection: "posts"
+  category: "posts"
+  tag: ""
+  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
+  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+  locale: ""
+  trail:
+    before: 2
+    after: 2
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: "index"
+
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - "autopage_category.html"
+    title: "Posts in category :cat"
+    dir: categories
+    permalink: "/categories/:cat"
+    slugify:
+      mode: "default" # :cat is slugified. Modes: default, raw, pretty, ascii, latin
+      case: false # Whether to replace all uppercase letters with their lowercase counterparts
+  collections:
+    layouts:
+      - "autopage_collection.html"
+    title: "Posts in collection :coll" # :coll is replaced by the collection name
+    dir: collections
+    permalink: "/collections/:coll"
+    slugify:
+      mode: "default" # :coll is slugified.
+      case: false
+  tags:
+    layouts:
+      - "autopage_tag.html"
+    title: "Posts tagged with :tag" # :tag is replaced by the tag name
+    dir: tags
+    permalink: "/tags/:tag"
+    slugify:
+      mode: "default" # :tag is slugified.
+      case: false
+############################################################
+############################################################
+# Where things are
+# source:
+destination: _site
+# collections_dir     : _collections
+# data_dir: _data
+# includes_dir: _includes
+# plugins_dir: _plugins
+layouts_dir: _layouts
+sass:
+  sass_dir: _sass
+############################################################
+# Outputting
+permalink: /:categories/:year/:month/:day/:title/
+timezone: null
+
+quiet: false
+verbose: false
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+############################################################
+# Serving
+# detach: false
+# port: 4000
+# host: 127.0.0.1
+baseurl: "" # does not include hostname
+# show_dir_listing: false
+############################################################
+# Filtering Content
+# show_drafts: null
+# limit_posts: 0
+# future: false
+# unpublished: false
+############################################################
+# Handling Reading
+safe: false
+include: [".htaccess"]
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+  ]
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
