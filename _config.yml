@@ -63,13 +63,11 @@ autopages:
     enabled: false
 ############################################################
 ############################################################
-# Where things are
 # source:
 destination: _site
 # collections_dir     : _collections
-# data_dir: _data
-# includes_dir: _includes
-# plugins_dir: _plugins
+data_dir: _data
+includes_dir: _includes
 layouts_dir: _layouts
 sass:
   sass_dir: _sass

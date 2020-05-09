@@ -1,0 +1,11 @@
+nav:
+  - title: Deployment
+    url: deployment.html
+    subnav:
+      - title: Heroku
+        url: heroku.html
+        subnav:
+          - title: Jekyll on Heroku
+            url: jekyll-on-heroku.html
+  - title: Help
+    url: help.html
