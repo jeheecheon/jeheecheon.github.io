@@ -7,10 +7,9 @@
         <input class="btn-search sidebar__btn-search" id="btnSearch" type="text" name="search"
             placeholder="Search posts">
 
-        {% include navigation.html nav=site.data.navigation %}
+        <div class="nav sidebar__nav">
+            {% include navigation.html nav=site.data.navigation %}
 
-        <div>
-            <div class="sidebar-nav-item">Tags</div>
             <div class="tags-cloud">
                 <div>
                     {% assign first = site.tags.first %}
@@ -23,13 +22,13 @@
                     {% assign min = tag[1].size %}
                     {% endif %}
                     {% endfor %}
-
+    
                     {% if max == min %}
                     {% assign diff = 1 %}
                     {% else %}
                     {% assign diff = max | minus: min %}
                     {% endif %}
-
+    
                     {% for tag in site.tags %}
                     {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
                     {% assign base = temp | divided_by: 4 %}
@@ -51,6 +50,38 @@
                     {% endfor %}
                 </div>
             </div>
+            <pre>
+                a
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+                1
+            </pre>
         </div>
     </div>
 
