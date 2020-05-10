@@ -37,6 +37,9 @@ pre {
   }
 }
 
+.removeDeco {
+  @include a--remove-deco();
+}
 /////////////////////////////////////////////////////////////
 
 .sidebar {
@@ -45,7 +48,7 @@ pre {
   width: 300px;
   position: fixed;
   overflow: hidden;
-  background-color: rgb(165, 227, 250);
+  background-color: rgba(4, 154, 192, 0.5);
   box-shadow: 5px 5px 13px #bdbdbd;
 
   display: flex;
@@ -90,7 +93,6 @@ pre {
   .search--container {
     position: relative;
 
-
     .search-btn {
       border: none;
       width: 100%;
@@ -110,10 +112,18 @@ pre {
     }
   }
 
-  .nav {
+  .menu {
     overflow-y: auto;
     &::-webkit-scrollbar { 
       display: none; 
+    }
+
+    .nav {
+      cursor: pointer;
+    }
+
+    .subnav {
+      display: none;
     }
   }
 }
@@ -194,15 +204,15 @@ pre {
     }
 
     .scroll-indicator {
-      flex-basis: 3px;
+      flex-basis: 5px;
 
-      transition: width 0.2s linear;
-      -moz-transition: width 0.2s linear;
-      -o-transition: width 0.2s linear;
-      -webkit-transition: width 0.2s linear;
+      transition: width 0.1s linear;
+      -moz-transition: width 0.1s linear;
+      -o-transition: width 0.1s linear;
+      -webkit-transition: width 0.1s linear;
 
       width: 0%;
-      background-color: black;
+      background-color: rgba(4, 154, 192, 0.5);
     }
   }
 

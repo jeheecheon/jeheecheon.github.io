@@ -1,11 +1,16 @@
-<ul>
+<ul class="nav {% if include.nav != site.data.navigation %}subnav{% endif %}">
     {% for item in include.nav %}
     {% if item.url %}
     <li><a href="{{site.url}}/{{item.url}}">{{ item.title }}</a></li>
     {% else %}
-    <li><a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a></li>
+    <li>
+        <a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
+        {% if item.subnav %}
+        <i class="fas fa-caret-down" onclick="populate_subnav(this)"></i>
+        {% endif %}
+    </li>
     {% endif %}
-    
+
     {% if item.subnav %}
     {% include navigation.html nav=item.subnav %}
     {% endif %}
