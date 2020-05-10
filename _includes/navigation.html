@@ -5,7 +5,7 @@
     {% else %}
     <li><a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category }}/">{{ item.title }}</a></li>
     {% endif %}
-
+    
     {% if item.subnav %}
     {% include navigation.html nav=item.subnav %}
     {% endif %}
