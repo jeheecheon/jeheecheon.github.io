@@ -1,25 +1,35 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-html { font-size: 18px; font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; line-height: 1.5; }
-
-body { color: #212121; background-color: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-size: 18px; font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; line-height: 1.5; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { float: left; height: 100vh; width: 300px; position: fixed; overflow: hidden; background-color: #29738E; box-shadow: 5px 5px 13px #bdbdbd; padding: 0 5px; display: flex; flex-flow: column nowrap; }
+.sidebar { float: left; height: 100vh; width: 300px; position: fixed; overflow: hidden; background-color: #a5e3fa; box-shadow: 5px 5px 13px #bdbdbd; display: flex; flex-flow: column nowrap; }
 
-.sidebar .profile { flex-basis: 300px; text-decoration: none; color: #212121; display: flex; flex-flow: column wrap; justify-content: center; align-items: center; }
+.sidebar .profile { flex-basis: 350px; text-decoration: none; color: #212121; background-image: url("/assets/img/pier-569314_640.jpg"); background-position: center; display: flex; flex-flow: column wrap; justify-content: center; align-items: center; }
 
-.sidebar .profile .img { width: 100px; height: 100px; border-radius: 50%; box-shadow: 1px 1px 15px #bdbdbd; }
+.sidebar .profile .img { margin: 15px; width: 100px; height: 100px; border-radius: 50%; box-shadow: 1px 1px 15px #bdbdbd; }
 
-.sidebar .btn-search { border: none; height: 40px; background-color: #eeeeee; padding: 0 30px; }
+.sidebar .profile .text { width: 250px; flex-basis: fit-content; background-color: rgba(255, 255, 255, 0.6); border-radius: 5%; text-align: center; }
 
-.sidebar .btn-search:focus { outline: none; }
+.sidebar .profile .text .author { color: lightslategray; font-size: 1.5rem; font-weight: bold; }
+
+.sidebar .profile .text .description { font-size: 1rem; }
+
+.sidebar .search--container { position: relative; }
+
+.sidebar .search--container .search-btn { border: none; width: 100%; height: 60px; background-color: #eeeeee; padding: 0 10px; }
+
+.sidebar .search--container .search-btn:focus { outline: none; }
+
+.sidebar .search--container .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
 .sidebar .nav { overflow-y: auto; }
+
+.sidebar .nav::-webkit-scrollbar { display: none; }
 
 .page { float: right; width: calc(100% - 300px); min-height: 100vh; overflow: hidden; display: flex; flex-flow: column wrap; }
 

@@ -17,10 +17,19 @@
     <div class="sidebar">
         <a href="/" class="profile sidebar__profile">
             <img class="img profile__img" src="/assets/img/pooh.jpg" alt="">
-            <div class="author profile__author">Jehee Cheon</div>
+            <div class="text">
+                <p class="author profile__author">Jehee Cheon</p>
+                <pre class="description profile__description">Game Developer
+코딩일기...</pre>
+            </div>
+
         </a>
-        <input class="btn-search sidebar__btn-search" id="btnSearch" type="text" name="search"
-            placeholder="Search posts">
+
+        <div class="search--container">
+            <input class="search-btn sidebar__search" id="search" type="text" name="search" placeholder="Search posts">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
 
         <div class="nav sidebar__nav">
             <ul>
@@ -73,9 +82,9 @@
                     
                     
                     
-    
+
                     
-    
+
                     
                     
                     
@@ -196,6 +205,14 @@
       </a>
     </div>
     
+    <div class="wrapper post-items__wrapper">
+      <a class="post-item wrapper__post-item" href="/cate1/cate1-1/2014/01/01/d/">
+        <img class="img post-item__img" src="/assets/img/typewriter-801921_1920.jpg" alt="">
+        <h1 class="title post-item__title">d</h1>
+        <span class="date post-item__date">2014-01-01 00:00:00 +0000</span>
+      </a>
+    </div>
+    
   </nav>
 </div>
 
@@ -205,23 +222,13 @@
   <span class="previous">Previous</span>
   
   <span class="page_number ">
-    Page: 1 of 2
+    Page: 1 of 1
   </span>
   
-  <a href="/categories/cate1-1/page-2/index.html" class="next">Next</a>
+  <span class="next ">Next</span>
   
 </div>
 
-
-  
-    <li class="selected">
-        <a href="/categories/cate1-1/index.html" title="Posts in category cate1-1">1</a>
-    </li>
-  
-    <li >
-        <a href="/categories/cate1-1/page-2/index.html" title="Posts in category cate1-1">2</a>
-    </li>
-  
 
         </main>
 
