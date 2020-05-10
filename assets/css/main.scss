@@ -9,17 +9,14 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   font-size: 18px;
   font-family: "Noto Sans KR", Helvetica, Arial, sans-serif;
   line-height: 1.5;
-}
-
-body {
-  color: #212121;
-  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 pre {
@@ -48,42 +45,76 @@ pre {
   width: 300px;
   position: fixed;
   overflow: hidden;
-  background-color: #29738E;
+  background-color: rgb(165, 227, 250);
   box-shadow: 5px 5px 13px #bdbdbd;
-  padding: 0 5px;
 
   display: flex;
   flex-flow: column nowrap;
 
   .profile {
-    flex-basis: 300px;
+    flex-basis: 350px;
     @include a--remove-deco();
+    background-image: url("/assets/img/pier-569314_640.jpg");
+    background-position: center;
 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 
-    .img {
+    .img {margin: 15px;
       width: 100px;
       height: 100px;
       border-radius: 50%;
       box-shadow: 1px 1px 15px #bdbdbd;
     }
+
+    .text {  
+      width: 250px;
+      flex-basis: fit-content;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 5%;
+      text-align: center;
+      .author {
+        color: rgb(119, 136, 153);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .description {
+        font-size: 1rem;
+      }
+    }
+
   }
 
-  .btn-search {
-    border: none;
-    height: 40px;
-    background-color: #eeeeee;
-    padding: 0 30px;
+  .search--container {
+    position: relative;
 
-    &:focus {
-      outline: none;
+
+    .search-btn {
+      border: none;
+      width: 100%;
+      height: 60px;
+      background-color: #eeeeee;
+      padding: 0 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
+
   .nav {
     overflow-y: auto;
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
   }
 }
 

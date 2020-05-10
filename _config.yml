@@ -5,6 +5,7 @@ blog:
   author: "Jehee Cheon"
   profile: "/assets/img/pooh.jpg"
   logo: "/assets/img/pooh.jpg"
+  description: "Game Developer\n코딩일기..."
 favicon: "/assets/img/favicon.ico"
 ############################################################
 ############################################################
@@ -21,7 +22,7 @@ jekyll_admin:
 # Paginate-v2
 pagination:
   enabled: true
-  per_page: 2
+  per_page: 4
   permalink: "/page-:num/"
   title: ":title"
   limit: 0

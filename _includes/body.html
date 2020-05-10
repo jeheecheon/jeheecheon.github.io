@@ -2,10 +2,18 @@
     <div class="sidebar">
         <a href="/" class="profile sidebar__profile">
             <img class="img profile__img" src="{{site.blog.profile}}" alt="">
-            <div class="author profile__author">{{site.blog.author}}</div>
+            <div class="text">
+                <p class="author profile__author">{{site.blog.author}}</p>
+                <pre class="description profile__description">{{site.blog.description}}</pre>
+            </div>
+
         </a>
-        <input class="btn-search sidebar__btn-search" id="btnSearch" type="text" name="search"
-            placeholder="Search posts">
+
+        <div class="search--container">
+            <input class="search-btn sidebar__search" id="search" type="text" name="search" placeholder="Search posts">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
 
         <div class="nav sidebar__nav">
             {% include navigation.html nav=site.data.navigation %}
@@ -22,13 +30,13 @@
                     {% assign min = tag[1].size %}
                     {% endif %}
                     {% endfor %}
-    
+
                     {% if max == min %}
                     {% assign diff = 1 %}
                     {% else %}
                     {% assign diff = max | minus: min %}
                     {% endif %}
-    
+
                     {% for tag in site.tags %}
                     {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
                     {% assign base = temp | divided_by: 4 %}

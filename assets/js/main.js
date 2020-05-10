@@ -23,7 +23,7 @@ if (document.querySelector(".post-cover")) {
       modifyHeader();
       getScrolled = false;
     }
-  }, 100);
+  }, 50);
 
   //display goToIndexBtn when header is clicked
   headerBar.addEventListener("click", function () {
@@ -55,9 +55,8 @@ function modifyHeader() {
   //in post content or others, except post cover
   else {
     //add background-color, change color of humburger to black
-    headerBar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+    headerBar.style.backgroundColor = "rgba(41, 115, 142, 0.8)";
     headerBar.childNodes[1].style.color = "black"; //hamburger
-    //display title
     headerBar.childNodes[3].style.visibility = "visible"; //title
 
     toggleHeader(nowScrollTop);
