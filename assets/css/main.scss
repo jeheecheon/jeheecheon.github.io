@@ -23,7 +23,7 @@ pre {
   font-family: "Noto Sans KR", Helvetica, Arial, sans-serif;
 }
 
-@mixin a--remove-deco {
+@mixin removeDeco {
   text-decoration: none;
   color: #212121;
 }
@@ -35,10 +35,6 @@ pre {
   to {
     background-position: 200% 100%;
   }
-}
-
-.removeDeco {
-  @include a--remove-deco();
 }
 /////////////////////////////////////////////////////////////
 
@@ -55,17 +51,17 @@ pre {
   flex-flow: column nowrap;
 
   .profile {
-    flex-basis: 350px;
-    @include a--remove-deco();
+    flex-basis: 250px;
+    @include removeDeco();
     background-image: url("/assets/img/pier-569314_640.jpg");
     background-position: center;
 
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
-    .img {margin: 15px;
+    .img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -90,7 +86,7 @@ pre {
 
   }
 
-  .search--container {
+  .search {
     position: relative;
 
     .search-btn {
@@ -112,17 +108,12 @@ pre {
     }
   }
 
-  .menu {
-    overflow-y: auto;
-    &::-webkit-scrollbar { 
-      display: none; 
-    }
-
-    .nav {
+  .navigation {
+    .nav-item {
       cursor: pointer;
     }
 
-    .subnav {
+    .subnav--hide {
       display: none;
     }
   }
@@ -183,7 +174,7 @@ pre {
       }
 
       .title {
-        @include a--remove-deco();
+        @include removeDeco();
         text-align: center;
 
         .main-title {

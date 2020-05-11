@@ -6,6 +6,7 @@
   category: daily-life
 - title: cate1
   category: cate1
+  active: false
   subnav:
     - title: cate1-1
       category: cate1-1
