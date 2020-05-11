@@ -27,7 +27,15 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .search .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
-.sidebar .navigation .nav-item { cursor: pointer; }
+.sidebar .navigation { margin: 0 10px; }
+
+.sidebar .navigation .category .cate-item { cursor: pointer; display: flex; justify-content: flex-start; }
+
+.sidebar .navigation .category .cate-item a { flex-grow: 1; display: inline-block; text-decoration: none; color: #212121; }
+
+.sidebar .navigation .category .cate-item i { padding-right: 5px; font-size: 1.5rem; flex-grow: 0; }
+
+.sidebar .navigation .subnav { margin-left: 25px; }
 
 .sidebar .navigation .subnav--hide { display: none; }
 
