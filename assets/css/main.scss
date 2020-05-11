@@ -109,10 +109,28 @@ pre {
   }
 
   .navigation {
-    .nav-item {
-      cursor: pointer;
-    }
+    margin: 0 10px;
+    .category { //ul
+      .cate-item { //li
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
 
+        a {
+          flex-grow: 1;
+          display: inline-block;
+          @include removeDeco();
+        }
+        i {
+          padding-right: 5px;
+          font-size: 1.5rem;
+          flex-grow: 0;
+        }
+      }
+    }
+    .subnav {
+      margin-left: 25px;
+    }
     .subnav--hide {
       display: none;
     }

@@ -1,18 +1,18 @@
-<ul class="nav-item {% if include.nav.active == false %}subnav--hide{% endif %}">
+<ul class="category navigation__category{% if include.subnav == true%} subnav{% endif %}{% if include.hidden == true %} subnav--hide{% endif %}">
     {% for item in include.nav %}
     {% if item.url %}
-    <li><a href="{{site.url}}/{{item.url}}">{{ item.title }}</a></li>
+    <li class="cate-item category__cate-item"><a href="{{site.url}}/{{item.url}}">{{ item.title }}</a></li>
     {% else %}
-    <li>
+    <li class="cate-item category__cate-item">
         {% if item.subnav %}
-        <i class="fas fa-caret-down" {% if item.subnav %} onclick="toggle_subnav(this)" {% endif %}></i>
+        <i class="fas fa-caret-square-down" {% if item.subnav %} onclick="toggle_subnav(this)" {% endif %}></i>
         {% endif %}
         <a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
     </li>
     {% endif %}
 
     {% if item.subnav %}
-    {% include navigation.html nav=item.subnav %}
+    {% include navigation.html nav=item.subnav hidden=item.hidden subnav=true %}
     {% endif %}
     {% endfor %}
 </ul>
