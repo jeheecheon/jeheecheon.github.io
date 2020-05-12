@@ -27,23 +27,27 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .search .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
-.sidebar .navigation { margin: 0 10px; }
+.sidebar .navigation { margin: 0 10px; font-weight: bold; }
 
-.sidebar .navigation .category .cate-item { cursor: pointer; display: flex; justify-content: flex-start; }
+.sidebar .navigation .category .cate-item { border-bottom: 2px solid black; cursor: pointer; display: flex; justify-content: flex-start; }
+
+.sidebar .navigation .category .cate-item:hover { background-color: red; }
 
 .sidebar .navigation .category .cate-item a { flex-grow: 1; display: inline-block; text-decoration: none; color: #212121; }
 
 .sidebar .navigation .category .cate-item i { padding-right: 5px; font-size: 1.5rem; flex-grow: 0; }
 
-.sidebar .navigation .subnav { margin-left: 25px; }
+.sidebar .navigation .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; margin-left: 15px; }
 
-.sidebar .navigation .subnav--hide { display: none; }
+.sidebar .navigation .subnav .cate-item { border-left: 2px solid black; }
+
+.sidebar .navigation .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
 
 .page { float: right; width: calc(100% - 300px); min-height: 100vh; overflow: hidden; display: flex; flex-flow: column wrap; }
 
 .page::after { content: ""; display: block; clear: both; }
 
-.header--hide { transform: translatey(-50px); -moz-transform: translatey(-50px); -ms-transform: translatey(-50px); -o-transform: translatey(-50px); -webkit-transform: translatey(-50px); }
+.header--hide { transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); -webkit-transform: translateY(-50px); }
 
 .page .header { width: calc(100% - 300px); position: fixed; transition: transform 0.5s ease-in-out; -moz-transition: -moz-transform 0.5s ease-in-out; -o-transition: -o-transform 0.5s ease-in-out; -webkit-transition: -webkit-transform 0.5s ease-in-out; z-index: 1; display: flex; flex-flow: column wrap; }
 
