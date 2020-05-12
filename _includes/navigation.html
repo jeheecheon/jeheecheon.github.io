@@ -1,7 +1,10 @@
-<ul class="category navigation__category{% if include.subnav %} subnav{% if include.hidden %} subnav--hide{% endif %}{% endif %}">
+<ul
+    class="category navigation__category{% if include.subnav %} subnav{% if include.hidden %} subnav--hide{% endif %}{% endif %}">
     {% for item in include.nav %}
     {% if item.url %}
-    <li class="cate-item category__cate-item"><a href="{{site.url}}/{{item.url}}">{{ item.title }}</a></li>
+    <li class="cate-item category__cate-item">
+        <i class="{{item.icon}}"></i>
+        <a href="{{site.url}}/{{item.url}}">{{ item.title }}</a></li>
     {% else %}
     <li class="cate-item category__cate-item">
         {% if item.subnav %}
