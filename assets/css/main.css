@@ -7,7 +7,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { float: left; height: 100vh; width: 300px; position: fixed; overflow: hidden; background-color: rgba(4, 154, 192, 0.5); box-shadow: 5px 5px 13px #bdbdbd; display: flex; flex-flow: column nowrap; }
+.sidebar { float: left; height: 100vh; width: 300px; position: fixed; overflow: hidden; background-color: #e7f4ff; box-shadow: 5px 5px 13px #bdbdbd; display: flex; flex-flow: column nowrap; }
 
 .sidebar .profile { flex-basis: 250px; text-decoration: none; color: #212121; background-image: url("/assets/img/pier-569314_640.jpg"); background-position: center; display: flex; flex-flow: column wrap; justify-content: space-around; align-items: center; }
 
@@ -27,21 +27,19 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .search .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
-.sidebar .navigation { margin: 0 10px; font-weight: bold; }
+.sidebar .navigation .categories-container .text { font-size: 1.5rem; }
 
-.sidebar .navigation .category .cate-item { border-bottom: 2px solid black; cursor: pointer; display: flex; justify-content: flex-start; }
+.sidebar .navigation .categories-container .categories .category { border-bottom: 2px solid black; padding: 10px 0; display: flex; justify-content: flex-start; transition: background-color 0.5s ease-in-out; }
 
-.sidebar .navigation .category .cate-item:hover { background-color: red; }
+.sidebar .navigation .categories-container .categories .category i { text-align: center; flex-basis: 40px; cursor: pointer; font-size: 1.5rem; }
 
-.sidebar .navigation .category .cate-item a { flex-grow: 1; display: inline-block; text-decoration: none; color: #212121; }
+.sidebar .navigation .categories-container .categories .category a { flex-grow: 1; text-decoration: none; color: #212121; }
 
-.sidebar .navigation .category .cate-item i { padding-right: 5px; font-size: 1.5rem; flex-grow: 0; }
+.sidebar .navigation .categories-container .categories .category:hover { background-color: #bddaf1; }
 
-.sidebar .navigation .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; margin-left: 15px; }
+.sidebar .navigation .categories-container .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; padding-left: 25px; padding: 0 0; }
 
-.sidebar .navigation .subnav .cate-item { border-left: 2px solid black; }
-
-.sidebar .navigation .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
+.sidebar .navigation .categories-container .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
 
 .page { float: right; width: calc(100% - 300px); min-height: 100vh; overflow: hidden; display: flex; flex-flow: column wrap; }
 
