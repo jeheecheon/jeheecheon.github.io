@@ -7,21 +7,19 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { float: right; height: 100vh; width: 300px; position: fixed; right: 0; overflow: auto; background-color: #bddaf1; box-shadow: 5px 5px 13px 5px #95bfe2; }
+.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; overflow: auto; background-color: #bddaf1; box-shadow: 5px 5px 13px 5px #95bfe2; }
 
-.sidebar .profile { margin: 10px 12px; }
+.sidebar .profile .inner { margin: 15px 10px; padding: 15px; border: 2px solid #95bfe2; }
 
-.sidebar .profile .inner { padding: 10px; border: 3px solid #95bfe2; flex-basis: 250px; text-decoration: none; color: #212121; }
-
-.sidebar .profile .inner .img { text-align: center; font-size: 6rem; }
+.sidebar .profile .inner .img { text-decoration: none; color: #212121; text-align: center; font-size: 6rem; position: relative; left: 50%; transform: translateX(-50%); }
 
 .sidebar .profile .inner .img:after { content: ""; margin: 25px 0 10px; width: 100px; height: 5px; background-color: #95bfe2; display: block; border-radius: 16%; }
 
-.sidebar .profile .inner .text { width: 230px; padding: 10px 0; flex-basis: fit-content; background-color: rgba(255, 255, 255, 0.6); border-radius: 5%; text-align: center; }
+.sidebar .profile .inner .text { width: 230px; padding: 10px 0; background-color: rgba(255, 255, 255, 0.6); border-radius: 5%; text-align: center; position: relative; left: 50%; transform: translateX(-50%); }
 
-.sidebar .profile .inner .text .author { color: lightslategray; font-size: 1.5rem; font-weight: bold; }
+.sidebar .profile .inner .text .author { text-decoration: none; color: #212121; color: lightslategray; font-size: 1.5rem; font-weight: bold; }
 
-.sidebar .profile .inner .text .description { font-size: 1rem; }
+.sidebar .profile .inner .text .description { text-decoration: none; color: #212121; font-size: 1rem; }
 
 .sidebar .search { position: relative; }
 
@@ -77,21 +75,25 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post-cover { position: relative; height: 100vh; width: 100%; overflow: hidden; }
 
-.page .main .post-cover .img { position: absolute; object-fit: cover; width: 100%; height: 100%; filter: blur(3px); -webkit-filter: blur(3px); }
+.page .main .post-cover .img { position: relative; object-fit: cover; width: 100%; height: 100%; -webkit-filter: blur(3px); filter: blur(3px); }
 
-.page .main .post-cover .text { position: relative; height: 100%; width: 100%; background-color: rgba(71, 71, 71, 0.4); color: white; display: flex; flex-direction: column; justify-content: center; text-align: center; }
-
-.page .main .post-cover .text .button--goToIndex { position: absolute; visibility: hidden; top: 2px; left: 50%; transform: translateX(-50%); z-index: 2; text-decoration: none; color: #212121; color: white; display: inline-block; padding: 1em; font-family: Helvetica Neue; border-radius: 30%; }
-
-.page .main .post-cover .text .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2.5s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.07) 90%, transparent 100%); background-size: 200% 100%; }
+.page .main .post-cover .text { color: white; z-index: 1; position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
 
 .page .main .post-cover .text .title { font-size: 3.5rem; }
 
-.page .main .post-content { width: 100%; display: flex; flex-flow: row wrap; justify-content: center; }
+.page .main .post-cover .background { position: absolute; top: 0; height: 100%; width: 100%; background-color: rgba(71, 71, 71, 0.4); color: white; }
 
-.page .main .post-content .main-content { margin: 0 20px; flex-grow: 1; max-width: 728px; font-size: 1rem; word-break: break-all; }
+.page .main .post-cover .background .button--goToIndex { position: absolute; visibility: hidden; top: 2px; left: 50%; transform: translateX(-50%); z-index: 2; text-decoration: none; color: #212121; color: white; display: inline-block; padding: 1em; font-family: Helvetica Neue; border-radius: 30%; }
 
-.page .main .post-content .side-content { flex-basis: 200px; }
+.page .main .post-cover .background .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2.5s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.07) 90%, transparent 100%); background-size: 200% 100%; }
+
+.page .main .post-content { position: relative; width: 100%; }
+
+.page .main .post-content .main-content { position: absolute; top: -400px; left: 50%; transform: translateX(-50%); z-index: 0.5; background-color: white; border-radius: 5px; box-sizing: content-box; padding: 0 20px; max-width: 728px; width: calc(100% - 40px); font-size: 1rem; word-break: break-all; }
+
+.page .main .post-content .j-space { position: relative; z-index: -1; }
+
+.page .main .post-content .j-space .side-content { margin: 20px 0 0 20px; position: sticky; top: 8%; width: 300px; height: 600px; border: 2px solid #bddaf1; }
 
 .page .main .post-content .comment { width: 100%; height: 100px; }
 
