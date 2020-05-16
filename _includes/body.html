@@ -1,12 +1,13 @@
 <body>
     <div class="sidebar">
         <a href="/" class="profile sidebar__profile">
-            <img class="img profile__img" src="{{site.blog.profile}}" alt="">
-            <div class="text">
-                <p class="author profile__author">{{site.blog.author}}</p>
-                <pre class="description profile__description">{{site.blog.description}}</pre>
+            <div class="inner profile__inner">
+                <i class="far fa-user img profile__img"></i>
+                <div class="text">
+                    <p class="author profile__author">{{site.blog.author}}</p>
+                    <pre class="description profile__description">{{site.blog.description}}</pre>
+                </div>
             </div>
-
         </a>
 
         <div class="search">
@@ -66,7 +67,7 @@
     <div class="page">
         <header class="header page__header">
             <div class="bar header__bar">
-                <i class="fas fa-bars hamburger"></i>
+                <i class="far fa-user-circle logo bar__logo"></i>
                 <a href="#top" class="title bar__title">
                     {% if page.title == site.title %}
                     <div class="main-title">
@@ -80,8 +81,8 @@
                         {{site.title}}
                     </div>
                     {% endif %}
-                </a>
-                <img src="{{site.blog.logo}}" alt="" class="logo bar__logo">
+                </a> 
+                <i class="fas fa-bars hamburger"></i>
             </div>
 
             <div class="scroll-indicator header__scroll-indicator"></div>
