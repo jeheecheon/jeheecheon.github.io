@@ -38,7 +38,7 @@ else {
   //toggle header
   setInterval(function () {
     if (getScrolled) {
-      toggleHeader(window.scrollY);
+      toggleHeader(document.body.scrollTop || document.documentElement.scrollTop);
       getScrolled = false;
     }
   }, 100);
@@ -46,21 +46,20 @@ else {
 
 //It could Invoke function toggleHeader
 function modifyHeader() {
-  var nowScrollTop = window.scrollY;
+  var nowScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
   //in post cover
   if (nowScrollTop < postCover.clientHeight - headerBar.clientHeight) {
     //remove background color, change color of hamburger to white
     headerBar.style.backgroundColor = "initial";
-    headerBar.childNodes[1].style.color = "white"; //hamburger
-    //hide title
-    headerBar.childNodes[3].style.visibility = "hidden"; //title
+    headerBar.children[2].style.color = "white"; //hamburger
+    headerBar.children[1].style.visibility = "hidden"; //title
   }
   //in post content or others, except post cover
   else {
     //add background-color, change color of humburger to black
     headerBar.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
-    headerBar.childNodes[1].style.color = "black"; //hamburger
-    headerBar.childNodes[3].style.visibility = "visible"; //title
+    headerBar.children[2].style.color = "black"; //hamburger
+    headerBar.children[1].style.visibility = "visible"; //title
 
     toggleHeader(nowScrollTop);
   }
@@ -81,8 +80,8 @@ function toggleHeader(nowScrollTop) {
 }
 
 function indicateProgress() {
-  var winScroll = window.scrollY - postCover.clientHeight; //Skip post-cover's height
-  var height = postContent.clientHeight - window.innerHeight;
+  var winScroll = (document.body.scrollTop || document.documentElement.scrollTop) - postCover.clientHeight; //Skip post-cover's height
+  var height = postContent.clientHeight - (document.body.clientHeight || document.documentElement.clientHeight);
   var scrolled = (winScroll / height) * 100;
 
   if (winScroll < 0 || scrolled > 100) scrollIndicator.style.width = 0;
