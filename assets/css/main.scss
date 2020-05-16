@@ -40,6 +40,7 @@ pre {
 $baseColor1: rgb(189, 218, 241);
 $baseColor2: rgb(149, 191, 226);
 $baseColor3: rgb(64, 95, 121);
+$baseColor4: rgb(245, 245, 245);
 // $baseColor1: rgba(112, 179, 233, 0.459);
 // $baseColor2: rgba(102, 171, 228, 0.445);
 // rgb(189, 218, 241)
@@ -57,6 +58,8 @@ $baseColor3: rgb(64, 95, 121);
   box-shadow: 5px 5px 13px 5px $baseColor2;
 
   .profile {
+    @include removeDeco();
+
     .inner {
       margin: 15px 10px;
       padding: 15px;
@@ -92,13 +95,11 @@ $baseColor3: rgb(64, 95, 121);
         transform: translateX(-50%);
 
         .author {
-          @include removeDeco();
           color: rgb(119, 136, 153);
           font-size: 1.5rem;
           font-weight: bold;
         }
         .description {
-          @include removeDeco();
           font-size: 1rem;
         }
       }
@@ -272,7 +273,7 @@ $baseColor3: rgb(64, 95, 121);
       -webkit-transition: width 0.1s linear;
 
       width: 0%;
-      background-color: rgba(4, 154, 192, 0.5);
+      background-color: $baseColor1;
     }
   }
 
