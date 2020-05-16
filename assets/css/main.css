@@ -49,7 +49,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .navigation .categories-container .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
 
-.page { float: left; width: calc(100% - 300px); min-height: 100vh; overflow: hidden; display: flex; flex-flow: column wrap; }
+.page { float: left; width: calc(100% - 300px); min-height: 100vh; display: flex; flex-flow: column wrap; }
 
 .page::after { content: ""; display: block; clear: both; }
 
@@ -71,7 +71,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .header .scroll-indicator { flex-basis: 5px; transition: width 0.1s linear; -moz-transition: width 0.1s linear; -o-transition: width 0.1s linear; -webkit-transition: width 0.1s linear; width: 0%; background-color: rgba(4, 154, 192, 0.5); }
 
-.page .main { flex: 1; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
+.page .main { min-height: 100vh; flex: 1; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
 
 .page .main .main__inner { width: 100%; }
 
