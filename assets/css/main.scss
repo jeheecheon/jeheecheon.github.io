@@ -197,7 +197,6 @@ $baseColor3: rgb(64, 95, 121);
   float: left;
   width: calc(100% - 300px);
   min-height: 100vh;
-  overflow: hidden;
 
   display: flex;
   flex-flow: column wrap;
@@ -284,6 +283,7 @@ $baseColor3: rgb(64, 95, 121);
   }
 
   .main {
+    min-height: 100vh;
     flex: 1;
     @import "page", "post", "index";
   }
