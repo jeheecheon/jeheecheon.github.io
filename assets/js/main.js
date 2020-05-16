@@ -1,5 +1,5 @@
 includeJs("/assets/js/header.js");
-includeJs("/assets/js/navigation.js");
+includeJs("/assets/js/sidebar.js");
 
 function includeJs(jsFilePath) {
     var js = document.createElement("script");

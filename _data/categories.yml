@@ -25,7 +25,7 @@
 - title: cate1
   category: cate1
   icon: "far fa-file-code"
-  hidden: true
+  hidden: false
   subnav:
     - title: cate1-1
       category: cate1-1
