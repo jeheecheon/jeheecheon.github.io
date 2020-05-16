@@ -14,9 +14,11 @@
             <i class="fas fa-search search-icon"></i>
         </div>
 
-
         <div class="navigation sidebar__navigation">
-            {% include navigation.html nav=site.data.navigation %}
+            <div class="categories-container">
+                <p class="text">Categories</p>
+                {% include categories.html nav=site.data.categories %}
+            </div>
 
             <div class="tags-cloud">
                 <div>

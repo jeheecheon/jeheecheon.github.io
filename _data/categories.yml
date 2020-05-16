@@ -1,14 +1,16 @@
 - title: Home
-  url: ""
-  icon: "fas fa-home"
+  url: "/"
+  icon: "far fa-building"
 - title: About
   url: "about"
+  icon: "far fa-id-card"
 - title: Daily life
   category: daily-life
-
+  icon: "far fa-grin-beam"
 - title: cate1
   category: cate1
-  hidden: false
+  icon: "far fa-file-code"
+  hidden: true
   subnav:
     - title: cate1-1
       category: cate1-1
