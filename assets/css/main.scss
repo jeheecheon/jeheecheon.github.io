@@ -53,7 +53,8 @@ $baseColor4: rgb(245, 245, 245);
   width: 300px;
   position: fixed;
   right: 0;
-  overflow: auto;
+
+  overflow-x: hidden;
   background-color: $baseColor1;
   box-shadow: 5px 5px 13px 5px $baseColor2;
 
