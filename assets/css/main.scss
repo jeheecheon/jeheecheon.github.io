@@ -37,8 +37,8 @@ pre {
   }
 }
 
-$baseColor1: rgb(227, 255, 227);
-$baseColor2: rgb(119, 136, 153);
+$baseColor1: rgba(112, 179, 233, 0.459);
+$baseColor2: rgba(102, 171, 228, 0.445);
 /////////////////////////////////////////////////////////////
 
 .sidebar {
@@ -49,7 +49,7 @@ $baseColor2: rgb(119, 136, 153);
   right: 0;
   overflow: auto;
   background-color: $baseColor1;
-  box-shadow: 5px 5px 13px 10px $baseColor2;
+  box-shadow: 5px 5px 13px 5px $baseColor2;
 
   display: flex;
   flex-flow: column nowrap;
