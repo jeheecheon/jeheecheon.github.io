@@ -7,7 +7,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; overflow: auto; background-color: #bddaf1; box-shadow: 5px 5px 13px 5px #95bfe2; }
+.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; overflow-x: hidden; background-color: #bddaf1; box-shadow: 5px 5px 13px 5px #95bfe2; }
 
 .sidebar .profile { text-decoration: none; color: #212121; }
 
