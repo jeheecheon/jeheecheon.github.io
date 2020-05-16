@@ -47,7 +47,7 @@ $baseColor2: rgb(119, 136, 153);
   width: 300px;
   position: fixed;
   right: 0;
-  overflow: hidden;
+  overflow: auto;
   background-color: $baseColor1;
   box-shadow: 5px 5px 13px 10px $baseColor2;
 
@@ -55,12 +55,12 @@ $baseColor2: rgb(119, 136, 153);
   flex-flow: column nowrap;
 
   .profile {
-    margin: 10px 15px;
+    margin: 10px 12px;
     .inner {
       padding: 10px;
       border: 3px solid $baseColor2;
       flex-basis: 250px;
-      box-shadow: 3px 3px 5px $baseColor2;
+      box-shadow: 3px 3px 5px 4px $baseColor2;
       border-radius: 5%;
       @include removeDeco();
       // background-image: url("/assets/img/pier-569314_640.jpg");
@@ -131,9 +131,12 @@ $baseColor2: rgb(119, 136, 153);
 
   .navigation {
     .categories-container {
-      padding: 0 12px;
-      margin: 0 3px;
+      padding: 0 10px;
+      margin: 10px 12px;
+      border-radius: 5%;
       border: 2px solid $baseColor2;
+      box-shadow: 3px 3px 5px 4px $baseColor2;
+
       .text {
         text-align: center;
         font-size: 1.5rem;      
@@ -141,14 +144,14 @@ $baseColor2: rgb(119, 136, 153);
       .categories { //ul
         .category { //li
           border-top: 2px solid $baseColor2;
-          padding: 10px 0;
+          padding: 8px 0;
           display: flex;
           justify-content: flex-start;
           transition: background-color 0.5s ease-in-out;
 
           i {
             text-align: center;
-            flex-basis: 40px;
+            flex-basis: 33px;
             cursor: pointer;
             font-size: 1.5rem;
           }
@@ -168,9 +171,7 @@ $baseColor2: rgb(119, 136, 153);
         transition: opacity 1s ease-out;
         opacity: 1;
         height: auto;
-        padding-left: 25px;
-        padding: 0 0;
-        padding-left: 25px;
+        padding-left: 30px;
       }
       .subnav--hide {
         opacity: 0;
