@@ -6,12 +6,14 @@ comments: true
 <section class="post main__post">
     <div class="post-cover">
         <img class="img post-cover__img" src="{{page.image}}" alt="">
-        <div class="text post-cover__text">
+        <div class="background post-cover__background">
             <a href="/" class="button--goToIndex">
                 <pre>
 Click here to go to index
                 </pre>
             </a>
+        </div>
+        <div class="text post-cover__text">
             <h1 class="title text__title">{{page.title}}</h1>
             <p class="date text__date">{{page.date}}</p>
         </div>
@@ -21,7 +23,9 @@ Click here to go to index
         <div class="main-content post-content__main-content">
             {{content}}
         </div>
-        <div class="side-content post-content__side-content">right</div>
+        <div class="j-space post-content__j-space">
+            <div class="side-content j-space__side-content"></div>
+        </div>
     </div>
 
     {% if site.related_posts.size >= 1 %}
