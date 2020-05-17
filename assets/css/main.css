@@ -11,7 +11,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .profile { text-decoration: none; color: #212121; }
 
-.sidebar .profile .inner { margin: 15px 10px; padding: 15px; border: 2px solid #95bfe2; }
+.sidebar .profile .inner { margin: 13px 10px; padding: 15px; border: 2px solid #95bfe2; }
 
 .sidebar .profile .inner .img { text-decoration: none; color: #212121; text-align: center; font-size: 6rem; position: relative; left: 50%; transform: translateX(-50%); }
 
@@ -31,19 +31,19 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .search .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
-.sidebar .navigation .categories-container { padding: 0 10px; margin: 10px 12px; }
+.sidebar .navigation .categories-container { margin: 10px; }
 
 .sidebar .navigation .categories-container:after { content: ""; display: block; width: 100%; height: 2px; background-color: #95bfe2; }
 
 .sidebar .navigation .categories-container .text { text-align: center; font-size: 1.5rem; }
 
-.sidebar .navigation .categories-container .categories .category { border-top: 2px solid #95bfe2; padding: 8px 0; display: flex; justify-content: flex-start; transition: background-color 0.5s ease-in-out; }
+.sidebar .navigation .categories-container .categories .category { border-top: 2px solid #95bfe2; transition: background-color 0.5s ease-in-out; display: flex; }
 
-.sidebar .navigation .categories-container .categories .category i { text-align: center; flex-basis: 33px; cursor: pointer; font-size: 1.5rem; }
+.sidebar .navigation .categories-container .categories .category i { padding: 8px 0; width: 30px; text-align: center; font-size: 1.5rem; cursor: pointer; }
 
-.sidebar .navigation .categories-container .categories .category a { flex-grow: 1; text-decoration: none; color: #212121; }
+.sidebar .navigation .categories-container .categories .category a { flex-grow: 1; padding: 8px 0; display: inline-block; text-decoration: none; color: #212121; }
 
-.sidebar .navigation .categories-container .categories .category:hover { background-color: #bddaf1; }
+.sidebar .navigation .categories-container .categories .category:hover { background-color: #95bfe2; }
 
 .sidebar .navigation .categories-container .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; padding-left: 30px; }
 
@@ -69,7 +69,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .header .bar .hamburger:after { content: ""; display: block; clear: both; }
 
-.page .header .scroll-indicator { height: 5px; transition: width 0.1s linear; -moz-transition: width 0.1s linear; -o-transition: width 0.1s linear; -webkit-transition: width 0.1s linear; width: 0%; background-color: #bddaf1; }
+.page .header .scroll-indicator { height: 8px; transition: width 0.3s ease-in-out; -moz-transition: width 0.3s ease-in-out; -o-transition: width 0.3s ease-in-out; -webkit-transition: width 0.3s ease-in-out; width: 0%; background-color: #bddaf1; }
 
 .page .main { min-height: fit-content; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
 
