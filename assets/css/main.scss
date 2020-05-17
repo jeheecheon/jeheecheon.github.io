@@ -17,6 +17,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
+
 }
 
 pre {
@@ -39,8 +40,8 @@ pre {
 
 $baseColor1: rgb(189, 218, 241);
 $baseColor2: rgb(149, 191, 226);
-$baseColor3: rgb(255, 255, 255);
-$baseColor4: rgb(245, 245, 245); //background1
+$baseColor3: rgb(255, 255, 255); //background1
+$baseColor4: rgb(245, 245, 245); //background2
 $baseColor5: rgb(170, 170, 170); //shadow
 $baseColor6: rgb(70, 70, 70); //background2
 
@@ -56,7 +57,7 @@ $baseColor6: rgb(70, 70, 70); //background2
 
   overflow-x: hidden;
   background-color: $baseColor1;
-  box-shadow: 3px 3px 5px 2px $baseColor5;
+  box-shadow: 3px 3px 5px 5px $baseColor5;
 
   .profile {
     display: block;
@@ -207,6 +208,7 @@ $baseColor6: rgb(70, 70, 70); //background2
   width: calc(100% - 300px);
   min-height: 100vh;
 
+
   @at-root .header--hide {
     transform: translateY(-50px);
     -moz-transform: translateY(-50px);
@@ -236,7 +238,6 @@ $baseColor6: rgb(70, 70, 70); //background2
       width: 100%;
 
       .logo {
-        float: left;
         font-size: 2rem;
         position: absolute;
         left: 10px;
@@ -245,7 +246,6 @@ $baseColor6: rgb(70, 70, 70); //background2
       }
 
       .title {
-        float: left;
         @include removeDeco();
         text-align: center;
         display: inline-block;
@@ -263,7 +263,6 @@ $baseColor6: rgb(70, 70, 70); //background2
 
       .hamburger {
         cursor: pointer;
-
         float: left;
         font-size: 22px;
         position: absolute;

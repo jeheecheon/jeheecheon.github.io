@@ -80,15 +80,17 @@
 .post__content {
   position: relative;
   width: 100%;
+  background-color: $baseColor3;
   
   .main-content {
+    background-color: $baseColor3;
     position: absolute;
     top: -400px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0.5;
     border-radius: 5px;
-    //box-shadow: 2px 4px 11px rgb(211, 211, 211);
+    // box-shadow: 1px 1px 2px 1px $baseColor5;
     box-sizing: content-box;
     padding: 20px 20px 0;
     max-width: 728px;
