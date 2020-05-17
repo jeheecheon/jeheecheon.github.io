@@ -16,13 +16,13 @@ for (i = 0; i < navs.length; i++) {
 }
 
 function toggle_subnav(i) {
-
-    i.parentNode.nextElementSibling.classList.toggle("subnav--hide");
-    if (i.nextElementSibling) {
-        i = i.parentNode.children[2];
+    if (i.parentNode.nextElementSibling.nodeName == "UL") {
+        i.parentNode.nextElementSibling.classList.toggle("subnav--hide");
+        i.parentNode.children[2].classList.toggle("fa-caret-square-down");
+        i.parentNode.children[2].classList.toggle("fa-caret-square-up");
     }
-    i.classList.toggle("fa-caret-square-down");
-    i.classList.toggle("fa-caret-square-up");
+    else
+        i.nextElementSibling.click();
 }
 
 function resizeLayout() {

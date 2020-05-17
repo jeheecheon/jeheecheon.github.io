@@ -60,9 +60,8 @@ $baseColor4: rgb(245, 245, 245);
 
   .profile {
     @include removeDeco();
-
     .inner {
-      margin: 15px 10px;
+      margin: 13px 10px;
       padding: 15px;
       border: 2px solid $baseColor2;
       
@@ -131,8 +130,8 @@ $baseColor4: rgb(245, 245, 245);
 
   .navigation {
     .categories-container {
-      padding: 0 10px;
-      margin: 10px 12px;
+      
+      margin: 10px;
       //border-radius: 5%;
       //border: 2px solid $baseColor2;
       //box-shadow: 3px 3px 5px 4px $baseColor2;
@@ -151,25 +150,25 @@ $baseColor4: rgb(245, 245, 245);
       .categories { //ul
         .category { //li
           border-top: 2px solid $baseColor2;
-          padding: 8px 0;
-          display: flex;
-          justify-content: flex-start;
           transition: background-color 0.5s ease-in-out;
 
+          display: flex;
           i {
+            padding: 8px 0;
+            width: 30px;
             text-align: center;
-            flex-basis: 33px;
-            cursor: pointer;
             font-size: 1.5rem;
+            cursor: pointer;
           }
           a {
             flex-grow: 1;
+            padding: 8px 0;
+            display: inline-block;
             @include removeDeco();
           }
 
-
           &:hover {
-            background-color: rgb(189, 218, 241);
+            background-color: $baseColor2;
           }
         }
       }
@@ -266,12 +265,12 @@ $baseColor4: rgb(245, 245, 245);
     }
 
     .scroll-indicator {
-      height: 5px;
+      height: 8px;
 
-      transition: width 0.1s linear;
-      -moz-transition: width 0.1s linear;
-      -o-transition: width 0.1s linear;
-      -webkit-transition: width 0.1s linear;
+      transition: width 0.3s ease-in-out;
+      -moz-transition: width 0.3s ease-in-out;
+      -o-transition: width 0.3s ease-in-out;
+      -webkit-transition: width 0.3s ease-in-out;
 
       width: 0%;
       background-color: $baseColor1;

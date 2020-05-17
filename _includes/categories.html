@@ -3,15 +3,15 @@
     {% for item in include.nav %}
     {% if item.url %}
     <li class="category categories__category">
-        <i class="{{item.icon}}"></i>
+        <i class="{{item.icon}}" onclick="toggle_subnav(this)"></i>
         <a href="{{site.url}}/{{item.url}}">{{ item.title }}</a>
     </li>
     {% else %}
     <li class="category categories__category">
-        <i class="{% if item.icon %}{{item.icon}}{% else %}far fa-file{% endif %}" {% if item.subnav %} onclick="toggle_subnav(this)" {% endif %}></i>
+        <i class="{% if item.icon %}{{item.icon}}{% else %}far fa-file{% endif %}" onclick="toggle_subnav(this)"></i>
         <a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
         {% if item.subnav %}
-        <i class="far fa-caret-square-down" {% if item.subnav %} onclick="toggle_subnav(this)" {% endif %}></i>
+        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
         {% endif %}
     </li>
     {% endif %}
