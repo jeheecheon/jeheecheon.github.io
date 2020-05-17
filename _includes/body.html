@@ -2,12 +2,14 @@
     <div class="layout">
         <div class="sidebar">
             <a href="/" class="profile sidebar__profile">
-                <div class="inner profile__inner">
-                    <i class="far fa-user img profile__img"></i>
-                    <div class="text">
-                        <p class="author profile__author">{{site.blog.author}}</p>
-                        <pre class="description profile__description">{{site.blog.description}}</pre>
+                <div class="profile-img profile__profile-img">
+                    <div class="img-container profile-img__img-container">
+                        <img src="{{site.blog.profile}}" alt="" class="img img-container__img">
                     </div>
+                </div>
+                <div class="text profile__text">
+                    <p class="author text__author">{{site.blog.author}}</p>
+                    <pre class="description text__description">{{site.blog.description}}</pre>
                 </div>
             </a>
 

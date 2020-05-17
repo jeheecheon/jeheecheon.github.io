@@ -39,12 +39,11 @@ pre {
 
 $baseColor1: rgb(189, 218, 241);
 $baseColor2: rgb(149, 191, 226);
-$baseColor3: rgb(64, 95, 121);
-$baseColor4: rgb(245, 245, 245);
-$baseColor5: rgb(170, 170, 170);
-// $baseColor1: rgba(112, 179, 233, 0.459);
-// $baseColor2: rgba(102, 171, 228, 0.445);
-// rgb(189, 218, 241)
+$baseColor3: rgb(255, 255, 255);
+$baseColor4: rgb(245, 245, 245); //background1
+$baseColor5: rgb(170, 170, 170); //shadow
+$baseColor6: rgb(70, 70, 70); //background2
+
 /////////////////////////////////////////////////////////////
 
 .sidebar {
@@ -57,52 +56,64 @@ $baseColor5: rgb(170, 170, 170);
 
   overflow-x: hidden;
   background-color: $baseColor1;
-  box-shadow: 5px 5px 13px 5px $baseColor2;
+  box-shadow: 3px 3px 5px 2px $baseColor5;
 
   .profile {
+    display: block;
     @include removeDeco();
-    .inner {
-      margin: 13px 10px;
-      padding: 15px;
-      border: 2px solid $baseColor2;
-      
-      .img {
-        @include removeDeco();
-        text-align: center;
-        font-size: 6rem;
+    margin: 13px 10px;
+    padding: 15px;
+
+    border: 2px solid $baseColor2;
+    .profile-img {
+      .img-container {
+        width: 100px;
+        height: 100px;
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
         left: 50%;
         transform: translateX(-50%);
-        
 
-        &:after {
-          content: "";
-          margin: 25px 0 10px;
-          width: 100px;
-          height: 5px;
-          background-color: $baseColor2;
-          display: block;
-          border-radius: 16%;
+        .img {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+          height: auto;
         }
       }
-      .text {        
-        width: 230px;
-        padding: 10px 0;
-        background-color: rgba(255, 255, 255, 0.6);
-        border-radius: 5%;
-        text-align: center;
+      &::after {
+        display: block;
+        content: "";
+        width: 150px;
+        height: 7px;
+        border-radius: 10px;
+        background-color: $baseColor2;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        margin: 10px 0;
+      }
+    }
 
-        .author {
-          color: rgb(119, 136, 153);
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-        .description {
-          font-size: 1rem;
-        }
+    .text {
+      width: 230px;
+      padding: 10px 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 5%;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .author {
+        color: rgb(119, 136, 153);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .description {
+        font-size: 1rem;
       }
     }
   }
@@ -131,7 +142,6 @@ $baseColor5: rgb(170, 170, 170);
 
   .navigation {
     .categories-container {
-      
       margin: 10px;
       //border-radius: 5%;
       //border: 2px solid $baseColor2;
@@ -146,10 +156,12 @@ $baseColor5: rgb(170, 170, 170);
       }
       .text {
         text-align: center;
-        font-size: 1.5rem;      
+        font-size: 1.5rem;
       }
-      .categories { //ul
-        .category { //li
+      .categories {
+        //ul
+        .category {
+          //li
           border-top: 2px solid $baseColor2;
           transition: background-color 0.5s ease-in-out;
 
@@ -173,8 +185,9 @@ $baseColor5: rgb(170, 170, 170);
           }
         }
       }
-  
-      .subnav { //ul
+
+      .subnav {
+        //ul
         transition: opacity 1s ease-out;
         opacity: 1;
         height: auto;
@@ -186,7 +199,7 @@ $baseColor5: rgb(170, 170, 170);
         overflow: hidden;
       }
     }
-  }  
+  }
 }
 
 .page {
@@ -212,6 +225,7 @@ $baseColor5: rgb(170, 170, 170);
 
     .bar {
       background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 3px 3px 5px $baseColor5;
 
       transition: background-color 0.6s ease-in-out;
       -moz-transition: background-color 0.6s ease-in-out;
@@ -238,7 +252,7 @@ $baseColor5: rgb(170, 170, 170);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        
+
         .main-title {
           font-size: 1rem;
         }
@@ -257,7 +271,6 @@ $baseColor5: rgb(170, 170, 170);
         top: 50%;
         transform: translateY(-50%);
       }
-
     }
 
     .scroll-indicator {
@@ -296,5 +309,4 @@ $baseColor5: rgb(170, 170, 170);
 
 /////////////////////////////////////////////////
 @media screen and (max-width: 1068px) {
-
 }

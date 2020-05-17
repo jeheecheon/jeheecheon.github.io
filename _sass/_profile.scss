@@ -1,16 +1,81 @@
 .profile-card {
-    .img-container {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-        .img {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            height: auto;
-        }
+  padding: 15px 15px 30px;
+  box-shadow: 3px 3px 5px 2px $baseColor5;
+  border-radius: 5px;
+  width: 100%;
+
+  .img-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: auto;
     }
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 1.5rem;
+    .name {
+    }
+    .description {
+      font-size: 1.5rem;
+      color: $baseColor6;
+    }
+  }
+
+  .blog-info {
+    text-align: center;
+    margin-top: 20px;
+
+    .s1,
+    .s2,
+    .s3 {
+      width: 28%;
+      display: inline-block;
+
+      .text {
+        display: inline-block;
+        font-size: 1rem;
+        color: $baseColor6;
+      }
+      .info {
+      }
+    }
+  }
+
+  .social-media {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    .github,
+    .linkedin,
+    .instagram {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 2rem;
+      color: $baseColor6;
+      text-align: center;
+      width: 28%;
+      box-shadow: 3px 3px 5px 2px $baseColor5;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $baseColor5;
+      }
+    }
+    .linkedin {
+      margin: 0 5%;
+    }
+  }
 }
