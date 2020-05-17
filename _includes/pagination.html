@@ -1,18 +1,19 @@
 <!-- <a class="blog-title" href="/">{{page.title}}</a> -->
 
-<div class="recent-posts">
-  <nav class="post-items">
-    {% for post in paginator.posts %}
-    <div class="wrapper post-items__wrapper">
-      <a class="post-item wrapper__post-item" href="{{ post.url }}">
-        <img class="img post-item__img" src="{{post.image}}aaa" alt="">
-        <h1 class="title post-item__title">{{ post.title }}</h1>
-        <span class="date post-item__date">{{ post.date }}</span>
-      </a>
+<nav class="post-items">
+  {% for post in paginator.posts %}
+  <a class="post-item" href="{{ post.url }}">
+    <div class="img-container post-item__img-container">
+      <img class="img" src="{{post.image}}" alt="">
     </div>
-    {% endfor %}
-  </nav>
-</div>
+    <text class="text post-item__text">
+      <p class="date text__date">{{ post.date }} - {{post.categories}}{{post.tags}}</p>
+      <h1 class="title text__title">{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
+    </text>
+  </a>
+  {% endfor %}
+</nav>
 
 <!-- Pagination links -->
 <div class="pagination">
@@ -34,9 +35,9 @@
 </div>
 
 {% if paginator.page_trail %}
-  {% for trail in paginator.page_trail %}
-    <li {% if page.url == trail.path %}class="selected"{% endif %}>
-        <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
-    </li>
-  {% endfor %}
+{% for trail in paginator.page_trail %}
+<li {% if page.url == trail.path %}class="selected" {% endif %}>
+  <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+</li>
+{% endfor %}
 {% endif %}
