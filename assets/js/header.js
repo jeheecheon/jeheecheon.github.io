@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 //In post
 if (document.querySelector(".post-cover")) {
   var postCover = document.querySelector(".post-cover");
-  var postContent = document.querySelector(".post-content");
+  var postContent = document.querySelector(".post__content");
   var scrollIndicator = document.querySelector(".scroll-indicator");
   var goToIndexBtn = document.querySelector(".button--goToIndex");
 

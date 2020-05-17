@@ -67,13 +67,17 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .header .bar .hamburger { cursor: pointer; float: left; font-size: 22px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); }
 
-.page .header .bar .hamburger:after { content: ""; display: block; clear: both; }
-
 .page .header .scroll-indicator { height: 8px; transition: width 0.3s ease-in-out; -moz-transition: width 0.3s ease-in-out; -o-transition: width 0.3s ease-in-out; -webkit-transition: width 0.3s ease-in-out; width: 0%; background-color: #bddaf1; }
 
-.page .main { min-height: fit-content; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
+.page .main { background-color: whitesmoke; min-height: fit-content; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
 
-.page .main .main__inner { width: 100%; }
+.page .main .content { width: fit-content; margin: 0 auto; }
+
+.page .main .content .main-content { margin-top: 80px; float: left; max-width: 768px; width: 768px; box-sizing: content-box; padding: 0 20px; }
+
+.page .main .content .l-content, .page .main .content .r-content { float: left; background-color: red; margin: 80px 20px; width: 300px; min-height: 1px; height: fit-content; }
+
+.page .main .content::after { content: ""; display: block; clear: both; }
 
 .page .main .post-cover { position: relative; height: 100vh; width: 100%; overflow: hidden; }
 
@@ -89,42 +93,22 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post-cover .background .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2.5s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.07) 90%, transparent 100%); background-size: 200% 100%; }
 
-.page .main .post-content { position: relative; width: 100%; }
+.page .main .post__content { position: relative; width: 100%; }
 
-.page .main .post-content .main-content { position: absolute; top: -400px; left: 50%; transform: translateX(-50%); z-index: 0.5; background-color: white; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); font-size: 1rem; word-break: break-all; }
+.page .main .post__content .main-content { position: absolute; top: -400px; left: 50%; transform: translateX(-50%); z-index: 0.5; background-color: white; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); font-size: 1rem; word-break: break-all; }
 
-.page .main .post-content .j-space { position: relative; z-index: -1; margin: 0; }
+.page .main .post__content .j-space { position: relative; z-index: -1; margin: 0; }
 
-.page .main .post-content .j-space .side-content { padding: 20px 0 0 20px; position: sticky; top: 8%; width: 300px; height: 600px; }
+.page .main .post__content .j-space .side-content { padding: 20px 0 0 20px; position: sticky; top: 8%; width: 300px; height: 600px; }
 
-.page .main .post-content .comment { width: 100%; height: 100px; }
+.page .main .post__content .comment { width: 100%; height: 100px; }
 
 @media screen and (max-width: 1268px) { .page .main .side-content { display: none; } }
 
-.page .main .blog-title { display: inline-block; width: 100%; height: fit-content; text-decoration: none; color: #424242; font-family: "Hi Melody", cursive; font-size: 6rem; width: 100%; text-align: center; margin: 3vh 0; }
-
-.page .main .recent-posts .post-items { margin: 0 auto; max-width: 1100px; display: grid; grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3); }
-
-.page .main .recent-posts .post-items .wrapper { width: 100%; height: 100%; padding: 20px; }
-
-.page .main .recent-posts .post-items .wrapper .post-item { width: 100%; height: 100%; display: block; transition: transform 0.7s ease-in-out; -moz-transition: -moz-transform 0.7s ease-in-out; -o-transition: -o-transform 0.7s ease-in-out; -webkit-transition: -webkit-transform 0.7s ease-in-out; box-shadow: 5px 5px 15px #e0e0e0; text-decoration: none; color: #424242; text-align: center; }
-
-.page .main .recent-posts .post-items .wrapper .post-item .img { width: 100%; height: 60%; object-fit: cover; }
-
-.page .main .recent-posts .post-items .wrapper .post-item:hover { transform: scale(1.08, 1.08); -moz-transform: scale(1.08, 1.08); -ms-transform: scale(1.08, 1.08); -o-transform: scale(1.08, 1.08); -webkit-transform: scale(1.08, 1.08); text-decoration: none; }
-
-.page .main .post__comment { margin: 0 20px; }
-
-@media screen and (max-width: 1380px) { .page .main .recent-posts .post-items { grid-template-columns: calc(100% / 2) calc(100% / 2); } .page .main .recent-posts .post-items .wrapper { padding: 20px 10px; } }
-
-@media screen and (max-width: 1068px) { .page .main .recent-posts .post-items { grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3); } }
-
-@media screen and (max-width: 1020px) { .page .main .recent-posts .post-items { grid-template-columns: calc(100% / 2) calc(100% / 2); } }
-
-@media screen and (max-width: 600px) { .page .main .recent-posts .post-items { grid-template-columns: auto; } }
+.page .main .blog-title { display: inline-block; width: 100%; font-family: "Hi Melody", cursive; font-size: 6rem; text-align: center; margin: 3vh 0; text-decoration: none; color: #212121; }
 
 .page .footer .inner { padding: 0 30px; text-align: center; }
 
-.page::after { content: ""; display: block; clear: both; }
+.layout::after { content: ""; display: block; clear: both; }
 
 /*# sourceMappingURL=main.css.map */
