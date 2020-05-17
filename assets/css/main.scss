@@ -257,11 +257,6 @@ $baseColor4: rgb(245, 245, 245);
         transform: translateY(-50%);
       }
 
-      .hamburger:after {
-        content: "";
-        display: block;
-        clear: both;
-      }
     }
 
     .scroll-indicator {
@@ -278,6 +273,7 @@ $baseColor4: rgb(245, 245, 245);
   }
 
   .main {
+    background-color: $baseColor4;
     min-height: fit-content;
     @import "page", "post", "index";
   }
@@ -291,7 +287,7 @@ $baseColor4: rgb(245, 245, 245);
 }
 
 //clear
-.page::after {
+.layout::after {
   content: "";
   display: block;
   clear: both;

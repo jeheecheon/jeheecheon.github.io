@@ -1,11 +1,11 @@
-<a class="blog-title" href="/">{{page.title}}</a>
+<!-- <a class="blog-title" href="/">{{page.title}}</a> -->
 
 <div class="recent-posts">
   <nav class="post-items">
     {% for post in paginator.posts %}
     <div class="wrapper post-items__wrapper">
       <a class="post-item wrapper__post-item" href="{{ post.url }}">
-        <img class="img post-item__img" src="{{post.image}}" alt="">
+        <img class="img post-item__img" src="{{post.image}}aaa" alt="">
         <h1 class="title post-item__title">{{ post.title }}</h1>
         <span class="date post-item__date">{{ post.date }}</span>
       </a>

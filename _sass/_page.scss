@@ -1,6 +1,42 @@
 /*In main-----------------------------------*/
 /*page layout-----------------------------------*/
 
-.main__inner {
-  width: 100%;
+.content {
+  width: fit-content;
+  margin: 0 auto;
+
+  .main-content {
+    margin-top: 80px;
+    float: left;
+    max-width: 768px;
+    width: 768px;
+    box-sizing: content-box;
+    padding: 0 20px;
+
+  }
+
+  .l-content, .r-content{
+    float: left;
+    background-color: red;
+    
+    margin: 80px 20px;
+    width: 300px;
+    min-height: 1px;
+    height: fit-content;
+  }
+
+  .l-content {
+
+  }
+
+  .r-content {
+
+  }
+  
+  //clear
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
