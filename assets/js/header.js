@@ -18,9 +18,7 @@ if (document.querySelector(".post-cover")) {
   //make reponsive header
   modifyHeader();
   indicateProgress();
-  window.addEventListener("scroll", function () {
-    indicateProgress();
-  });
+  window.addEventListener("scroll", indicateProgress);
   setInterval(function () {
     if (getScrolled) {
       modifyHeader();
@@ -81,16 +79,17 @@ function toggleHeader(nowScrollTop) {
 
 function indicateProgress() {
   var winScroll = (document.body.scrollTop || document.documentElement.scrollTop) - postCover.clientHeight; //Skip post-cover's height
-  var height = postContent.clientHeight - (document.body.clientHeight || document.documentElement.clientHeight);
+  var height = postContent.clientHeight - postCover.clientHeight;
   var scrolled = (winScroll / height) * 100;
-
-  if (winScroll < 0 || scrolled > 100) scrollIndicator.style.width = 0;
-  else scrollIndicator.style.width = scrolled + "%";
+  if (winScroll < 0 || scrolled > 100)
+    scrollIndicator.style.width = 0;
+  else
+    scrollIndicator.style.width = scrolled + "%";
 }
 
 function hideGoToIndexBtn() {
   if (window.scrollY > delta) {
-      goToIndexBtn.style.visibility = "hidden";
-      window.removeEventListener("scroll", hideGoToIndexBtn);
+    goToIndexBtn.style.visibility = "hidden";
+    window.removeEventListener("scroll", hideGoToIndexBtn);
   }
 }
