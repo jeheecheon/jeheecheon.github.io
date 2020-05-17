@@ -75,7 +75,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .content .main-content { margin-top: 80px; float: left; max-width: 808px; box-sizing: border-box; padding: 0 20px; }
 
-.page .main .content .l-content, .page .main .content .r-content { float: left; background-color: red; margin: 80px 20px; width: 300px; min-height: 1px; }
+.page .main .content .l-content, .page .main .content .r-content { float: left; margin: 80px 20px; width: 300px; min-height: 1px; }
 
 .page .main .content::after { content: ""; display: block; clear: both; }
 
