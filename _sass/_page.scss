@@ -17,14 +17,13 @@
 
   .l-content, .r-content{
     float: left;
-    background-color: red;
     margin: 80px 20px;
     width: 300px;
     min-height: 1px;
   }
 
   .l-content {
-
+    @import "profile";
   }
 
   .r-content {
