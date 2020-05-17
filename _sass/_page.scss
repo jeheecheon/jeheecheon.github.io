@@ -5,13 +5,12 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 1488px;
+  max-width: 1488px;
 
   .main-content {
     margin-top: 80px;
     float: left;
     max-width: 808px;
-    width: 808px;
     box-sizing: border-box;
     padding: 0 20px;
   }
@@ -19,11 +18,9 @@
   .l-content, .r-content{
     float: left;
     background-color: red;
-    
     margin: 80px 20px;
     width: 300px;
     min-height: 1px;
-    height: fit-content;
   }
 
   .l-content {
