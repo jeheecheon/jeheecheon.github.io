@@ -7,7 +7,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; overflow-x: hidden; background-color: #bddaf1; box-shadow: 3px 3px 5px 5px #aaaaaa; }
+.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; transition: right 0.5s ease-in-out; overflow-x: hidden; background-color: #bddaf1; box-shadow: 3px 3px 5px 5px #aaaaaa; }
 
 .sidebar .profile { display: block; text-decoration: none; color: #212121; margin: 13px 10px; padding: 15px; border: 2px solid #95bfe2; }
 
@@ -49,13 +49,13 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .navigation .categories-container .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
 
-.page { float: left; width: calc(100% - 300px); min-height: 100vh; }
+.page { float: left; width: calc(100% - 300px); transition: width 0.5s ease-in-out; min-height: 100vh; }
 
 .header--hide { transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); -webkit-transform: translateY(-50px); }
 
-.page .header { width: calc(100% - 300px); position: fixed; transition: transform 0.5s ease-in-out; -moz-transition: -moz-transform 0.5s ease-in-out; -o-transition: -o-transform 0.5s ease-in-out; -webkit-transition: -webkit-transform 0.5s ease-in-out; z-index: 1; }
+.page .header { width: calc(100% - 300px); position: fixed; transition: all 0.5s ease-in-out; -moz-transition: -moz-transform 0.5s ease-in-out; -o-transition: -o-transform 0.5s ease-in-out; -webkit-transition: -webkit-transform 0.5s ease-in-out; z-index: 1; }
 
-.page .header .bar { background-color: rgba(255, 255, 255, 0.8); box-shadow: 3px 3px 5px #aaaaaa; transition: background-color 0.6s ease-in-out; -moz-transition: background-color 0.6s ease-in-out; -o-transition: background-color 0.6s ease-in-out; -webkit-transition: background-color 0.6s ease-in-out; height: 50px; width: 100%; }
+.page .header .bar { background-color: rgba(255, 255, 255, 0.7); box-shadow: 3px 3px 5px #aaaaaa; transition: background-color 0.6s ease-in-out; -moz-transition: background-color 0.6s ease-in-out; -o-transition: background-color 0.6s ease-in-out; -webkit-transition: background-color 0.6s ease-in-out; height: 50px; width: 100%; transition: width 0.5s 1s ease-in-out; }
 
 .page .header .bar .logo { font-size: 2rem; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); }
 
@@ -77,7 +77,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .content .l-content, .page .main .content .r-content { float: left; margin: 80px 20px; width: 300px; min-height: 1px; }
 
-.page .main .content .l-content .profile-card { padding: 15px 15px 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
+.page .main .content .l-content .profile-card { position: sticky; padding: 15px 15px 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
 
 .page .main .content .l-content .profile-card .img-container { width: 100px; height: 100px; position: relative; overflow: hidden; border-radius: 50%; left: 50%; transform: translateX(-50%); }
 
@@ -105,7 +105,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post-cover { position: relative; height: 100vh; width: 100%; overflow: hidden; }
 
-.page .main .post-cover .img { position: relative; object-fit: cover; width: 100%; height: 100%; -webkit-filter: blur(3px); filter: blur(3px); }
+.page .main .post-cover .img { top: 50%; left: 50%; position: relative; transform: translate(-50%, -50%); height: auto; width: 100%; -webkit-filter: blur(3px); filter: blur(3px); }
 
 .page .main .post-cover .text { color: white; z-index: 1; position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
 
@@ -117,15 +117,11 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post-cover .background .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2.5s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.07) 90%, transparent 100%); background-size: 200% 100%; }
 
-.page .main .post__content { position: relative; width: 100%; background-color: white; }
+.page .main .post__content { position: relative; width: 100%; }
 
-.page .main .post__content .main-content { background-color: white; position: absolute; top: -400px; left: 50%; transform: translateX(-50%); z-index: 0.5; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); font-size: 1rem; word-break: break-all; }
+.page .main .post__content .main-content { background-color: white; position: relative; top: -400px; left: 50%; transform: translateX(-50%); z-index: 0.5; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); height: fit-content; font-size: 1rem; word-break: break-all; }
 
-.page .main .post__content .j-space { position: relative; z-index: -1; margin: 0; }
-
-.page .main .post__content .j-space .side-content { padding: 20px 0 0 20px; position: sticky; top: 8%; width: 300px; height: 600px; }
-
-.page .main .post__content .comment { width: 100%; height: 100px; }
+.page .main .comment { width: 100%; height: 100px; }
 
 @media screen and (max-width: 1268px) { .page .main .side-content { display: none; } }
 
