@@ -8,10 +8,12 @@
   overflow: hidden;
 
   .img {
+    top: 50%;
+    left: 50%;
     position: relative;
-    object-fit: cover;
+    transform: translate(-50%, -50%);
+    height: auto;
     width: 100%;
-    height: 100%;
     -webkit-filter: blur(3px);
     filter: blur(3px);
   }
@@ -28,7 +30,7 @@
       font-size: 3.5rem;
     }
   }
-  
+
   .background {
     position: absolute;
     top: 0;
@@ -80,11 +82,11 @@
 .post__content {
   position: relative;
   width: 100%;
-  background-color: $baseColor3;
   
   .main-content {
-    background-color: $baseColor3;
-    position: absolute;
+  background-color: $baseColor3;
+
+    position: relative;
     top: -400px;
     left: 50%;
     transform: translateX(-50%);
@@ -95,30 +97,24 @@
     padding: 20px 20px 0;
     max-width: 728px;
     width: calc(100% - 40px);
+    height: fit-content;
     font-size: 1rem;
     word-break: break-all;
   }
 
-  .j-space {
-    position: relative;
-    z-index: -1;
-    margin: 0;
+  // .j-space {
+  //   position: absolute;
+  //   display: block;
+  //   width: 100%;
+  //   .side-content {
 
-    .side-content {
-      padding: 20px 0 0 20px;
-      position: sticky;
-      top: 8%;
+  //   }
+  // }
+}
 
-      width: 300px;
-      height: 600px;
-      //border: 2px solid $baseColor1;
-    }
-  }
-
-  .comment {
-    width: 100%;
-    height: 100px;
-  }
+.comment {
+  width: 100%;
+  height: 100px;
 }
 
 @media screen and (max-width: 1268px) {

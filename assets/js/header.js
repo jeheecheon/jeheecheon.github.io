@@ -48,7 +48,8 @@ function modifyHeader() {
   //in post cover
   if (nowScrollTop < postCover.clientHeight - headerBar.clientHeight) {
     //remove background color, change color of hamburger to white
-    headerBar.style.backgroundColor = "initial";
+    headerBar.style.backgroundColor = "rgba(255, 255, 255, 0)";
+    headerBar.style.boxShadow = "none";
     headerBar.children[2].style.color = "white"; //hamburger
     headerBar.children[1].style.visibility = "hidden"; //title
   }
@@ -56,6 +57,7 @@ function modifyHeader() {
   else {
     //add background-color, change color of humburger to black
     headerBar.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+    headerBar.style.boxShadow = "3px 3px 5px rgb(170, 170, 170)";
     headerBar.children[2].style.color = "black"; //hamburger
     headerBar.children[1].style.visibility = "visible"; //title
 
