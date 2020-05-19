@@ -231,22 +231,30 @@ $baseColor6: rgb(70, 70, 70); //background2
 
     height: 50px;
     width: 100%;
-    
-    .logo {
-      font-size: 2rem;
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    text-align: center;
+
+    .logo,
+    .hamburger {
+      font-size: 30px;
+      padding: 0 10px;
+      cursor: pointer;
     }
 
     .title {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex-grow: 1;
+
       @include removeDeco();
-      text-align: center;
-      display: inline-block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
 
       .main-title {
         font-size: 1rem;
@@ -254,16 +262,6 @@ $baseColor6: rgb(70, 70, 70); //background2
       .sub-title {
         font-size: 0.7rem;
       }
-    }
-
-    .hamburger {
-      cursor: pointer;
-      float: left;
-      font-size: 22px;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
     }
   }
 
@@ -285,8 +283,6 @@ $baseColor6: rgb(70, 70, 70); //background2
   width: calc(100% - 300px);
   transition: width 0.5s ease-in-out;
   min-height: 100vh;
-
-
 
   .main {
     background-color: $baseColor4;

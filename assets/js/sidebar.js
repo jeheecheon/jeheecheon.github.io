@@ -1,6 +1,10 @@
 sidebar.style.right = window.getComputedStyle(sidebar, null).right;
 sidebar.style.width = window.getComputedStyle(sidebar, null).width;
-
+// 
+//
+//
+//
+//
 resizeLayout();
 
 for (i = 0; i < navs.length; i++) {
@@ -25,7 +29,11 @@ window.addEventListener("resize", function () {
     resizeLayout();
   }
 });
-
+// 
+//
+//
+//
+//
 function toggle_subnav(i) {
   if (i.parentNode.nextElementSibling.nodeName == "UL") {
     i.parentNode.nextElementSibling.classList.toggle("subnav--hide");
