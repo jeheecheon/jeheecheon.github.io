@@ -61,5 +61,5 @@ function hideGoToIndexBtn() {
 }
 
 function resizePostContentHeight() {
-  postContent.style.height = mainContent.clientHeight - 400 + "px";
+  postContent.style.height = postContent.clientHeight + parseInt(window.getComputedStyle(mainContent, null).top) + "px";
 }

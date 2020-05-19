@@ -22,7 +22,7 @@
     color: white;
     z-index: 1;
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -87,7 +87,7 @@
   background-color: $baseColor3;
 
     position: relative;
-    top: -400px;
+    top: -25vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0.5;

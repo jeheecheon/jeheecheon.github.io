@@ -2,30 +2,29 @@
   <div class="layout">
     {% include sidebar.html %}
 
-    <header class="header">
-      <div class="bar header__bar">
-        <i class="far fa-user-circle logo bar__logo"></i>
-        <a href="#top" class="title bar__title">
-          {% if page.title == site.title %}
-          <div class="main-title">
-            {{site.title}}
-          </div>
-          {% else %}
-          <div class="main-title">
-            {{page.title}}
-          </div>
-          <div class="sub-title">
-            {{site.title}}
-          </div>
-          {% endif %}
-        </a>
-        <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
-      </div>
-
-      <div class="scroll-indicator header__scroll-indicator"></div>
-    </header>
-
     <div class="page">
+      <header class="header">
+        <div class="bar header__bar">
+          <i class="far fa-user-circle logo bar__logo"></i>
+          <a href="#top" class="title bar__title">
+            {% if page.title == site.title %}
+            <div class="main-title">
+              {{site.title}}
+            </div>
+            {% else %}
+            <div class="main-title">
+              {{page.title}}
+            </div>
+            <div class="sub-title">
+              {{site.title}}
+            </div>
+            {% endif %}
+          </a>
+          <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
+        </div>
+        <div class="scroll-indicator header__scroll-indicator"></div>
+      </header>
+
       <main class="main page__main" id="top">
         {{content}}
       </main>
