@@ -51,7 +51,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .header--hide { transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); -webkit-transform: translateY(-50px); }
 
-.page { float: left; width: calc(100% - 300px); transition: width 0.5s ease-in-out; min-height: 100vh; }
+.page { float: left; width: calc(100% - 300px); transition: width 0.5s ease-in-out; min-height: 100vh; overflow-x: hidden; }
 
 .page .header { width: calc(100% - 300px); position: fixed; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; z-index: 1; }
 
