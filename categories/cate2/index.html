@@ -15,40 +15,40 @@
 </head>
 <body>
   <div class="layout">
-    <div class="sidebar">
-      <a href="/" class="profile sidebar__profile">
-        <div class="profile-img profile__profile-img">
-          <div class="img-container profile-img__img-container">
-            <img
-              src="/assets/img/20181205_211335_971.jpg"
-              alt=""
-              class="img img-container__img"
-            />
-          </div>
-        </div>
-        <div class="text profile__text">
-          <p class="author text__author">Jehee Cheon</p>
-          <pre class="description text__description">
-Game Developer...</pre
-          >
-        </div>
-      </a>
+    <script src="/assets/js/sidebar.js" defer></script>
 
-      <div class="search">
-        <input
-          class="search-btn sidebar__search"
-          id="search"
-          type="text"
-          name="search"
-          placeholder="Search posts"
+<div class="sidebar">
+  <a href="/" class="profile sidebar__profile">
+    <div class="profile-img profile__profile-img">
+      <div class="img-container profile-img__img-container">
+        <img
+          src="/assets/img/20181205_211335_971.jpg"
+          alt=""
+          class="img img-container__img"
         />
-        <i class="fas fa-search search-icon"></i>
       </div>
+    </div>
+    <div class="text profile__text">
+      <p class="author text__author">Jehee Cheon</p>
+      <pre class="description text__description">Game Developer...</pre>
+    </div>
+  </a>
 
-      <div class="navigation sidebar__navigation">
-        <div class="categories-container">
-          <p class="text">Categories</p>
-          <ul
+  <div class="search">
+    <input
+      class="search-btn sidebar__search"
+      id="search"
+      type="text"
+      name="search"
+      placeholder="Search posts"
+    />
+    <i class="fas fa-search search-icon"></i>
+  </div>
+
+  <div class="navigation sidebar__navigation">
+    <div class="categories-container">
+      <p class="text">Categories</p>
+      <ul
     class="categories">
     
     
@@ -208,68 +208,71 @@ Game Developer...</pre
     
     
 </ul>
-        </div>
-
-        <div class="tags-cloud">
-          <div>
-                      
-            <a
-              href="/#a"
-              style="font-size: 18pt; color: #999;"
-              >a</a
-            >
-                 
-            <a
-              href="/#b"
-              style="font-size: 9pt; color: #000;"
-              >b</a
-            >
-                 
-            <a
-              href="/#c-d"
-              style="font-size: 9pt; color: #000;"
-              >c-d</a
-            >
-                 
-            <a
-              href="/#e"
-              style="font-size: 9pt; color: #000;"
-              >e</a
-            >
-                 
-            <a
-              href="/#f"
-              style="font-size: 9pt; color: #000;"
-              >f</a
-            >
-            
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="page">
-      <header class="header page__header">
-        <div class="bar header__bar">
-          <i class="far fa-user-circle logo bar__logo"></i>
-          <a href="#top" class="title bar__title">
-            
-            <div class="main-title">
-              Posts in category cate2
-            </div>
-            <div class="sub-title">
-              Jehee Cheon
-            </div>
-            
-          </a>
-          <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
-        </div>
+    <div class="tags-cloud">
+      <div>
+                  
+        <a
+          href="/#a"
+          style="font-size: 18pt; color: #999;"
+          >a</a
+        >
+             
+        <a
+          href="/#b"
+          style="font-size: 9pt; color: #000;"
+          >b</a
+        >
+             
+        <a
+          href="/#c-d"
+          style="font-size: 9pt; color: #000;"
+          >c-d</a
+        >
+             
+        <a
+          href="/#e"
+          style="font-size: 9pt; color: #000;"
+          >e</a
+        >
+             
+        <a
+          href="/#f"
+          style="font-size: 9pt; color: #000;"
+          >f</a
+        >
+        
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="scroll-indicator header__scroll-indicator"></div>
-      </header>
-      
+
+    <header class="header">
+      <div class="bar header__bar">
+        <i class="far fa-user-circle logo bar__logo"></i>
+        <a href="#top" class="title bar__title">
+          
+          <div class="main-title">
+            Posts in category cate2
+          </div>
+          <div class="sub-title">
+            Jehee Cheon
+          </div>
+          
+        </a>
+        <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
+      </div>
+
+      <div class="scroll-indicator header__scroll-indicator"></div>
+    </header>
+
+    <div class="page">
       <main class="main page__main" id="top">
-        <div class="content main__content">
+        <script src="/assets/js/page.js" defer></script>
+
+<div class="content main__content">
     <div class="l-content content__l-content">
         <div class="profile-card">
     <div class="img-container profile-card__img-container">
@@ -353,6 +356,7 @@ Game Developer...</pre
         
     </div>
 </div>
+
       </main>
 
       <footer class="footer page__footer">
