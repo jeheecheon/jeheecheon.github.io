@@ -1,92 +1,31 @@
 <body>
   <div class="layout">
-    <div class="sidebar">
-      <a href="/" class="profile sidebar__profile">
-        <div class="profile-img profile__profile-img">
-          <div class="img-container profile-img__img-container">
-            <img
-              src="{{site.blog.profile}}"
-              alt=""
-              class="img img-container__img"
-            />
-          </div>
-        </div>
-        <div class="text profile__text">
-          <p class="author text__author">{{site.blog.author}}</p>
-          <pre class="description text__description">
-{{site.blog.description}}</pre
-          >
-        </div>
-      </a>
+    {% include sidebar.html %}
 
-      <div class="search">
-        <input
-          class="search-btn sidebar__search"
-          id="search"
-          type="text"
-          name="search"
-          placeholder="Search posts"
-        />
-        <i class="fas fa-search search-icon"></i>
+    <header class="header">
+      <div class="bar header__bar">
+        <i class="far fa-user-circle logo bar__logo"></i>
+        <a href="#top" class="title bar__title">
+          {% if page.title == site.title %}
+          <div class="main-title">
+            {{site.title}}
+          </div>
+          {% else %}
+          <div class="main-title">
+            {{page.title}}
+          </div>
+          <div class="sub-title">
+            {{site.title}}
+          </div>
+          {% endif %}
+        </a>
+        <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
       </div>
 
-      <div class="navigation sidebar__navigation">
-        <div class="categories-container">
-          <p class="text">Categories</p>
-          {% include categories.html nav=site.data.categories %}
-        </div>
-
-        <div class="tags-cloud">
-          <div>
-            {% assign first = site.tags.first %} {% assign max = first[1].size
-            %} {% assign min = max %} {% for tag in site.tags offset:1 %} {% if
-            tag[1].size > max %} {% assign max = tag[1].size %} {% elsif
-            tag[1].size < min %} {% assign min = tag[1].size %} {% endif %} {%
-            endfor %} {% if max == min %} {% assign diff = 1 %} {% else %} {%
-            assign diff = max | minus: min %} {% endif %} {% for tag in
-            site.tags %} {% assign temp = tag[1].size | minus: min | times: 36 |
-            divided_by: diff %} {% assign base = temp | divided_by: 4 %} {%
-            assign remain = temp | modulo: 4 %} {% if remain == 0 %} {% assign
-            size = base | plus: 9 %} {% elsif remain == 1 or remain == 2 %} {%
-            assign size = base | plus: 9 | append: '.5' %} {% else %} {% assign
-            size = base | plus: 10 %} {% endif %} {% if remain == 0 or remain ==
-            1 %} {% assign color = 9 | minus: base %} {% else %} {% assign color
-            = 8 | minus: base %} {% endif %}
-            <a
-              href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}"
-              style="font-size: {{ size }}pt; color: #{{ 9 | minus: color }}{{ 9 | minus: color }}{{ 9 | minus: color }};"
-              >{{ tag[0] }}</a
-            >
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
+      <div class="scroll-indicator header__scroll-indicator"></div>
+    </header>
 
     <div class="page">
-      <header class="header page__header">
-        <div class="bar header__bar">
-          <i class="far fa-user-circle logo bar__logo"></i>
-          <a href="#top" class="title bar__title">
-            {% if page.title == site.title %}
-            <div class="main-title">
-              {{site.title}}
-            </div>
-            {% else %}
-            <div class="main-title">
-              {{page.title}}
-            </div>
-            <div class="sub-title">
-              {{site.title}}
-            </div>
-            {% endif %}
-          </a>
-          <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
-        </div>
-
-        <div class="scroll-indicator header__scroll-indicator"></div>
-      </header>
-      
       <main class="main page__main" id="top">
         {{content}}
       </main>
