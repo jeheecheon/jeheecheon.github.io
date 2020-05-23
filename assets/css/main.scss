@@ -46,10 +46,8 @@ $baseColor6: rgb(70, 70, 70); //background2
 
 /////////////////////////////////////////////////////////////
 
-@import "sidebar";
 
-
-@at-root .header--hide {
+.header--hide {
   transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
@@ -57,7 +55,7 @@ $baseColor6: rgb(70, 70, 70); //background2
   -webkit-transform: translateY(-50px);
 }
 
-
+@import "sidebar";
 
 .page {
   float: left;
