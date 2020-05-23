@@ -23,31 +23,26 @@ window.addEventListener("scroll", function () {
   getScrolled = true;
 });
 
+includeJs("/assets/js/sidebar.js");
+includeJs("/assets/js/sidebar.js");
+
 if (!window.getComputedStyle) {
   window.getComputedStyle = function (element) {
     return element.currentStyle;
   };
 }
-//
-//
-//
-//
-//
-function toggleHeader(nowScrollTop) {
-  if (Math.abs(lastScrollTop - nowScrollTop) <= delta) return;
 
-  //when scrolling down
-  if (nowScrollTop > lastScrollTop) {
-    headerBar.parentElement.classList.add("header--hide");
-  }
-  //when scrolling up
-  else {
-    headerBar.parentElement.classList.remove("header--hide");
-  }
-  lastScrollTop = nowScrollTop;
-}
+sidebar.style.right = window.getComputedStyle(sidebar, null).right;
+sidebar.style.width = window.getComputedStyle(sidebar, null).width;
 
-//includeJs("/assets/js/sidebar.js");
+
+
+//
+//
+//
+//
+//
+
 function includeJs(jsFilePath) {
   var js = document.createElement("script");
 

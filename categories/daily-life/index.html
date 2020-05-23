@@ -53,7 +53,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-building" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-building" onclick="toggleSubnav(this)"></i>
         <a href="/">Home</a>
     </li>
     
@@ -62,7 +62,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-id-card" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-id-card" onclick="toggleSubnav(this)"></i>
         <a href="/about">About</a>
     </li>
     
@@ -71,7 +71,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-grin-beam" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-grin-beam" onclick="toggleSubnav(this)"></i>
         <a href="/categories/daily-life/">Daily life</a>
         
     </li>
@@ -81,7 +81,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file-code" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file-code" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1/">cate1</a>
         
         <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
@@ -95,7 +95,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-1/">cate1-1</a>
         
     </li>
@@ -105,7 +105,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
         <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
@@ -119,7 +119,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-1/">cate1-1</a>
         
     </li>
@@ -129,7 +129,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
     </li>
@@ -145,7 +145,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file-code" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file-code" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1/">cate1</a>
         
         <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
@@ -159,7 +159,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-1/">cate1-1</a>
         
     </li>
@@ -169,7 +169,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
         <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
@@ -183,7 +183,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-1/">cate1-1</a>
         
     </li>
@@ -193,7 +193,7 @@
     
     
     <li class="category categories__category">
-        <i class="far fa-file" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
     </li>
@@ -263,7 +263,7 @@
             </div>
             
           </a>
-          <i class="fas fa-bars hamburger" onclick="toggle_sidebar()"></i>
+          <i class="fas fa-bars hamburger" onclick="toggleSidebar(0)"></i>
         </div>
         <div class="scroll-indicator header__scroll-indicator"></div>
       </header>
@@ -324,13 +324,13 @@
   
   <a class="post-item" href="/daily-life/2000/01/01/a/">
     <div class="img-container post-item__img-container">
-      <img class="img" src="/assets/img/typewriter-801921_1920.jpg" alt="">
+      <img class="img" src="/assets/img/business-2717063_1920.jpg" alt="">
     </div>
     <text class="text post-item__text">
       <p class="metadata text__metadata">2000-01-01 00:00:00 +0000 </p>
       <h1 class="title text__title">a</h1>
-      <p class="excerpt text_excerpt"><p><img src="/assets/img/typewriter-801921_1920.jpg" alt="first image" />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="excerpt text_excerpt"><!-- ![first image](/assets/img/typewriter-801921_1920.jpg) -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </p>
     </text>
   </a>

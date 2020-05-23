@@ -7,7 +7,9 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 @keyframes reflection { from { background-position: 0% 100%; }
   to { background-position: 200% 100%; } }
 
-.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; transition: right 0.5s ease-in-out; overflow-x: hidden; background-color: #bddaf1; box-shadow: 3px 3px 5px 5px #aaaaaa; }
+.header--hide { transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); -webkit-transform: translateY(-50px); }
+
+.sidebar { z-index: 1; float: right; height: 100vh; width: 300px; position: fixed; right: 0; transition: all 0.5s ease-in-out; overflow-x: hidden; background-color: #bddaf1; box-shadow: 3px 3px 5px 5px #aaaaaa; }
 
 .sidebar .profile { display: block; text-decoration: none; color: #212121; margin: 13px 10px; padding: 15px; border: 2px solid #95bfe2; }
 
@@ -48,8 +50,6 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 .sidebar .navigation .categories-container .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; padding-left: 30px; }
 
 .sidebar .navigation .categories-container .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
-
-.header--hide { transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); -webkit-transform: translateY(-50px); }
 
 .page { float: left; width: calc(100% - 300px); transition: width 0.5s ease-in-out; min-height: 100vh; overflow-x: hidden; }
 
