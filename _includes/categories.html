@@ -11,7 +11,7 @@
         <i class="{% if item.icon %}{{item.icon}}{% else %}far fa-file{% endif %}" onclick="toggleSubnav(this)"></i>
         <a href="{{site.url}}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
         {% if item.subnav %}
-        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         {% endif %}
     </li>
     {% endif %}

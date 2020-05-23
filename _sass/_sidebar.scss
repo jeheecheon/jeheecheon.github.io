@@ -1,5 +1,5 @@
 .sidebar {
-  z-index: 1;
+  z-index: 3;
   float: right;
   height: 100vh;
   width: 300px;
@@ -10,6 +10,13 @@
   overflow-x: hidden;
   background-color: $baseColor1;
   box-shadow: 3px 3px 5px 5px $baseColor5;
+
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+  }
 
   .profile {
     display: block;

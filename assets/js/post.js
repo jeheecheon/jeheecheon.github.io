@@ -1,4 +1,4 @@
-resizePostContentHeight();
+
 
 
 modifyHeader();
@@ -18,20 +18,13 @@ headerBar.addEventListener("click", function () {
   window.addEventListener("scroll", hideGoToIndexBtn);
 });
 
-window.addEventListener("resize", function () {
-  resizePostContentHeight();
-});
+
 //
 //
 //
 //
 //
-function resizePostContentHeight() {
-  postContent.style.height =
-    postContent.clientHeight +
-    parseInt(window.getComputedStyle(mainContent, null).top) +
-    "px";
-}
+
 
 function modifyHeader() {
   var nowScrollTop =
