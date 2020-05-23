@@ -47,7 +47,7 @@ $baseColor6: rgb(70, 70, 70); //background2
 /////////////////////////////////////////////////////////////
 
 
-.header--hide {
+@at-root .header--hide {
   transform: translateY(-50px);
   -moz-transform: translateY(-50px);
   -ms-transform: translateY(-50px);
@@ -59,13 +59,14 @@ $baseColor6: rgb(70, 70, 70); //background2
 
 .page {
   float: left;
-  width: calc(100% - 300px);
+  width: 100%;
   transition: width 0.5s ease-in-out;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   .header {
-    width: calc(100% - 300px);
+    width: 100%;
     position: fixed;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;

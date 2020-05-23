@@ -82,15 +82,18 @@
 .post__content {
   position: relative;
   width: 100%;
-  
+
+  overflow-y: visible;
+
+
   .main-content {
-  background-color: $baseColor3;
+    background-color: $baseColor3;
 
     position: relative;
-    top: -25vh;
+    top: -20vh;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0.5;
+    z-index: 1;
     border-radius: 5px;
     // box-shadow: 1px 1px 2px 1px $baseColor5;
     box-sizing: content-box;
@@ -113,8 +116,6 @@
 }
 
 .comment {
-  width: 100%;
-  height: 100px;
 }
 
 @media screen and (max-width: 1268px) {
