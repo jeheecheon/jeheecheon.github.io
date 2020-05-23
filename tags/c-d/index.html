@@ -13,11 +13,12 @@
 
     <title>Posts tagged with c-d</title>
 </head>
-<body onload="renewLayout()">
+<body onload="initializeLayout()">
   <div class="layout">
     <script src="/assets/js/sidebar.js" defer></script>
 
 <div class="sidebar">
+  <i class="hamburger sidebar__hamburger fas fa-bars" onclick="toggleSidebar(0)"></i>
   <a href="/" class="profile sidebar__profile">
     <div class="profile-img profile__profile-img">
       <div class="img-container profile-img__img-container">
@@ -84,7 +85,7 @@
         <i class="far fa-file-code" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1/">cate1</a>
         
-        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         
     </li>
     
@@ -108,7 +109,7 @@
         <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
-        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         
     </li>
     
@@ -148,7 +149,7 @@
         <i class="far fa-file-code" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1/">cate1</a>
         
-        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         
     </li>
     
@@ -172,7 +173,7 @@
         <i class="far fa-file" onclick="toggleSubnav(this)"></i>
         <a href="/categories/cate1-2/">cate1-2</a>
         
-        <i class="far fa-caret-square-down" onclick="toggle_subnav(this)"></i>
+        <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         
     </li>
     
@@ -263,7 +264,7 @@
             </div>
             
           </a>
-          <i class="fas fa-bars hamburger" onclick="toggleSidebar(0)"></i>
+          <i class="hamburger bar__hamburger fas fa-bars" onclick="toggleSidebar(0)"></i>
         </div>
         <div class="scroll-indicator header__scroll-indicator"></div>
       </header>
