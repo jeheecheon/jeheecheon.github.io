@@ -9,7 +9,7 @@
 
   overflow-x: hidden;
   background-color: $baseColor1;
-  box-shadow: 3px 3px 5px 5px $baseColor5;
+  box-shadow: 3px 3px 5px 5px $shadowColor;
 
   .hamburger {
     display: none;
@@ -20,7 +20,8 @@
 
   .profile {
     display: block;
-    @include removeDeco();
+    text-decoration: none;
+
     margin: 13px 10px;
     padding: 15px;
 
@@ -115,7 +116,7 @@
         background-color: $baseColor2;
       }
       .text {
-        color: $baseColor6;
+        color: $baseColor5;
         text-align: center;
         font-size: 1.5rem;
       }
@@ -131,6 +132,8 @@
           display: flex;
 
           i {
+            color: $baseColor5;
+
             padding: 8px 0;
             width: 30px;
             text-align: center;
@@ -138,7 +141,7 @@
             cursor: pointer;
           }
           a {
-            color: $baseColor6;
+            color: $baseColor5;
 
             -webkit-box-flex: 1;
             -ms-flex: 1;
@@ -146,7 +149,8 @@
 
             padding: 8px 0;
             display: inline-block;
-            @include removeDeco();
+            text-decoration: none;
+
           }
 
           &:hover {

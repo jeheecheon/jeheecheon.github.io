@@ -15,7 +15,7 @@
     height: 100%;
 
     border-radius: 15px;
-    box-shadow: 3px 3px 5px 2px $baseColor5;
+    box-shadow: 3px 3px 5px 2px $shadowColor;
 
     -webkit-filter: blur(1.5px);
     filter: blur(1.5px);
@@ -50,7 +50,8 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      @include removeDeco();
+      text-decoration: none;
+
       color: white;
 
       display: inline-block;
@@ -88,8 +89,7 @@
   width: 100%;
 
   .main-content {
-    background-color: $baseColor3;
-    box-shadow: 1px 1px 1px 1px $baseColor5;
+    background-color: $backgroundColor1;
     transition: top 0.5s ease-in-out;
 
     position: relative;

@@ -23,12 +23,13 @@
 
   .text {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     .name {
+      color: $baseColor3;
     }
     .description {
-      font-size: 1.5rem;
-      color: $baseColor6;
+      font-size: 1rem;
+      color: $baseColor5;
     }
   }
 
@@ -46,9 +47,11 @@
       .text {
         display: inline-block;
         font-size: 1rem;
-        color: $baseColor6;
+        color: $baseColor3;
       }
       .info {
+      color: $baseColor5;
+
       }
     }
   }
@@ -64,13 +67,18 @@
       cursor: pointer;
       display: inline-block;
       font-size: 2rem;
-      color: $baseColor6;
+
+      color: $baseColor5;
+      transition: color 0.5s ease-in-out;
+
       text-align: center;
       width: 28%;
-      box-shadow: 3px 3px 5px 2px $baseColor5;
+      box-shadow: 3px 3px 5px 2px $shadowColor;
       border-radius: 5px;
 
+
       &:hover {
+        color: white;
         background-color: $baseColor5;
       }
     }

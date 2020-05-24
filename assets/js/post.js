@@ -32,7 +32,7 @@ function modifyHeader() {
     //remove background color, change color of hamburger to white
     headerBar.style.backgroundColor = "rgba(100, 100, 100, 0.3)";
     headerBar.style.boxShadow = "none";
-    headerBar.children[2].style.color = "white"; //hamburger
+    headerBar.children[2].style.color = "rgb(255,255,255)"; //hamburger
     headerBar.children[1].style.visibility = "hidden"; //title
   }
   //the area in post content or others, except post cover
@@ -40,7 +40,7 @@ function modifyHeader() {
     //add background-color, change color of humburger to black
     headerBar.style.backgroundColor = "rgba(189, 218, 241, 0.7)";
     headerBar.style.boxShadow = "3px 3px 5px rgb(170, 170, 170)";
-    headerBar.children[2].style.color = "black"; //hamburger
+    headerBar.children[2].style.color = "rgb(70,70,70)"; //hamburger
     headerBar.children[1].style.visibility = "visible"; //title
   }
 }

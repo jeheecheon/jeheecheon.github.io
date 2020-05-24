@@ -1,5 +1,6 @@
 ---
 ---
+
 * {
   margin: 0;
   padding: 0;
@@ -22,17 +23,12 @@ pre {
   font-family: "Noto Sans KR", Helvetica, Arial, sans-serif;
 }
 
-@mixin removeDeco {
-  text-decoration: none;
-  color: #212121;
-}
-
 @mixin card {
   margin-bottom: 30px;
-  box-shadow: 3px 3px 5px 2px $baseColor5;
+  box-shadow: 3px 3px 5px 2px $shadowColor;
   border-radius: 5px;
   width: 100%;
-  background-color: $baseColor3;
+  background-color: $backgroundColor1;
 }
 
 @keyframes reflection {
@@ -44,16 +40,19 @@ pre {
   }
 }
 
-$baseColor0: rgba(189, 218, 241, 0.7);
+$shadowColor: rgb(170, 170, 170); 
+$headerColor: rgba(189, 218, 241, 0.7);
+
 $baseColor1: rgb(189, 218, 241);
 $baseColor2: rgb(149, 191, 226);
-$baseColor3: rgb(255, 255, 255); //background1
-$baseColor4: rgb(245, 245, 245); //background2
-$baseColor5: rgb(170, 170, 170); //shadow
-$baseColor6: rgb(70, 70, 70); //background3
+$baseColor3: rgb(41, 102, 151);
+$baseColor4: rgb(12, 64, 107);
+$baseColor5: rgb(70, 70, 70); 
+
+$backgroundColor1: rgb(255, 255, 255); 
+$backgroundColor2: rgb(245, 245, 245); 
 
 /////////////////////////////////////////////////////////////
-
 
 @at-root .header--hide {
   transform: translateY(-50px);
@@ -81,30 +80,29 @@ $baseColor6: rgb(70, 70, 70); //background3
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
-  
-  
+
     .bar {
-      background-color: $baseColor0;
-      box-shadow: 3px 3px 5px $baseColor5;
-  
+      background-color: $headerColor;
+      box-shadow: 3px 3px 5px $shadowColor;
+
       transition: background-color 0.6s ease-in-out;
       -moz-transition: background-color 0.6s ease-in-out;
       -o-transition: background-color 0.6s ease-in-out;
       -webkit-transition: background-color 0.6s ease-in-out;
-  
+
       height: 50px;
       width: 100%;
-  
+
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-  
+
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-  
+
       text-align: center;
-  
+
       .logo,
       .hamburger {
         box-sizing: border-box;
@@ -114,46 +112,47 @@ $baseColor6: rgb(70, 70, 70); //background3
       }
 
       .hamburger {
+        color: $baseColor5;
         margin-right: 10px;
         border-radius: 5px;
       }
-  
+
       .title {
+        color: $baseColor5;
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex-grow: 1;
-  
-        @include removeDeco();
-  
+
+        text-decoration: none;
+
         .main-title {
-          font-size: 1rem;
+          font-size: 1.2rem;
+          font-weight: 700;
         }
         .sub-title {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
         }
       }
     }
-  
+
     .scroll-indicator {
       height: 6px;
-  
+
       transition: width 0.1s ease-out;
       -moz-transition: width 0.1s ease-out;
       -o-transition: width 0.1s ease-out;
       -webkit-transition: width 0.1s ease-out;
-  
+
       width: 0%;
       background-color: $baseColor2;
     }
   }
 
   .main {
-    background-color: $baseColor4;
+    background-color: $backgroundColor2;
     min-height: fit-content;
     @import "page", "post", "pagination";
   }
-
-
 
   .footer {
     .inner {
