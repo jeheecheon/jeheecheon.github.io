@@ -142,9 +142,11 @@ $baseColor6: rgb(70, 70, 70); //background3
   .main {
     background-color: $baseColor4;
     min-height: fit-content;
-    @import "page", "post", "index";
+    @import "page", "post", "pagination";
   }
 
+
+  
   .footer {
     .inner {
       padding: 0 30px;

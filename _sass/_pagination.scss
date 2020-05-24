@@ -2,11 +2,13 @@
 /*index.html-----------------------------------*/
 
 .post-items {
+  max-width: 768px;
+
   .post-item {
     width: 100%;
     float: left;
     background-color: $baseColor3;
-    
+
     overflow: hidden;
     margin-bottom: 50px;
     box-shadow: 3px 3px 5px 2px $baseColor5;

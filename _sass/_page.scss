@@ -5,7 +5,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1408px; //768px(main-content) + 600px(l,rcontent) + 40px(margin) 
+  max-width: 1408px; //768px(main-content) + 600px(l,rcontent) + 40px(margin)
 
   .inner {
     display: -webkit-box;
@@ -20,12 +20,14 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     .main-content {
       margin-top: 80px;
       float: left;
-      max-width: 768px;
+
       padding: 0 20px;
     }
 
