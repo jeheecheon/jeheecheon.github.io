@@ -75,9 +75,11 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .content .main-content { margin-top: 80px; float: left; max-width: 808px; box-sizing: border-box; padding: 0 20px; }
 
-.page .main .content .l-content, .page .main .content .r-content { float: left; margin: 80px 20px; width: 300px; min-height: 1px; }
+.page .main .content .l-content, .page .main .content .r-content { width: 300px; float: left; }
 
-.page .main .content .l-content .profile-card { position: sticky; padding: 15px 15px 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
+.page .main .content .l-content { margin: 80px 0 0 10px; }
+
+.page .main .content .l-content .profile-card { padding: 15px 15px 30px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 300px; background-color: white; }
 
 .page .main .content .l-content .profile-card .img-container { width: 100px; height: 100px; position: relative; overflow: hidden; border-radius: 50%; left: 50%; transform: translateX(-50%); }
 
@@ -87,7 +89,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .content .l-content .profile-card .text .description { font-size: 1.5rem; color: #464646; }
 
-.page .main .content .l-content .profile-card .blog-info { text-align: center; margin-top: 20px; }
+.page .main .content .l-content .profile-card .blog-info { text-align: center; margin-top: 20px; width: 100%; }
 
 .page .main .content .l-content .profile-card .blog-info .s1, .page .main .content .l-content .profile-card .blog-info .s2, .page .main .content .l-content .profile-card .blog-info .s3 { width: 28%; display: inline-block; }
 
@@ -100,6 +102,22 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 .page .main .content .l-content .profile-card .social-media .github:hover, .page .main .content .l-content .profile-card .social-media .linkedin:hover, .page .main .content .l-content .profile-card .social-media .instagram:hover { background-color: #aaaaaa; }
 
 .page .main .content .l-content .profile-card .social-media .linkedin { margin: 0 5%; }
+
+.page .main .content .r-content { margin: 80px 10px 0 0; }
+
+.page .main .content .r-content .category-card { padding: 15px 15px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 300px; background-color: white; }
+
+.page .main .content .r-content .category-card .categories .category { border-top: 2px solid #95bfe2; transition: background-color 0.5s ease-in-out; display: flex; }
+
+.page .main .content .r-content .category-card .categories .category i { padding: 8px 0; width: 30px; text-align: center; font-size: 1.5rem; cursor: pointer; }
+
+.page .main .content .r-content .category-card .categories .category a { flex-grow: 1; padding: 8px 0; display: inline-block; text-decoration: none; color: #212121; }
+
+.page .main .content .r-content .category-card .categories .category:hover { background-color: #95bfe2; }
+
+.page .main .content .r-content .category-card .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; padding-left: 30px; }
+
+.page .main .content .r-content .category-card .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
 
 .page .main .content::after { content: ""; display: block; clear: both; }
 
@@ -119,11 +137,11 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post__content { position: relative; width: 100%; }
 
-.page .main .post__content .main-content { background-color: white; position: relative; top: -20vh; left: 50%; transform: translateX(-50%); z-index: 0.5; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); height: fit-content; font-size: 1rem; word-break: break-all; }
+.page .main .post__content .main-content { background-color: white; transition: top 0.5s ease-in-out; position: relative; top: -20vh; left: 50%; transform: translateX(-50%); z-index: 0.5; border-radius: 5px; box-sizing: content-box; padding: 20px 20px 0; max-width: 728px; width: calc(100% - 40px); height: fit-content; font-size: 1rem; word-break: break-all; }
 
 @media screen and (max-width: 768px) { .page .main .post__content .main-content { top: 0px; } }
 
-.page .main .post-items .post-item { width: 100%; float: left; background-color: white; margin-bottom: 50px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; text-decoration: none; color: #212121; transition: transform 0.5s ease-in-out; }
+.page .main .post-items .post-item { width: 100%; float: left; background-color: white; overflow: hidden; margin-bottom: 50px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; text-decoration: none; color: #212121; transition: transform 0.5s ease-in-out; }
 
 .page .main .post-items .post-item .img-container { height: 220px; position: relative; overflow: hidden; }
 
@@ -137,7 +155,7 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .post-items .post-item .text .excerpt { font-size: 1rem; }
 
-.page .main .post-items .post-item:hover { transform: scale(1.08, 1.08); }
+.page .main .post-items .post-item:hover { transform: scale(1.03, 1.05); }
 
 .page .main .post-items::after { content: ""; display: block; clear: both; }
 
