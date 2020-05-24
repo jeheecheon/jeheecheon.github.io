@@ -31,7 +31,7 @@ pre {
   margin-bottom: 30px;
   box-shadow: 3px 3px 5px 2px $baseColor5;
   border-radius: 5px;
-  width: 300px;
+  width: 100%;
   background-color: $baseColor3;
 }
 
@@ -49,7 +49,7 @@ $baseColor2: rgb(149, 191, 226);
 $baseColor3: rgb(255, 255, 255); //background1
 $baseColor4: rgb(245, 245, 245); //background2
 $baseColor5: rgb(170, 170, 170); //shadow
-$baseColor6: rgb(70, 70, 70); //background2
+$baseColor6: rgb(70, 70, 70); //background3
 
 /////////////////////////////////////////////////////////////
 

@@ -3,11 +3,17 @@
   
   @include card();
 
+  .title {
+    color: $baseColor6;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
   .categories {
     //ul
     .category {
       //li
-      border-top: 2px solid $baseColor2;
+      border-bottom: 2px solid $baseColor6;
       transition: background-color 0.5s ease-in-out;
 
       display: flex;
