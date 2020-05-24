@@ -39,13 +39,13 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .sidebar .navigation .categories-container:after { content: ""; display: block; width: 100%; height: 2px; background-color: #95bfe2; }
 
-.sidebar .navigation .categories-container .text { text-align: center; font-size: 1.5rem; }
+.sidebar .navigation .categories-container .text { color: #464646; text-align: center; font-size: 1.5rem; }
 
 .sidebar .navigation .categories-container .categories .category { border-top: 2px solid #95bfe2; transition: background-color 0.5s ease-in-out; display: flex; }
 
 .sidebar .navigation .categories-container .categories .category i { padding: 8px 0; width: 30px; text-align: center; font-size: 1.5rem; cursor: pointer; }
 
-.sidebar .navigation .categories-container .categories .category a { flex-grow: 1; padding: 8px 0; display: inline-block; text-decoration: none; color: #212121; }
+.sidebar .navigation .categories-container .categories .category a { color: #464646; flex-grow: 1; padding: 8px 0; display: inline-block; text-decoration: none; color: #212121; }
 
 .sidebar .navigation .categories-container .categories .category:hover { background-color: #95bfe2; }
 
@@ -71,15 +71,13 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main { background-color: whitesmoke; min-height: fit-content; /*In main-----------------------------------*/ /*page layout-----------------------------------*/ /*In main-----------------------------------*/ /*post layout-----------------------------------*/ /*In main-----------------------------------*/ /*index.html-----------------------------------*/ }
 
-.page .main .content { position: relative; left: 50%; transform: translateX(-50%); max-width: 1488px; }
+.page .main .content { position: relative; left: 50%; transform: translateX(-50%); max-width: 1408px; }
 
-.page .main .content .main-content { margin-top: 80px; float: left; max-width: 808px; box-sizing: border-box; padding: 0 20px; }
+.page .main .content .main-content { margin-top: 80px; float: left; max-width: 768px; padding: 0 20px; }
 
-.page .main .content .l-content, .page .main .content .r-content { width: 300px; float: left; }
+.page .main .content .l-content, .page .main .content .r-content { margin: 80px 10px 0; width: 300px; float: left; }
 
-.page .main .content .l-content { margin: 80px 0 0 10px; }
-
-.page .main .content .l-content .profile-card { padding: 15px 15px 30px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 300px; background-color: white; }
+.page .main .content .l-content .profile-card { padding: 15px 15px 30px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
 
 .page .main .content .l-content .profile-card .img-container { width: 100px; height: 100px; position: relative; overflow: hidden; border-radius: 50%; left: 50%; transform: translateX(-50%); }
 
@@ -103,11 +101,11 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .page .main .content .l-content .profile-card .social-media .linkedin { margin: 0 5%; }
 
-.page .main .content .r-content { margin: 80px 10px 0 0; }
+.page .main .content .r-content .category-card { padding: 15px 15px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
 
-.page .main .content .r-content .category-card { padding: 15px 15px; margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 300px; background-color: white; }
+.page .main .content .r-content .category-card .title { color: #464646; text-align: center; font-size: 1.5rem; }
 
-.page .main .content .r-content .category-card .categories .category { border-top: 2px solid #95bfe2; transition: background-color 0.5s ease-in-out; display: flex; }
+.page .main .content .r-content .category-card .categories .category { border-bottom: 2px solid #464646; transition: background-color 0.5s ease-in-out; display: flex; }
 
 .page .main .content .r-content .category-card .categories .category i { padding: 8px 0; width: 30px; text-align: center; font-size: 1.5rem; cursor: pointer; }
 
@@ -118,6 +116,8 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 .page .main .content .r-content .category-card .subnav { transition: opacity 1s ease-out; opacity: 1; height: auto; padding-left: 30px; }
 
 .page .main .content .r-content .category-card .subnav--hide { opacity: 0; height: 0; overflow: hidden; }
+
+.page .main .content .r-content .tag_card { margin-bottom: 30px; box-shadow: 3px 3px 5px 2px #aaaaaa; border-radius: 5px; width: 100%; background-color: white; }
 
 .page .main .content::after { content: ""; display: block; clear: both; }
 
