@@ -5,37 +5,57 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1408px;
+  max-width: 1408px; //768px(main-content) + 600px(l,rcontent) + 40px(margin) 
 
-  .main-content {
-    margin-top: 80px;
-    float: left;
-    max-width: 768px;
-    padding: 0 20px;
+  .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -webkit-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    .main-content {
+      margin-top: 80px;
+      float: left;
+      max-width: 768px;
+      padding: 0 20px;
+    }
+
+    .l-content,
+    .r-content {
+      margin: 80px 10px 0;
+      width: 300px;
+      height: fit-content;
+
+      float: left;
+    }
+
+    .l-content {
+      @import "profile_card";
+    }
+
+    .r-content {
+      @import "category_card";
+      @import "tag_card";
+    }
+
+    //clear
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
+}
 
-  .l-content, .r-content{
-    margin: 80px 10px 0;
-    width: 300px;
-    float: left;
-  }
-
-  .l-content {
-
-
-    @import "profile_card";
-  }
-
-  .r-content {
-
-    @import "category_card";
-    @import "tag_card";
-  }
-  
-  //clear
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+/////////////////////////////////////////////////
+@media screen and (max-width: 1388px) {
 }

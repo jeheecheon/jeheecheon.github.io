@@ -125,7 +125,11 @@
           //li
           border-top: 2px solid $baseColor2;
           transition: background-color 0.5s ease-in-out;
+
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+
           i {
             padding: 8px 0;
             width: 30px;
@@ -135,7 +139,11 @@
           }
           a {
             color: $baseColor6;
+
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex-grow: 1;
+
             padding: 8px 0;
             display: inline-block;
             @include removeDeco();
