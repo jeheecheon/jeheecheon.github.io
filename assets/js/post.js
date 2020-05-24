@@ -1,8 +1,6 @@
-
-
-
 modifyHeader();
 indicateProgress();
+
 setInterval(function () {
   if (getScrolled) {
     modifyHeader();

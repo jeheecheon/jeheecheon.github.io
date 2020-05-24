@@ -118,8 +118,10 @@
 .comment {
 }
 
-@media screen and (max-width: 1268px) {
-  .side-content {
-    display: none;
+@media screen and (max-width: 768px) {
+  .post__content {
+    .main-content {
+      top: 0px;
+    }
   }
 }
