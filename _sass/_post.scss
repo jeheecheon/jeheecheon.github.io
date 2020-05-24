@@ -83,11 +83,10 @@
   position: relative;
   width: 100%;
 
-
-
-
   .main-content {
     background-color: $baseColor3;
+
+    transition: top 0.5s ease-in-out;
 
     position: relative;
     top: -20vh;

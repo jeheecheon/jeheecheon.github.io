@@ -5,12 +5,14 @@ layout: default
 
 <div class="content main__content">
     <div class="l-content content__l-content">
-        {% include profile.html %}
+        {% include profile_card.html %}
     </div>
     <div class="main-content content__main-content">
         {{content}}
     </div>
     <div class="r-content content__r-content">
-        
+        {% include category_card.html %}
+        {% include category_card.html %}
+
     </div>
 </div>

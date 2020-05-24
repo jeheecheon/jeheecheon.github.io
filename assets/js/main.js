@@ -20,7 +20,6 @@ var scrollIndicator = document.querySelector(".scroll-indicator");
 //
 //
 //
-includeJs("/assets/js/sidebar.js");
 
 if (!window.getComputedStyle) {
   window.getComputedStyle = function (element) {
@@ -50,7 +49,7 @@ function initializeLayout() {
   var pageWidth =
     document.body.clientWidth || document.documentElement.clientWidth;
 
-  if (pageWidth < 768) toggleSidebar(1);
+  if (pageWidth < 1068) toggleSidebar(1);
   else toggleSidebar(2);
 }
 
@@ -58,7 +57,7 @@ function resizeLayout() {
   var pageWidth =
     document.body.clientWidth || document.documentElement.clientWidth;
 
-  if (pageWidth < 768) {
+  if (pageWidth < 1068) {
     if (sidebar.style.right == "-300px") {
       sidebar.style.width = "300px";
       page.style.display = "block";

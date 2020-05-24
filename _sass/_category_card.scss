@@ -1,0 +1,46 @@
+.category-card {
+  padding: 15px 15px;
+  
+  @include card();
+
+  .categories {
+    //ul
+    .category {
+      //li
+      border-top: 2px solid $baseColor2;
+      transition: background-color 0.5s ease-in-out;
+
+      display: flex;
+      i {
+        padding: 8px 0;
+        width: 30px;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      a {
+        flex-grow: 1;
+        padding: 8px 0;
+        display: inline-block;
+        @include removeDeco();
+      }
+
+      &:hover {
+        background-color: $baseColor2;
+      }
+    }
+  }
+
+  .subnav {
+    //ul
+    transition: opacity 1s ease-out;
+    opacity: 1;
+    height: auto;
+    padding-left: 30px;
+  }
+  .subnav--hide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
