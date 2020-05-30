@@ -8,7 +8,7 @@
   transition: all 0.5s ease-in-out;
 
   overflow-x: hidden;
-  background-color: $baseColor1;
+  background-color: $sidebarColor;
   box-shadow: 3px 3px 5px 5px $shadowColor;
 
   .hamburger {
@@ -21,11 +21,13 @@
   .profile {
     display: block;
     text-decoration: none;
+    color: $baseColor5;
 
     margin: 13px 10px;
     padding: 15px;
 
     border: 2px solid $baseColor2;
+
     .profile-img {
       .img-container {
         width: 100px;

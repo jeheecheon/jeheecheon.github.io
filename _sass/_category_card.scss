@@ -4,7 +4,7 @@
   @include card();
 
   .title {
-    color: $baseColor3;
+    color: $baseColor5;
     font-weight: 800;
     text-align: center;
     font-size: 1.5rem;
@@ -14,7 +14,7 @@
     //ul
     .category {
       //li
-      border-bottom: 2px solid $baseColor1;
+      border-bottom: 2px solid $baseColor2;
       transition: background-color 0.5s ease-in-out;
 
       display: -webkit-box;
@@ -22,7 +22,7 @@
       display: flex;
 
       i {
-        color: $baseColor5;
+        color: $baseColor3;
 
         padding: 8px 0;
         width: 30px;
@@ -31,7 +31,7 @@
         cursor: pointer;
       }
       a {
-        color: $baseColor3;
+        color: $baseColor5;
         
         -webkit-box-flex: 1;
         -ms-flex: 1;
