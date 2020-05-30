@@ -1,10 +1,8 @@
-<!-- <a class="blog-title" href="/">{{page.title}}</a> -->
-
 <nav class="post-items">
   {% for post in paginator.posts %}
   <a class="post-item" href="{{ post.url }}">
     <div class="img-container post-item__img-container">
-      <img class="img" src="{{post.image}}" alt="">
+      <img class="img" src="{{post.image}}" alt="" />
     </div>
     <text class="text post-item__text">
       <p class="metadata text__metadata">{{ post.date }} {{post.tags}}</p>
@@ -16,28 +14,43 @@
 </nav>
 
 <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">
-    Previous
-  </a>
-  {% else %}
-  <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-  <span class="next ">Next</span>
-  {% endif %}
-</div>
-
 {% if paginator.page_trail %}
-{% for trail in paginator.page_trail %}
-<li {% if page.url == trail.path %}class="selected" {% endif %}>
-  <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
-</li>
-{% endfor %}
+<ul class="trail">
+  <li class="item trail__item">
+    {% if paginator.previous_page %}
+    <a
+      class="link item__link"
+      href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+      ><i class="fas fa-chevron-left"></i
+    ></a>
+    {% else %}
+    <i class="link item__link fas fa-chevron-left"></i>
+    {% endif %}
+  </li>
+
+  {% for trail in paginator.page_trail %}
+  <li
+    class="item trail__item {% if page.url == trail.path %}selected{% endif %}"
+  >
+    <a
+      class="link item__link"
+      href="{{ trail.path | prepend: site.baseurl }}"
+      title="{{trail.title}}"
+      >{{ trail.num }}</a
+    >
+  </li>
+  {% endfor %}
+
+  <li class="item trail__item">
+    {% if paginator.next_page %}
+    <a
+      class="link item__link"
+      href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+      ><i class="fas fa-chevron-right"></i
+    ></a>
+    {% else %}
+    <i class="link item__link fas fa-chevron-right"></i>
+    {% endif %}
+  </li>
+</ul>
 {% endif %}

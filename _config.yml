@@ -22,7 +22,7 @@ jekyll_admin:
 # Paginate-v2
 pagination:
   enabled: true
-  per_page: 4
+  per_page: 3
   permalink: "/page-:num/"
   title: ":title"
   limit: 0

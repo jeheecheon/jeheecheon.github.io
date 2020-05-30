@@ -60,4 +60,36 @@
     clear: both;
   }
 }
-//   font-family: "Hi Melody", cursive;
+
+.trail {
+  text-align: center;
+
+  .item {
+    display: inline-block;
+    margin: 0 5px;
+    list-style-type: none;
+    background-color: $baseColor1;
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    .link {
+      text-decoration: none;
+      color: $baseColor5;
+    }
+  }
+
+  .selected {
+    transform: scale(1.5, 1.5);
+
+    .link {
+      cursor: none;
+      color: rgb(187, 64, 111);
+    }
+  }
+
+  .null {
+    cursor: none;
+  }
+}
