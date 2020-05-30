@@ -169,6 +169,18 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .layout .page .main .post-items::after { content: ""; display: block; clear: both; }
 
+.layout .page .main .trail { text-align: center; }
+
+.layout .page .main .trail .item { display: inline-block; margin: 0 5px; list-style-type: none; background-color: rgba(189, 218, 241, 0.7); border-radius: 50%; width: 30px; height: 30px; }
+
+.layout .page .main .trail .item .link { text-decoration: none; color: #464646; }
+
+.layout .page .main .trail .selected { transform: scale(1.5, 1.5); }
+
+.layout .page .main .trail .selected .link { cursor: none; color: #bb406f; }
+
+.layout .page .main .trail .null { cursor: none; }
+
 .layout .page .footer .inner { padding: 0 30px; text-align: center; }
 
 .layout::after { content: ""; display: block; clear: both; }
