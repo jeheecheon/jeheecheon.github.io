@@ -2,10 +2,11 @@
 layout: default
 comments: true
 ---
+
 <script src="/assets/js/post.js" defer></script>
 
 <section class="post main__post">
-  <div class="post-cover">
+  <div class="post-cover post__post-cover">
     <img class="img post-cover__img" src="{{page.image}}" alt="" />
     <div class="background post-cover__background">
       <a href="/" class="button--goToIndex">
@@ -21,23 +22,28 @@ Click here to go to index
     </div>
   </div>
 
-  <div class="post__content">
-    <div class="main-content content__main-content">
-      {{content}}
-    </div>
-    <div class="j-space post-content__j-space">
-      <div class="side-content j-space__side-content"></div>
+  <div class="content post__content">
+    <div class="inner content__inner">
+      <div class="l-content inner__l-content">
+        {% include profile_card.html %}
+      </div>
+      <div class="main-content inner__main-content">{{content}}</div>
+      <div class="r-content inner__r-content">
+        {% include category_card.html %}
+      </div>
     </div>
   </div>
 
   {% if site.related_posts.size >= 1 %}
-
-  <h3>Related Posts</h3>
-  <ul>
+  <div class="related-posts post__related-posts">
+    <span>Related Posts</span>
     {% for related_post in site.related_posts limit: 5 %}
-    <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+    <div class="related-post">
+      <img class="post-img" src="{{ related_post.image }}" alt="related_post.image">
+      <a class="post-link" href="{{ related_post.url }}">{{ related_post.title }}</a>
+    </div>
     {% endfor %}
-  </ul>
+  </div>
   {% endif %}
 
   <div class="comment post__comment">

@@ -12,20 +12,26 @@
             <div class="text s1__text">
                 Post
             </div>
-            <div class="info s1__info">1</div>
+            <div class="info s1__info">
+                {{ site.posts.size }}
+            </div>
         </div>
 
         <div class="s2 blog-info__s2">
             <div class="text s2__text">
                 Category
             </div>
-            <div class="info s2__info">2</div>
+            <div class="info s2__info">
+                {{ site.categories.size }}
+            </div>
         </div>
         <div class="s3 blog-info__s3">
             <div class="text s3__text">
                 Tag
             </div>
-            <div class="info s3__info">3</div>
+            <div class="info s3__info">
+                {{ site.tags.size }}
+            </div>
         </div>
     </div>
 
