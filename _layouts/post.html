@@ -10,10 +10,7 @@ comments: true
     <img class="img post-cover__img" src="{{page.image}}" alt="" />
     <div class="background post-cover__background">
       <a href="/" class="button--goToIndex">
-        <pre>
-Click here to go to index
-                </pre
-        >
+        <pre>Click Here To Go To Index!</pre>
       </a>
     </div>
     <div class="text post-cover__text">
@@ -41,14 +38,19 @@ Click here to go to index
     <div class="inner related-posts__inner">
       {% for related_post in site.related_posts limit: 4 %}
       <a href="{{ related_post.url }}" class="related-post">
-        <img class="post-img" src="{{ related_post.image }}" alt="related_post.image">
+        <img
+          class="post-img"
+          src="{{ related_post.image }}"
+          alt="related_post.image"
+        />
         <div class="post-title">{{ related_post.title }}</div>
-        <div class="post-excerpt">{{ related_post.excerpt | slice: 0, 50 | append: "...." }}</div> 
+        <div class="post-excerpt">
+          {{ related_post.excerpt | slice: 0, 50 | append: "...." }}
+        </div>
         <div class="post-date">{{ related_post.date }}</div>
       </a>
       {% endfor %}
     </div>
-
   </div>
   {% endif %}
 

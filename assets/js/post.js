@@ -12,6 +12,7 @@ setInterval(function () {
 
 //display goToIndexBtn when header is clicked
 headerBar.addEventListener("click", function () {
+  console.log(goToIndexBtn);
   goToIndexBtn.style.visibility = "visible";
   window.addEventListener("scroll", hideGoToIndexBtn);
 });
