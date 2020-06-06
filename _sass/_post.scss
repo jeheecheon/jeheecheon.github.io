@@ -222,16 +222,17 @@
         display: block;
         text-align: center;
 
-        color: $baseColor5;
         text-decoration: none;
-
-        font-size: 1.2rem;
+        
+        color: $baseColor3;
+        font-size: 1.5rem;
         font-weight: 700;
       }
 
       .post-excerpt {
         display: block;
         text-align: center;
+        font-size: 1rem;
 
         color: $baseColor5;
       }
