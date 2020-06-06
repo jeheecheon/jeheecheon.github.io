@@ -20,11 +20,11 @@
       height: 220px;
       position: relative;
       overflow: hidden;
+
       .img {
-        top: 50%;
+        position: absolute;
         left: 50%;
-        position: relative;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         height: auto;
         width: 100%;
       }
@@ -33,17 +33,18 @@
     .text {
       display: block;
       width: 100%;
-      max-height: 130px;
+      max-height: 180px;
       overflow: hidden;
       padding: 7px;
       text-align: center;
+
       .metadata {
         font-size: 0.8rem;
         text-align: left;
       }
 
       .title {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
 
       .excerpt {
@@ -86,7 +87,7 @@
 
     .link {
       cursor: none;
-      color: rgb(187, 64, 111);
+      color: $baseColor6;
     }
   }
 
