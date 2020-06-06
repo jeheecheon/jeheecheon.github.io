@@ -133,17 +133,17 @@ pre { font-family: "Noto Sans KR", Helvetica, Arial, sans-serif; }
 
 .layout .page .main .post .post-cover { position: relative; height: 100vh; width: 100%; }
 
-.layout .page .main .post .post-cover .img { z-index: 1; position: absolute; left: 50%; transform: translateX(-50%); height: 100%; border-radius: 15px; box-shadow: 3px 3px 5px 2px #aaaaaa; -webkit-filter: blur(1.5px); filter: blur(1.5px); }
+.layout .page .main .post .post-cover .img { z-index: 1; position: absolute; left: 50%; transform: translateX(-50%); height: 100%; width: auto; border-radius: 15px; box-shadow: 3px 3px 5px 2px #aaaaaa; -webkit-filter: blur(1.5px); filter: blur(1.5px); }
 
-.layout .page .main .post .post-cover .text { color: white; z-index: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.layout .page .main .post .post-cover .text { color: white; z-index: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.layout .page .main .post .post-cover .text .title { font-size: 3.5rem; }
+.layout .page .main .post .post-cover .text .title { text-align: center; font-size: 3.5rem; }
 
-.layout .page .main .post .post-cover .background { z-index: 0; position: absolute; top: 0; height: 100%; width: 100%; color: white; }
+.layout .page .main .post .post-cover .background { z-index: 2; position: absolute; height: 100%; width: 100%; }
 
-.layout .page .main .post .post-cover .background .button--goToIndex { position: absolute; visibility: hidden; top: 2px; left: 50%; transform: translateX(-50%); z-index: 2; text-decoration: none; color: white; display: inline-block; padding: 1em; font-family: Helvetica Neue; border-radius: 30%; }
+.layout .page .main .post .post-cover .background .button--goToIndex { position: absolute; top: 50px; transform: translateX(-50%); left: 50%; visibility: hidden; text-decoration: none; color: #95bfe2; font-weight: 700; display: inline-block; padding: 1rem; font-family: Helvetica Neue; border-radius: 30%; }
 
-.layout .page .main .post .post-cover .background .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2.5s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.07) 90%, transparent 100%); background-size: 200% 100%; }
+.layout .page .main .post .post-cover .background .button--goToIndex:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 30%; filter: blur(10px); z-index: -1; animation: reflection 2s infinite ease-in-out; background: linear-gradient(90deg, transparent 0%, transparent 80%, rgba(247, 247, 247, 0.6) 90%, transparent 100%); background-size: 200% 100%; }
 
 .layout .page .main .post .content { position: relative; top: 20px; left: 50%; transform: translateX(-50%); margin-bottom: 50px; max-width: 1428px; z-index: 2; }
 
