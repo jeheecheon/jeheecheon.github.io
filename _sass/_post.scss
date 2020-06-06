@@ -161,9 +161,14 @@
     .text {
       text-align: center;
 
-      font-size: 2.5rem;
       font-weight: 200;
       color: $baseColor5;
+    }
+
+    .inner {
+      .related-post {
+        text-decoration: none;
+      }
     }
   }
 
@@ -178,9 +183,11 @@
 ////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 750px) {
-  .related-posts__inner {
-    list-style-type: none;
+  .related-posts__text {
+    font-size: 2.5rem;
+  }
 
+  .related-posts__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -193,16 +200,15 @@
       float: left;
 
       display: block;
-      text-decoration: none;
       width: 23%;
       max-width: 300px;
       min-width: 169px;
       margin: 0 1%;
 
       border-radius: 5px;
+      box-shadow: 3px 3px 5px 2px $shadowColor;
       overflow: hidden;
       background-color: $backgroundColor1;
-      box-shadow: 3px 3px 5px 2px $shadowColor;
       transition: transform 0.5s ease-in-out;
 
       &:hover {
@@ -245,8 +251,11 @@
 }
 
 @media screen and (max-width: 749px) {
+  .related-posts__text {
+    font-size: 1.5rem;
+  }
+
   .related-posts__inner {
-    list-style-type: none;
     border-radius: 9px;
     box-shadow: 3px 3px 5px 2px $shadowColor;
     padding: 5px 10px;
@@ -254,9 +263,9 @@
 
     .related-post {
       position: relative;
-      border-bottom: 2px solid $baseColor2;
       display: block;
-      text-decoration: none;
+      border-bottom: 2px solid $baseColor2;
+      
       transition: background-color 0.5s ease-in-out;
       overflow: hidden;
 
@@ -276,7 +285,7 @@
         color: $baseColor3;
         text-decoration: none;
         width: calc(100% - 70px);
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 700;
       }
 
@@ -287,7 +296,7 @@
       .post-date {
         display: inline-block;
         color: $baseColor5;
-        font-size: 0.5rem;
+        font-size: 1rem;
       }
 
       &:hover {
