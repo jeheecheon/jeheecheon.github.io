@@ -7,6 +7,8 @@
   transform: translateX(-50%);
   max-width: 1408px; //768px(main-content) + 600px(l,rcontent) + 40px(margin)
 
+  margin-top: 80px;
+
   .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -25,15 +27,26 @@
     justify-content: center;
 
     .main-content {
-      margin-top: 80px;
       float: left;
       max-width: 768px;
       padding: 0 20px;
+      
+      .text--recent-posts, .text--category-posts, .text--tag-posts {
+        position: relative;
+    
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $baseColor5;
+        margin: 3vh auto;
+      }
+    
     }
 
     .l-content,
     .r-content {
-      margin: 80px 10px 0;
+      margin: 0 10px;
       width: 300px;
       height: fit-content;
 
