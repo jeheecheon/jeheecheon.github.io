@@ -7,7 +7,7 @@
     <text class="text post-item__text">
       <p class="metadata text__metadata">{{ post.date }} {{post.tags}}</p>
       <h1 class="title text__title">{{ post.title }}</h1>
-      <p class="excerpt text_excerpt">{{ post.excerpt }}</p>
+      <p class="excerpt text_excerpt">{{ post.excerpt | slice: 0, 100 | append: "...."}}</p>
     </text>
   </a>
   {% endfor %}

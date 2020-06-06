@@ -36,13 +36,19 @@ Click here to go to index
 
   {% if site.related_posts.size >= 1 %}
   <div class="related-posts post__related-posts">
-    <span>Related Posts</span>
-    {% for related_post in site.related_posts limit: 5 %}
-    <div class="related-post">
-      <img class="post-img" src="{{ related_post.image }}" alt="related_post.image">
-      <a class="post-link" href="{{ related_post.url }}">{{ related_post.title }}</a>
+    <div class="text related-posts__text">Recommended Posts</div>
+
+    <div class="inner related-posts__inner">
+      {% for related_post in site.related_posts limit: 4 %}
+      <a href="{{ related_post.url }}" class="related-post">
+        <img class="post-img" src="{{ related_post.image }}" alt="related_post.image">
+        <div class="post-title">{{ related_post.title }}</div>
+        <div class="post-excerpt">{{ related_post.excerpt | slice: 0, 50 | append: "...." }}</div> 
+        <div class="post-date">{{ related_post.date }}</div>
+      </a>
+      {% endfor %}
     </div>
-    {% endfor %}
+
   </div>
   {% endif %}
 
