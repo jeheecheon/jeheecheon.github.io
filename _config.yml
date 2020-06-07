@@ -74,6 +74,7 @@ sass:
   sass_dir: _sass
 ############################################################
 # Outputting
+url: https://jeheecheon.github.io
 permalink: pretty
 
 defaults:
