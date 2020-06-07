@@ -45,7 +45,7 @@ comments: true
         />
         <div class="post-title">{{ related_post.title }}</div>
         <div class="post-excerpt">
-          {{ related_post.excerpt | slice: 0, 50 | append: "...." }}
+          {{ related_post.excerpt | truncate: 50 }}
         </div>
         <div class="post-date">{{ related_post.date }}</div>
       </a>
