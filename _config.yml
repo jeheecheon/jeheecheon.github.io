@@ -1,17 +1,18 @@
 ############################################################
 # Global variables
 title: "Jehee Cheon"
-blog:
-  profile: "/assets/img/20181205_211335_971.jpg"
-  logo: "/assets/img/pooh.jpg"
+profile: "/assets/img/20181205_211335_971.jpg"
+logo: "/assets/img/logo.jpg"
 author: "Jehee Cheon"
 description: "Game Developer..."
 favicon: "/assets/img/favicon.ico"
+
 ############################################################
 ############################################################
 # gems
 # Auto image
 image: "/assets/img/business-2717063_1920.jpg"
+
 
 # Admin
 jekyll_admin:
