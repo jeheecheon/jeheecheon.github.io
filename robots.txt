@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://jeheecheon.github.io/sitemap.xml
