@@ -4,7 +4,7 @@ title: "Jehee Cheon"
 profile: "/assets/img/20181205_211335_971.jpg"
 logo: "/assets/img/logo.jpg"
 author: "Jehee Cheon"
-description: "Game Developer..."
+description: "Blog of a person who likes to program. 컴퓨터공학과 학부생의 일상"
 favicon: "/assets/img/favicon.ico"
 
 facebook_url: https://www.facebook.com/profile.php?id=100009511965571
@@ -81,6 +81,8 @@ sass:
   sass_dir: _sass
 ############################################################
 # Outputting
+encoding            : "utf-8"
+
 url: https://jeheecheon.github.io
 permalink: pretty
 

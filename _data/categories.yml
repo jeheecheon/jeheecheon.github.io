@@ -7,6 +7,11 @@
 - title: Daily life
   category: daily-life
   icon: "far fa-grin-beam"
+- title: 테스트
+  category: 테스트
+  icon: "far fa-file-code"
+  hidden: true
+
 - title: cate1
   category: cate1
   icon: "far fa-file-code"
