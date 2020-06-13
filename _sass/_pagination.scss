@@ -4,9 +4,8 @@
 .post-items {
   .post-item {
     width: 100%;
-    float: left;
     background-color: $backgroundColor1;
-
+    display: inline-block;
     color: $baseColor4;
 
     overflow: hidden;
@@ -24,7 +23,8 @@
       .img {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         height: auto;
         width: 100%;
       }
@@ -48,17 +48,13 @@
       }
 
       .excerpt {
+        display: block;
         font-size: 1rem;
       }
     }
     &:hover {
       transform: scale(1.03, 1.05);
     }
-  }
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
   }
 }
 

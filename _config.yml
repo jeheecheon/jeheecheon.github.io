@@ -2,19 +2,12 @@
 # Global variables
 profile: "/assets/img/20181205_211335_971.jpg"
 favicon: "/assets/img/favicon.ico"
-
-facebook_url: https://www.facebook.com/profile.php?id=100009511965571
-twitter_url: https://twitter.com/JeheeCheon
-linkedin_url: https://www.linkedin.com/in/jehee-cheon-93a3081b0/
-googleplus_url:
-pinterest_url:
-instagram_url: https://www.instagram.com/jeheecheon/
 ############################################################
 ############################################################
 # gems
 # jekyll-seo-tag
 title: "Jehee Cheon"
-description: "Blog of a person who likes to program. 컴퓨터공학과 학부생의 일상"
+description: "The place where I post about programming."
 author: "Jehee Cheon"
 logo: "/assets/img/logo.jpg"
 social:
@@ -96,7 +89,6 @@ sass:
 ############################################################
 # Outputting
 encoding            : "utf-8"
-
 url: https://jeheecheon.github.io
 permalink: pretty
 

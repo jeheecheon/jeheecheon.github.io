@@ -2,13 +2,13 @@
   {% for post in paginator.posts %}
   <a class="post-item" href="{{ post.url }}">
     <div class="img-container post-item__img-container">
-      <img class="img" src="{{post.image}}" alt="" />
+      <img class="img" src="{{post.image}}" alt="Post Image" />
     </div>
-    <text class="text post-item__text">
-      <p class="metadata text__metadata">{{ post.date }} {{post.tags}}</p>
+    <div class="text post-item__text">
+      <p class="metadata text__metadata">{{ post.date | date: "%a, %B %d, %Y, %H:%M" }} {{post.tags}}</p>
       <h1 class="title text__title">{{ post.title }}</h1>
-      <p class="excerpt text_excerpt">{{ post.excerpt | truncate: 100}}</p>
-    </text>
+      <p class="excerpt text_excerpt">{{ post.description | truncate: 100 }}</p>
+    </div>
   </a>
   {% endfor %}
 </nav>
