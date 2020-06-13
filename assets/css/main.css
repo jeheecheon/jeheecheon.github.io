@@ -90,7 +90,7 @@ pre {
         font-size: 1.5rem;
         font-weight: bold; }
       .sidebar .profile .text .description {
-        font-size: 1rem; }
+        font-size: 0.9rem; }
   .sidebar .search {
     position: relative; }
     .sidebar .search .search-btn {
@@ -281,10 +281,10 @@ pre {
             .layout .page .main .content .inner .l-content .profile-card .text {
               text-align: center;
               font-size: 1.8rem; }
-              .layout .page .main .content .inner .l-content .profile-card .text .name {
+              .layout .page .main .content .inner .l-content .profile-card .text .author {
                 color: #296697; }
               .layout .page .main .content .inner .l-content .profile-card .text .description {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 color: #464646; }
             .layout .page .main .content .inner .l-content .profile-card .blog-info {
               text-align: center;
@@ -496,10 +496,10 @@ pre {
             .layout .page .main .post .content .inner .l-content .profile-card .text {
               text-align: center;
               font-size: 1.8rem; }
-              .layout .page .main .post .content .inner .l-content .profile-card .text .name {
+              .layout .page .main .post .content .inner .l-content .profile-card .text .author {
                 color: #296697; }
               .layout .page .main .post .content .inner .l-content .profile-card .text .description {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 color: #464646; }
             .layout .page .main .post .content .inner .l-content .profile-card .blog-info {
               text-align: center;
@@ -696,8 +696,8 @@ pre {
           top: 0; } }
       .layout .page .main .post-items .post-item {
         width: 100%;
-        float: left;
         background-color: white;
+        display: inline-block;
         color: #0c406b;
         overflow: hidden;
         margin-bottom: 50px;
@@ -712,7 +712,8 @@ pre {
           .layout .page .main .post-items .post-item .img-container .img {
             position: absolute;
             left: 50%;
-            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
             height: auto;
             width: 100%; }
         .layout .page .main .post-items .post-item .text {
@@ -728,13 +729,10 @@ pre {
           .layout .page .main .post-items .post-item .text .title {
             font-size: 1.7rem; }
           .layout .page .main .post-items .post-item .text .excerpt {
+            display: block;
             font-size: 1rem; }
         .layout .page .main .post-items .post-item:hover {
           transform: scale(1.03, 1.05); }
-      .layout .page .main .post-items::after {
-        content: "";
-        display: block;
-        clear: both; }
       .layout .page .main .trail {
         text-align: center;
         margin-bottom: 20px; }
