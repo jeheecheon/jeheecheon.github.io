@@ -12,4 +12,5 @@ group :jekyll_plugins do
     gem "jekyll-auto-image"
     gem 'jekyll-autolink_email'
     gem "jekyll-youtube"
+    gem 'jekyll-analytics'
 end
