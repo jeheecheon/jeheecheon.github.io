@@ -18,8 +18,6 @@ social:
     - https://www.linkedin.com/in/jehee-cheon-93a3081b0/
     - https://github.com/jeheecheon
     - https://www.instagram.com/jeheecheon/
-
-# Auto image
 image: "/assets/img/business-2717063_1920.jpg"
 
 # Admin
@@ -98,6 +96,16 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+    values:
+      image: "/assets/img/business-2717063_1920.jpg"
+      
 ############################################################
 # Filtering Content
 # show_drafts: null

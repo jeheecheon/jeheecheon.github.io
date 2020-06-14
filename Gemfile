@@ -9,7 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-admin'
     gem "jekyll-paginate-v2"
     gem "jekyll-tagging-related_posts"
-    gem "jekyll-auto-image"
     gem 'jekyll-autolink_email'
     gem "jekyll-youtube"
 end
