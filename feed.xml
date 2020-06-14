@@ -49,8 +49,6 @@
     <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
-
-
 </head>
 <body onload="initializeLayout()">
   <div class="layout">
@@ -349,8 +347,8 @@
     <description>The place where I post about programming.</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jun 2020 05:14:52 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2020 05:14:52 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Jun 2020 05:22:53 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2020 05:22:53 +0000</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
