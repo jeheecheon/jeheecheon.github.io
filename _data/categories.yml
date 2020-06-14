@@ -8,7 +8,7 @@
   category: daily-life
   icon: "far fa-grin-beam"
 - title: 테스트
-  category: 테스트
+  category: test
   icon: "far fa-file-code"
   hidden: true
 
