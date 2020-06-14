@@ -13,11 +13,11 @@ logo: "/assets/img/logo.jpg"
 social:
   name: Jehee Cheon
   links:
-    - https://twitter.com/JeheeCheon
-    - https://www.facebook.com/profile.php?id=100009511965571
-    - https://www.linkedin.com/in/jehee-cheon-93a3081b0/
-    - https://github.com/jeheecheon
-    - https://www.instagram.com/jeheecheon/
+    - "https://twitter.com/JeheeCheon"
+    - "https://www.facebook.com/profile.php?id=100009511965571"
+    - "https://www.linkedin.com/in/jehee-cheon-93a3081b0/"
+    - "https://github.com/jeheecheon"
+    - "https://www.instagram.com/jeheecheon/"
 image: "/assets/img/business-2717063_1920.jpg"
 
 # Admin
@@ -88,6 +88,7 @@ sass:
 # Outputting
 encoding            : "utf-8"
 url: https://jeheecheon.github.io
+baseurl             : "" # does not include hostname
 permalink: pretty
 
 defaults:
