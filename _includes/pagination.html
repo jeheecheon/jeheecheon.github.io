@@ -1,6 +1,6 @@
 <nav class="post-items">
   {% for post in paginator.posts %}
-  <a class="post-item" href="{{ post.url }}">
+  <a class="post-item" href="{{ post.url | relative_url }}">
     <div class="img-container post-item__img-container">
       <img class="img" src="{{post.image}}" alt="Post Image" />
     </div>

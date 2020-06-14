@@ -37,7 +37,7 @@ comments: true
 
     <div class="inner related-posts__inner">
       {% for related_post in site.related_posts limit: 4 %}
-      <a href="{{ related_post.url }}" class="related-post">
+      <a href="{{ related_post.url | relative_url }}" class="related-post">
         <img
           class="post-img"
           src="{{ related_post.image }}"
