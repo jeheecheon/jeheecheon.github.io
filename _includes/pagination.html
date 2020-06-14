@@ -20,7 +20,7 @@
     {% if paginator.previous_page %}
     <a
       class="link item__link"
-      href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+      href="{{ paginator.previous_page_path | relative_url }}"
       ><i class="fas fa-chevron-left"></i
     ></a>
     {% else %}
@@ -34,7 +34,7 @@
   >
     <a
       class="link item__link"
-      href="{{ trail.path | prepend: site.baseurl }}"
+      href="{{ trail.path | relative_url }}"
       title="{{trail.title}}"
       >{{ trail.num }}</a
     >
@@ -45,7 +45,7 @@
     {% if paginator.next_page %}
     <a
       class="link item__link"
-      href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+      href="{{ paginator.next_page_path | relative_url }}"
       ><i class="fas fa-chevron-right"></i
     ></a>
     {% else %}

@@ -4,12 +4,12 @@
     {% if item.url %}
     <li class="category categories__category">
         <i class="{{item.icon}}" onclick="toggleSubnav(this)"></i>
-        <a href="{{ site.url }}{{ site.baseurl }}/{{item.url}}">{{ item.title }}</a>
+        <a href="{{ item.url | relative_url | prepend: site.url }}">{{ item.title }}</a>
     </li>
     {% else %}
     <li class="category categories__category">
         <i class="{% if item.icon %}{{item.icon}}{% else %}far fa-file{% endif %}" onclick="toggleSubnav(this)"></i>
-        <a href="{{ site.url }}{{ site.baseurl }}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
+        <a href="{{ site.url }}/{{ site.baseurl }}/{{ site.autopages.categories.dir }}/{{ item.category | downcase }}/">{{ item.title }}</a>
         {% if item.subnav %}
         <i class="far fa-caret-square-down" onclick="toggleSubnav(this)"></i>
         {% endif %}

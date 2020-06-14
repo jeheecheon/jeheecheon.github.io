@@ -1,5 +1,8 @@
 ---
+layout: null
+sitemap:
+  exclude: 'yes'
 ---
 User-agent: *
 Allow: /
-Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.baseurl | prepend: site.url }}
+Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}

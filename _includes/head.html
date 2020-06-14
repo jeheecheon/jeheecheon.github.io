@@ -1,11 +1,17 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     {% assign lastCate = page.categories | last %}
     {% assign lastTag = page.tags | last %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta name="keywords" content="{% for tag in page.tags %}{{tag}}{% if lastCate != nil or tag != lastTag %}, {% endif %}{% endfor %}{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
     <meta name="robots" content="All" />
-
+    <meta http-equiv="Reply-To" content="jeheecheon@gmail.com" />
+    <meta http-equiv="Email" content="jeheecheon@gmail.com" />
+    <meta name="classification" content="{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
+    <meta name="copyright" content="{{site.copyright}}" />
+    <meta name="subject" content="IT" />
+    <meta name="title" content="{{site.title}}" />
     {% seo %}    
     {% if jekyll.environment == 'production' %}
     <meta name="google-site-verification" content="OOwp8l6OX4ZRBSgTb9rnln2e9E9z3YmAWOQojdeQ8Qc" />
