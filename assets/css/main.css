@@ -163,13 +163,7 @@ pre {
   -o-transition: width 0.9s ease-in-out;
   -webkit-transition: width 0.9s ease-in-out;
   min-height: 100vh;
-  overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  overflow-x: hidden; }
   .layout .page .header {
     z-index: 3;
     width: 100%;
@@ -232,9 +226,6 @@ pre {
       width: 0%;
       background-color: #95bfe2; }
   .layout .page .main {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex-grow: 1;
     /*In main-----------------------------------*/
     /*page layout-----------------------------------*/
     /*In main-----------------------------------*/
@@ -844,15 +835,51 @@ pre {
   .layout .page .footer {
     box-shadow: 3px 3px 5px 2px #aaaaaa;
     width: 100%;
-    height: 10vh;
+    height: fit-content;
     transition: width 0.9s ease-in-out;
     -moz-transition: width 0.9s ease-in-out;
     -o-transition: width 0.9s ease-in-out;
     -webkit-transition: width 0.9s ease-in-out;
     background-color: rgba(189, 218, 241, 0.7);
-    color: #296697;
-    padding: 25px;
-    text-align: center; }
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px; }
+    .layout .page .footer .site-info {
+      display: inline-block;
+      color: #296697;
+      margin-bottom: 15px; }
+      .layout .page .footer .site-info .designer {
+        margin-top: 15px;
+        margin-bottom: 80px;
+        font-size: 0.8rem; }
+      .layout .page .footer .site-info .logo {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; }
+      .layout .page .footer .site-info .text {
+        display: inline-block;
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 5px; }
+    .layout .page .footer .menu1,
+    .layout .page .footer .menu2 {
+      display: inline-block;
+      list-style: none;
+      margin-right: 30px;
+      margin-bottom: 15px; }
+      .layout .page .footer .menu1 .item,
+      .layout .page .footer .menu2 .item {
+        display: block;
+        margin-top: 15px; }
+        .layout .page .footer .menu1 .item .link,
+        .layout .page .footer .menu2 .item .link {
+          text-decoration: none;
+          color: #296697;
+          font-size: 1.2rem; }
+          .layout .page .footer .menu1 .item .link:hover,
+          .layout .page .footer .menu2 .item .link:hover {
+            text-decoration: underline; }
 
 .layout::after {
   content: "";
