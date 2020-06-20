@@ -10,7 +10,8 @@
     <div class="text post-item__text">
       <p class="tag text__tag">{% for tag in post.tags %}#{{tag}}{% if tag != lastTag %}, {% endif %}{% endfor %}</p>
       <p class="excerpt text_excerpt">{{ post.description | truncate: 80 }}</p>
-      <p class="metadata text__metadata">{{ post.date | date: "%b %d %Y, %H:%M" }} | Categories: {% for cate in post.categories %}{{cate}}{% if cate != lastCate %}, {% endif %}{% endfor %}</p>
+      <p class="date text__date">{{ post.date | date: "%b %d %Y, %H:%M" }}</p>
+      <p class="categories text__categories">Categories: {% for cate in post.categories %}{{cate}}{% if cate != lastCate %}, {% endif %}{% endfor %}</p>
     </div>
   </a>
   {% endfor %}
