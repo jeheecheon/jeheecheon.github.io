@@ -6,7 +6,6 @@
     width: 100%;
     background-color: $backgroundColor1;
     display: inline-block;
-    color: $baseColor4;
 
     overflow: hidden;
     margin-bottom: 50px;
@@ -31,6 +30,8 @@
 
       .title {
         position: absolute;
+        color: $baseColor4;
+
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -54,16 +55,19 @@
       .tag {
         font-size: 0.8rem;
         text-align: center;
-      }
-
-      .metadata {
-        font-size: 0.8rem;
-        text-align: right;
+        color: $baseColor3;
       }
 
       .excerpt {
         display: block;
         font-size: 1rem;
+        color: $baseColor4;
+      }
+
+      .metadata {
+        font-size: 0.8rem;
+        text-align: right;
+        color: $baseColor3;
       }
     }
     &:hover {
