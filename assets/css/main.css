@@ -163,7 +163,13 @@ pre {
   -o-transition: width 0.9s ease-in-out;
   -webkit-transition: width 0.9s ease-in-out;
   min-height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .layout .page .header {
     z-index: 3;
     width: 100%;
@@ -226,7 +232,9 @@ pre {
       width: 0%;
       background-color: #95bfe2; }
   .layout .page .main {
-    min-height: fit-content;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex-grow: 1;
     /*In main-----------------------------------*/
     /*page layout-----------------------------------*/
     /*In main-----------------------------------*/
@@ -433,10 +441,9 @@ pre {
         .layout .page .main .post .post-cover .text .author {
           display: inline-block;
           text-decoration: none;
-          text-align: right;
           position: relative;
-          left: 50%;
-          transform: translateX(-50%); }
+          left: 100%;
+          transform: translateX(-100%); }
           .layout .page .main .post .post-cover .text .author .logo {
             width: 30px;
             height: 30px;
