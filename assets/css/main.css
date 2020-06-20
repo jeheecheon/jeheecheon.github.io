@@ -721,18 +721,29 @@ pre {
             transform: translate(-50%, -50%);
             height: auto;
             width: 100%; }
+          .layout .page .main .post-items .post-item .img-container .title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            background-color: rgba(241, 241, 241, 0.7);
+            text-align: center;
+            padding: 10px;
+            border-radius: 7px;
+            font-size: 1.5rem; }
         .layout .page .main .post-items .post-item .text {
           display: block;
           width: 100%;
-          max-height: 180px;
           overflow: hidden;
           padding: 7px;
           text-align: center; }
+          .layout .page .main .post-items .post-item .text .tag {
+            font-size: 0.8rem;
+            text-align: center; }
           .layout .page .main .post-items .post-item .text .metadata {
             font-size: 0.8rem;
-            text-align: left; }
-          .layout .page .main .post-items .post-item .text .title {
-            font-size: 1.7rem; }
+            text-align: right; }
           .layout .page .main .post-items .post-item .text .excerpt {
             display: block;
             font-size: 1rem; }
