@@ -111,12 +111,28 @@ $backgroundColor2: rgb(245, 245, 245);
 
         text-align: center;
 
-        .logo,
         .hamburger {
           box-sizing: border-box;
           font-size: 30px;
           padding: 3px 10px;
           cursor: pointer;
+        }
+
+        .logo--container {
+          margin-left: 10px;
+          width: 40px;
+          height: 40px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 50%;
+          
+          .logo {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: auto;
+          }
         }
 
         .hamburger {
