@@ -57,10 +57,9 @@
       .author {
         display: inline-block;
         text-decoration: none;
-        text-align: right;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 100%;
+        transform: translateX(-100%);
 
         .logo {
           width: 30px;
@@ -83,7 +82,6 @@
         font-size: 1rem;
         text-align: right;
         color: $baseColor5;
-
       }
     }
 

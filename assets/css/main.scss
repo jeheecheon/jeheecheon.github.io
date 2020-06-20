@@ -81,6 +81,13 @@ $backgroundColor2: rgb(245, 245, 245);
     min-height: 100vh;
     overflow-x: hidden;
 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: vertical; 
+    -ms-flex-direction: column;
+     flex-direction: column;
+
     .header {
       z-index: 3;
 
@@ -171,7 +178,9 @@ $backgroundColor2: rgb(245, 245, 245);
     }
 
     .main {
-      min-height: fit-content;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex-grow: 1;
       @import "page", "post", "pagination";
     }
 
