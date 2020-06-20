@@ -515,7 +515,8 @@ pre {
             padding: 10px 10px 50px;
             width: 768px;
             font-size: 1rem;
-            word-break: break-all; }
+            word-break: break-all;
+            margin-bottom: 25px; }
             .layout .page .main .post .content .inner .main-content .tags {
               display: block;
               position: absolute;
