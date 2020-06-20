@@ -75,7 +75,10 @@ $backgroundColor2: rgb(245, 245, 245);
   .page {
     float: left;
     width: 100%;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.9s ease-in-out;
+    -moz-transition: width 0.9s ease-in-out;
+    -o-transition: width 0.9s ease-in-out;
+    -webkit-transition: width 0.9s ease-in-out;
     min-height: 100vh;
     overflow-x: hidden;
 
@@ -174,10 +177,17 @@ $backgroundColor2: rgb(245, 245, 245);
     }
 
     .footer {
-      .inner {
-        padding: 0 30px;
-        text-align: center;
-      }
+      box-shadow: 3px 3px 5px 2px $shadowColor;
+      width: 100%;
+      transition: width 0.9s ease-in-out;
+      -moz-transition: width 0.9s ease-in-out;
+      -o-transition: width 0.9s ease-in-out;
+      -webkit-transition: width 0.9s ease-in-out;
+
+      background-color: $baseColor1;
+      color: $baseColor3;
+      padding: 25px;
+      text-align: center;
     }
   }
 }
