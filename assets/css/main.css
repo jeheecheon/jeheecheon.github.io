@@ -833,14 +833,13 @@ pre {
       .layout .page .main .trail .null {
         cursor: none; }
   .layout .page .footer {
-    box-shadow: 3px 3px 5px 2px #aaaaaa;
     width: 100%;
     height: fit-content;
     transition: width 0.9s ease-in-out;
     -moz-transition: width 0.9s ease-in-out;
     -o-transition: width 0.9s ease-in-out;
     -webkit-transition: width 0.9s ease-in-out;
-    background-color: rgba(189, 218, 241, 0.7);
+    border-top: 1px solid #cacaca;
     text-align: center;
     display: inline-block;
     padding: 0 10px; }
