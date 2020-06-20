@@ -8,9 +8,9 @@ copyright: "Copyright 2020. Jehee Cheon. All rights reserved."
 # gems
 # jekyll-seo-tag
 title: "Jehee Cheon"
-description: "The place where I post about programming."
+description: "Jehee Cheons's blog"
 author: "Jehee Cheon"
-logo: "/assets/img/logo.jpg"
+logo: "/assets/img/logo.png"
 social:
   name: Jehee Cheon
   links:

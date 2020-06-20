@@ -19,29 +19,67 @@
       border-radius: 15px;
       box-shadow: 3px 3px 5px 2px $shadowColor;
 
-      -webkit-filter: blur(1.5px);
-      filter: blur(1.5px);
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
     }
 
     .text {
+      max-width: 768px;
+      width: 100%;
       color: $baseColor5;
       background-color: rgba(241, 241, 241, 0.7);
       border-radius: 7px;
-      padding: 10px 20px;
-      z-index: 1;
+      padding: 10px;
+      z-index: 2;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
+      .category {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $baseColor3;
+      }
+
       .title {
         text-align: center;
         font-size: 3.5rem;
+      }
+  
+      .author {
+        display: inline-block;
+        text-decoration: none;
+        text-align: right;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .logo {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+
+        .name {
+          display: inline-block;
+          font-size: 0.9rem;
+          color: $baseColor5;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
 
       .date {
         font-size: 1rem;
         text-align: right;
+        color: $baseColor5;
+
       }
     }
 
@@ -60,9 +98,8 @@
 
         visibility: hidden;
         text-decoration: none;
-        color: $baseColor2;
+        color: $baseColor3;
         font-weight: 700;
-
 
         display: inline-block;
         padding: 1rem;
@@ -129,13 +166,26 @@
         position: relative;
         border-radius: 5px;
 
-        padding: 20px;
+        padding: 10px;
         
         width: 768px;
         font-size: 1rem;
         word-break: break-all;
 
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
+
+        .tags {
+          display: block;
+
+          .tag {
+            background-color: rgba(224, 224, 224, 0.5);
+            margin-right: 10px;
+            text-decoration: none;
+            color: $baseColor5;
+            margin-top: 100%;
+            padding: 3px;
+          }
+        }
       }
 
       .l-content,

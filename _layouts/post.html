@@ -5,6 +5,8 @@ comments: true
 
 <script src="/assets/js/post.js" defer></script>
 
+{% assign lastCate = page.categories | last %}
+{% assign lastTag = page.tags | last %}
 <section class="post main__post">
   <div class="post-cover post__post-cover">
     <img class="img post-cover__img" src="{{page.image}}" alt="Cover Image of Post" />
@@ -14,7 +16,12 @@ comments: true
       </a>
     </div>
     <div class="text post-cover__text">
+      <a href="{{ site.autopages.categories.dir | relative_url }}/{{ lastCate | downcase }}/" class="category text__category">{{ lastCate }}</a>
       <h1 class="title text__title">{{page.title}}</h1>
+      <a href="/" class="author text__author">
+        <img src="{{site.logo}}" alt="logo image" class="logo author__logo">
+        <p class="name author__name">{{site.author}}</p>
+      </a>
       <p class="date text__date">{{page.date | date: "%b %d %Y, %H:%M"}}</p>
     </div>
   </div>
@@ -24,7 +31,16 @@ comments: true
       <div class="l-content inner__l-content">
         {% include cards/profile_card.html %}
       </div>
-      <div class="main-content inner__main-content">{{content}}</div>
+      <div class="main-content inner__main-content">
+        {{content}}
+        <div class="tags main-content__tags">
+          {% for tag in page.tags %}
+          <a href="{{ site.autopages.tags.dir | relative_url }}/{{ tag | downcase }}/" class="tag tags__tag">
+            #{{tag}}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
       <div class="r-content inner__r-content">
         {% include cards/category_card.html %}
       </div>
