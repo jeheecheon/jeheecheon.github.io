@@ -35,7 +35,10 @@ pre {
   width: 300px;
   position: fixed;
   right: -300px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
   overflow-x: hidden;
   background-color: #bddaf1;
   box-shadow: 3px 3px 5px 5px #aaaaaa; }
@@ -163,10 +166,10 @@ pre {
       z-index: 3;
       width: 100%;
       position: fixed;
-      transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out; }
+      transition: all 0.9s ease-in-out;
+      -moz-transition: all 0.9s ease-in-out;
+      -o-transition: all 0.9s ease-in-out;
+      -webkit-transition: all 0.9s ease-in-out; }
       .layout .page .header .bar {
         background-color: rgba(189, 218, 241, 0.7);
         box-shadow: 3px 3px 5px #aaaaaa;
@@ -355,6 +358,7 @@ pre {
                 cursor: pointer; }
               .layout .page .main .content .inner .r-content .category-card .categories .category a {
                 color: #464646;
+                font-size: 1.1rem;
                 -webkit-box-flex: 1;
                 -ms-flex: 1;
                 flex-grow: 1;
@@ -570,6 +574,7 @@ pre {
                 cursor: pointer; }
               .layout .page .main .post .content .inner .r-content .category-card .categories .category a {
                 color: #464646;
+                font-size: 1.1rem;
                 -webkit-box-flex: 1;
                 -ms-flex: 1;
                 flex-grow: 1;
@@ -743,12 +748,18 @@ pre {
           background-color: rgba(189, 218, 241, 0.7);
           border-radius: 50%;
           width: 30px;
-          height: 30px; }
+          height: 30px;
+          transition: transform 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out; }
           .layout .page .main .trail .item .link {
             text-decoration: none;
             color: #464646; }
+          .layout .page .main .trail .item:hover {
+            transform: scale(1.3, 1.3); }
         .layout .page .main .trail .selected {
-          transform: scale(1.5, 1.5); }
+          transform: scale(1.3, 1.3); }
           .layout .page .main .trail .selected .link {
             cursor: none;
             color: #bb406f; }
