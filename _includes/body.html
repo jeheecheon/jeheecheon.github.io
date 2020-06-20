@@ -33,8 +33,25 @@
       </main>
 
       <footer class="footer page__footer">
-        {{site.copyright}}</br>
-        Designed by Jehee Cheon.
+        <ul class="menu1 footer__menu1">
+          <li class="item menu__item"><a class="link item__link" href="/">Blog</a></li>
+          <li class="item menu__item"><a class="link item__link" href="/about">About</a></li>
+          <li class="item menu__item"><a class="link item__link" href="/Contact">Contact</a></li>
+        </ul>
+        <ul class="menu2 footer__menu2">
+          <li class="item menu__item"><a class="link item__link" href="/portfolio">Portfolio</a></li>
+          <li class="item menu__item"><a class="link item__link" href="/Daily Life">Daily Life</a></li>
+          <li class="item menu__item"><a class="link item__link" href="/Tags">Tags</a></li>
+        </ul>
+        <div class="site-info footer__site-info">
+          <div class="designer site-info__designer">Designed by Jehee Cheon</div>
+          <img src="{{site.logo}}" alt="logo image" class="logo author__logo">
+          <div class="text site-info__text">
+            <p class="title text__title">{{site.title}}</p>
+            {% assign year = "now" | date: "%Y" %}
+            <p class="copyright text__copyright">(C) {{ year }}. {{site.author}} All rights reserved. </p>
+          </div>
+        </div>
       </footer>
     </div>
   </div>
