@@ -195,13 +195,9 @@ pre {
           margin-left: 10px;
           width: 40px;
           height: 40px;
-          position: relative;
           overflow: hidden;
           border-radius: 50%; }
           .layout .page .header .bar .logo--container .logo {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
             width: 100%;
             height: auto; }
         .layout .page .header .bar .hamburger {
@@ -257,7 +253,7 @@ pre {
           .layout .page .main .content .inner .main-content {
             float: left;
             width: 768px;
-            padding: 0 20px; }
+            padding: 0 10px; }
             .layout .page .main .content .inner .main-content .text--recent-posts, .layout .page .main .content .inner .main-content .text--category-posts, .layout .page .main .content .inner .main-content .text--tag-posts {
               position: relative;
               display: block;
@@ -405,24 +401,53 @@ pre {
           width: auto;
           border-radius: 15px;
           box-shadow: 3px 3px 5px 2px #aaaaaa;
-          -webkit-filter: blur(1.5px);
-          filter: blur(1.5px); }
+          -webkit-filter: blur(2px);
+          filter: blur(2px); }
         .layout .page .main .post .post-cover .text {
+          max-width: 768px;
+          width: 100%;
           color: #464646;
           background-color: rgba(241, 241, 241, 0.7);
           border-radius: 7px;
-          padding: 10px 20px;
-          z-index: 1;
+          padding: 10px;
+          z-index: 2;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%); }
+          .layout .page .main .post .post-cover .text .category {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #296697; }
           .layout .page .main .post .post-cover .text .title {
             text-align: center;
             font-size: 3.5rem; }
+          .layout .page .main .post .post-cover .text .author {
+            display: inline-block;
+            text-decoration: none;
+            text-align: right;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%); }
+            .layout .page .main .post .post-cover .text .author .logo {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              display: inline-block; }
+            .layout .page .main .post .post-cover .text .author .name {
+              display: inline-block;
+              font-size: 0.9rem;
+              color: #464646;
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%); }
           .layout .page .main .post .post-cover .text .date {
             font-size: 1rem;
-            text-align: right; }
+            text-align: right;
+            color: #464646; }
         .layout .page .main .post .post-cover .background {
           z-index: 2;
           position: absolute;
@@ -435,7 +460,7 @@ pre {
             left: 50%;
             visibility: hidden;
             text-decoration: none;
-            color: #95bfe2;
+            color: #296697;
             font-weight: 700;
             display: inline-block;
             padding: 1rem;
@@ -481,11 +506,19 @@ pre {
             transition: top 0.5s ease-in-out;
             position: relative;
             border-radius: 5px;
-            padding: 20px;
+            padding: 10px;
             width: 768px;
             font-size: 1rem;
-            word-break: break-all;
-            margin-bottom: 25px; }
+            word-break: break-all; }
+            .layout .page .main .post .content .inner .main-content .tags {
+              display: block; }
+              .layout .page .main .post .content .inner .main-content .tags .tag {
+                background-color: rgba(224, 224, 224, 0.5);
+                margin-right: 10px;
+                text-decoration: none;
+                color: #464646;
+                margin-top: 100%;
+                padding: 3px; }
           .layout .page .main .post .content .inner .l-content,
           .layout .page .main .post .content .inner .r-content {
             float: left;
