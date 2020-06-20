@@ -511,7 +511,8 @@ pre {
             font-size: 1rem;
             word-break: break-all; }
             .layout .page .main .post .content .inner .main-content .tags {
-              display: block; }
+              display: block;
+              margin-top: 10px; }
               .layout .page .main .post .content .inner .main-content .tags .tag {
                 background-color: rgba(224, 224, 224, 0.5);
                 margin-right: 10px;
