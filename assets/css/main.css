@@ -186,12 +186,24 @@ pre {
         -ms-flex-align: center;
         align-items: center;
         text-align: center; }
-        .layout .page .header .bar .logo,
         .layout .page .header .bar .hamburger {
           box-sizing: border-box;
           font-size: 30px;
           padding: 3px 10px;
           cursor: pointer; }
+        .layout .page .header .bar .logo--container {
+          margin-left: 10px;
+          width: 40px;
+          height: 40px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 50%; }
+          .layout .page .header .bar .logo--container .logo {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: auto; }
         .layout .page .header .bar .hamburger {
           color: #464646;
           margin-right: 10px;
@@ -396,7 +408,10 @@ pre {
           -webkit-filter: blur(1.5px);
           filter: blur(1.5px); }
         .layout .page .main .post .post-cover .text {
-          color: white;
+          color: #464646;
+          background-color: rgba(241, 241, 241, 0.7);
+          border-radius: 7px;
+          padding: 10px 20px;
           z-index: 1;
           position: absolute;
           top: 50%;
@@ -405,6 +420,9 @@ pre {
           .layout .page .main .post .post-cover .text .title {
             text-align: center;
             font-size: 3.5rem; }
+          .layout .page .main .post .post-cover .text .date {
+            font-size: 1rem;
+            text-align: right; }
         .layout .page .main .post .post-cover .background {
           z-index: 2;
           position: absolute;
@@ -642,11 +660,6 @@ pre {
               color: #296697;
               font-size: 1.5rem;
               font-weight: 700; }
-            .layout .page .main .related-posts__inner .related-post .post-excerpt {
-              display: block;
-              text-align: center;
-              font-size: 1rem;
-              color: #464646; }
             .layout .page .main .related-posts__inner .related-post .post-date {
               display: none; }
           .layout .page .main .related-posts__inner::after {
@@ -682,8 +695,6 @@ pre {
               width: calc(100% - 70px);
               font-size: 1.5rem;
               font-weight: 700; }
-            .layout .page .main .related-posts__inner .related-post .post-excerpt {
-              display: none; }
             .layout .page .main .related-posts__inner .related-post .post-date {
               display: inline-block;
               color: #464646;
@@ -703,7 +714,6 @@ pre {
         width: 100%;
         background-color: white;
         display: inline-block;
-        color: #0c406b;
         overflow: hidden;
         margin-bottom: 50px;
         box-shadow: 3px 3px 5px 2px #aaaaaa;
@@ -723,6 +733,7 @@ pre {
             width: 100%; }
           .layout .page .main .post-items .post-item .img-container .title {
             position: absolute;
+            color: #0c406b;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -740,13 +751,16 @@ pre {
           text-align: center; }
           .layout .page .main .post-items .post-item .text .tag {
             font-size: 0.8rem;
-            text-align: center; }
-          .layout .page .main .post-items .post-item .text .metadata {
-            font-size: 0.8rem;
-            text-align: right; }
+            text-align: center;
+            color: #296697; }
           .layout .page .main .post-items .post-item .text .excerpt {
             display: block;
-            font-size: 1rem; }
+            font-size: 1rem;
+            color: #0c406b; }
+          .layout .page .main .post-items .post-item .text .metadata {
+            font-size: 0.8rem;
+            text-align: right;
+            color: #296697; }
         .layout .page .main .post-items .post-item:hover {
           transform: scale(1.03, 1.05); }
       .layout .page .main .trail {
