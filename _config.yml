@@ -5,6 +5,16 @@ favicon: "/assets/img/favicon.ico"
 ############################################################
 ############################################################
 # gems
+
+tipue_search:
+    include:
+        pages: false
+        collections: []
+    exclude:
+        files: []
+        categories: []
+        tags: []
+
 # jekyll-seo-tag
 title: "Jehee Cheon"
 description: "Jehee Cheons's blog"
