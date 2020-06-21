@@ -850,7 +850,8 @@ pre {
       .layout .page .footer .site-info .designer {
         margin-top: 15px;
         margin-bottom: 80px;
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        text-align: center; }
       .layout .page .footer .site-info .logo {
         display: inline-block;
         width: 30px;
@@ -865,8 +866,9 @@ pre {
     .layout .page .footer .menu2 {
       display: inline-block;
       list-style: none;
-      margin-right: 30px;
-      margin-bottom: 15px; }
+      margin-right: 40px;
+      margin-bottom: 15px;
+      text-align: left; }
       .layout .page .footer .menu1 .item,
       .layout .page .footer .menu2 .item {
         display: block;
