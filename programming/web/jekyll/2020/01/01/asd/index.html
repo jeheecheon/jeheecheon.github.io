@@ -57,6 +57,15 @@
     <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/tipuesearch/css/normalize.css">
+    <link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+    <script src="/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/assets/tipuesearch/tipuesearch.min.js"></script>
+    
 </head>
 <body onload="initializeLayout()">
   <div class="layout">
@@ -83,7 +92,7 @@
     </div>
   </a>
 
-  <div class="search">
+  <!-- <div class="search">
     <input
       class="search-btn sidebar__search"
       id="search"
@@ -92,7 +101,12 @@
       placeholder="Search posts"
     />
     <i class="fas fa-search search-icon"></i>
-  </div>
+  </div> -->
+  <form action="/search">
+    <div class="tipue_search_left"><img src="/assets/tipuesearch/search.png" class="tipue_search_icon"></div>
+    <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+    <div style="clear: both;"></div>
+  </form>
 
   <div class="navigation sidebar__navigation">
     <div class="categories-container">
@@ -298,7 +312,7 @@
 <br />
 <br />
 <br />
-a</p>
+content</p>
 
         <div class="tags main-content__tags">
           

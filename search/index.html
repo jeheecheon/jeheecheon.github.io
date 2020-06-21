@@ -15,19 +15,19 @@
     <meta name="subject" content="IT" />
     <meta name="title" content="Jehee Cheon" />
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Posts tagged with post | Jehee Cheon</title>
+<title>Search | Jehee Cheon</title>
 <meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="Posts tagged with post" />
+<meta property="og:title" content="Search" />
 <meta name="author" content="Jehee Cheon" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Jehee Cheons’s blog" />
-<meta property="og:description" content="Jehee Cheons’s blog" />
-<link rel="canonical" href="https://jeheecheon.github.io/tags/post/" />
-<meta property="og:url" content="https://jeheecheon.github.io/tags/post/" />
+<meta name="description" content="Search this site" />
+<meta property="og:description" content="Search this site" />
+<link rel="canonical" href="https://jeheecheon.github.io/search/" />
+<meta property="og:url" content="https://jeheecheon.github.io/search/" />
 <meta property="og:site_name" content="Jehee Cheon" />
 <meta property="og:image" content="https://jeheecheon.github.io/assets/img/business-2717063_1920.jpg" />
 <script type="application/ld+json">
-{"headline":"Posts tagged with post","author":{"@type":"Person","name":"Jehee Cheon"},"description":"Jehee Cheons’s blog","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jeheecheon.github.io/assets/img/logo.png"},"name":"Jehee Cheon"},"image":"https://jeheecheon.github.io/assets/img/business-2717063_1920.jpg","url":"https://jeheecheon.github.io/tags/post/","@context":"https://schema.org"}</script>
+{"headline":"Search","author":{"@type":"Person","name":"Jehee Cheon"},"description":"Search this site","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jeheecheon.github.io/assets/img/logo.png"},"name":"Jehee Cheon"},"image":"https://jeheecheon.github.io/assets/img/business-2717063_1920.jpg","url":"https://jeheecheon.github.io/search/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
     
     
@@ -200,7 +200,7 @@
           <a href="#top" class="title bar__title">
             
             <div class="main-title">
-              Posts tagged with post
+              Search
             </div>
             <div class="sub-title">
               Jehee Cheon
@@ -269,29 +269,22 @@
 </section>
     </div>
     <div class="main-content inner__main-content">
-      <div class="text--tag-posts main-content__text--recent-posts">Posts tagged with post</div>
-<nav class="post-items">
-  
-  
-  
-  <a class="post-item" href="/programming/web/jekyll/2020/01/01/asd/">
-    <div class="img-container post-item__img-container">
-      <img class="img" src="/assets/img/business-2717063_1920.jpg" alt="Post Image" />
-      <h1 class="title img-container__title">Asd</h1>
-    </div>
-    <div class="text post-item__text">
-      <p class="tag text__tag">#testing, #post, #blog, #jehee, #cheon</p>
-      <p class="excerpt text_excerpt">블로그 포스트 테스트 중입니다.</p>
-      <p class="date text__date">Jan 01 2020, 00:00</p>
-      <p class="categories text__categories">Categories: programming, web, jekyll</p>
-    </div>
-  </a>
-  
-</nav>
+      <form action="/search">
+  <div class="tipue_search_left"><img src="/assets/tipuesearch/search.png" class="tipue_search_icon"></div>
+  <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+  <div style="clear: both;"></div>
+</form>
+<div id="tipue_search_content"></div>
 
-<!-- Pagination links -->
-
-
+<script>
+$(document).ready(function() {
+  $('#tipue_search_input').tipuesearch({
+    'wholeWords' : false,
+    'showTime' : false,
+    'minimumLength' : 1
+  });
+});
+</script>
     </div>
     <div class="r-content inner__r-content">
       <section class="category-card">

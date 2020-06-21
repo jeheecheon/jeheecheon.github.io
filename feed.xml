@@ -5,8 +5,8 @@
     <description>Jehee Cheons's blog</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Jun 2020 13:05:55 +0000</pubDate>
-    <lastBuildDate>Sun, 21 Jun 2020 13:05:55 +0000</lastBuildDate>
+    <pubDate>Sun, 21 Jun 2020 14:27:00 +0000</pubDate>
+    <lastBuildDate>Sun, 21 Jun 2020 14:27:00 +0000</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -31,7 +31,7 @@
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;
-a&lt;/p&gt;
+content&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
         <link>https://jeheecheon.github.io/programming/web/jekyll/2020/01/01/asd/</link>
