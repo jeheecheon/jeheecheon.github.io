@@ -1,11 +1,11 @@
 ############################################################
 # Global variables
-profile: "/assets/img/20181205_211335_971.jpg"
-favicon: "/assets/img/favicon.ico"
+profile: "/assets/img/site/20181205_211335_971.jpg"
+favicon: "/assets/img/site/favicon.ico"
 ############################################################
 ############################################################
 # gems
-
+# tipue_search
 tipue_search:
     include:
         pages: false
@@ -19,7 +19,7 @@ tipue_search:
 title: "Jehee Cheon"
 description: "Jehee Cheons's blog"
 author: "Jehee Cheon"
-logo: "/assets/img/logo.png"
+logo: "/assets/img/site/logo.png"
 social:
   name: Jehee Cheon
   links:
@@ -28,7 +28,7 @@ social:
     - "https://www.linkedin.com/in/jehee-cheon-93a3081b0/"
     - "https://github.com/jeheecheon"
     - "https://www.instagram.com/jeheecheon/"
-image: "/assets/img/business-2717063_1920.jpg"
+image: "/assets/img/background/default.jpg"
 
 # Admin
 jekyll_admin:
@@ -115,7 +115,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "/assets/img/business-2717063_1920.jpg"
+      image: "/assets/img/background/default.jpg"
       
 ############################################################
 # Filtering Content

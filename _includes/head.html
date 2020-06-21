@@ -25,18 +25,23 @@
 
     <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url}}" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
+
 
     <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
 
-    {% if page.tipue_search_active or layout.tipue_search_active %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/normalize.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_url }}">
-    <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
-    <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
-    <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
+
+
+    {% if page.tipue_search_active or layout.tipue_search_active %}    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/tipuesearch.css" | relative_url }}">
+    <script src="{{ "/assets/js/tipuesearch_content.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/tipuesearch_set.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/tipuesearch.js" | relative_url }}"></script>
     {% endif %}
 </head>
