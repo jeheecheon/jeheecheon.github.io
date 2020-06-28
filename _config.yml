@@ -2,6 +2,8 @@
 # Global variables
 profile: "/assets/img/site/20181205_211335_971.jpg"
 favicon: "/assets/img/site/favicon.ico"
+locale: "en_US"
+twitter_url: "https://twitter.com/JeheeCheon"
 ############################################################
 ############################################################
 # gems
@@ -28,7 +30,6 @@ social:
     - "https://www.linkedin.com/in/jehee-cheon-93a3081b0/"
     - "https://github.com/jeheecheon"
     - "https://www.instagram.com/jeheecheon/"
-image: "/assets/img/background/default.jpg"
 
 # Admin
 jekyll_admin:

@@ -1,45 +1,69 @@
+{% assign lastCate = page.categories | last %}
+{% assign lastTag = page.tags | last %}
+{% assign year = "now" | date: "%Y" %}
+{% if page.description %}
+{% assign page_description = page.description %}
+{% else %}
+{% assign page_description = site.description %}
+{% endif %}
 <head>
-    {% assign lastCate = page.categories | last %}
-    {% assign lastTag = page.tags | last %}
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <meta name="keywords" content="{% for tag in page.tags %}{{tag}}{% if lastCate != nil or tag != lastTag %}, {% endif %}{% endfor %}{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
-    <meta name="robots" content="All" />
     <meta http-equiv="Reply-To" content="jeheecheon@gmail.com" />
     <meta http-equiv="Email" content="jeheecheon@gmail.com" />
-    <meta name="classification" content="{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
-    <meta name="copyright" content="{{site.copyright}}" />
+    <meta name="title" content="{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author}}" />
+    <meta name="description" content="{{ page_description }}">
+    <meta property="og:locale" content="{{ site.locale }}" />
+    <meta name="robots" content="All" />
+    <meta name="copyright" content="(C) {{ year }}. {{site.author}} All rights reserved." />
     <meta name="subject" content="IT" />
-    <meta name="title" content="{{site.title}}" />
-    {% seo %}    
-    {% if jekyll.environment == 'production' %}
+    {% if lastCate or lastTag %}
+    <meta name="keywords" content="{% for tag in page.tags %}{{tag}}{% if lastCate != nil or tag != lastTag %}, {% endif %}{% endfor %}{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
+    <meta name="classification" content="{% for cate in page.categories %}{{ cate }}{% if lastCate != cate %}, {%endif%}{% endfor %}" />
+    {% endif %}
+
+<!-- Facebook integration -->
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% if page.image %}<meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}"/>{% endif %}
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{{ page_description }}"/>
+<!-- Twitter integration -->
+    <meta name="twitter:card" content="summary">
+    {% if site.twitter_url %}<meta name="twitter:site" content="{{ site.twitter_url }}">{% endif %}
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
+    <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+
+    <link rel="shortcut icon" type="image/png" href="{{ site.logo | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" sizes="196x196" href="{{ site.logo | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="apple-touch-icon" href="{{ site.logo | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.baseurl | prepend: site.url }}" type="image/x-icon">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url }}" />
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+<!--  -->
+<!--  -->
+<!--  -->
     <meta name="google-site-verification" content="OOwp8l6OX4ZRBSgTb9rnln2e9E9z3YmAWOQojdeQ8Qc" />
     <meta name="naver-site-verification" content="179d04771774c6eb84fcd7e55dbfce37e2355826" />
     {% include GoogleAnalytics.html %}
     <!-- Googld AdSense -->
     <script data-ad-client="ca-pub-8498679271828458" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    {% endif %}
-    <!-- <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="200" /> -->
-
-    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.baseurl | prepend: site.url }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ site.favicon | prepend: site.baseurl | prepend: site.url }}">
-
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
-
-
-    <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
-
-
-
+<!--  -->
+<!--  -->
+<!--  -->
     {% if page.tipue_search_active or layout.tipue_search_active %}    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="{{ "/assets/css/tipuesearch.css" | prepend: site.baseurl | prepend: site.url }}">

@@ -36,11 +36,11 @@
         <ul class="menu1 footer__menu1">
           <li class="item menu__item"><a class="link item__link" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">Blog</a></li>
           <li class="item menu__item"><a class="link item__link" href="{{ "/about" | prepend: site.baseurl | prepend: site.url }}">About</a></li>
-          <li class="item menu__item"><a class="link item__link" href="{{ " /contact" | prepend: site.baseurl | prepend: site.url }}">Contact</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/portfolio" | prepend: site.baseurl | prepend: site.url }}">Portfolio</a></li>
         </ul>
         <ul class="menu2 footer__menu2">
-          <li class="item menu__item"><a class="link item__link" href="{{ "/portfolio" | prepend: site.baseurl | prepend: site.url }}">Portfolio</a></li>
           <li class="item menu__item"><a class="link item__link" href="{{ "/daily_life" | prepend: site.baseurl | prepend: site.url }}">Daily Life</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/categories" | prepend: site.baseurl | prepend: site.url }}">Categories</a></li>
           <li class="item menu__item"><a class="link item__link" href="{{ "/tags" | prepend: site.baseurl | prepend: site.url }}">Tags</a></li>
         </ul>
         <div class="site-info footer__site-info">
@@ -49,7 +49,7 @@
           <div class="text site-info__text">
             <p class="title text__title">{{site.title}}</p>
             {% assign year = "now" | date: "%Y" %}
-            <p class="copyright text__copyright">(C) {{ year }}. {{site.author}} All rights reserved. </p>
+            <p class="copyright text__copyright">(C) {{ year }}. {{site.author}} All rights reserved.</p>
           </div>
         </div>
       </footer>

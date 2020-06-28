@@ -241,10 +241,15 @@
   }
 
   .comment {
-    margin: 0 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 10px 30px;
     padding: 10px;
     background-color: $backgroundColor1;
     border-radius: 5px;
+    max-width: 1428px;
+    color: $baseColor2;
   }
 }
 
