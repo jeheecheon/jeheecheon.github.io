@@ -39,7 +39,7 @@ jekyll_admin:
 # Paginate-v2
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 5
   permalink: "/page-:num/"
   title: ":title"
   limit: 0
@@ -50,7 +50,7 @@ pagination:
   tag: ""
   locale: ""
   trail:
-    before: 2
+    before: 1
     after: 2
   extension: html
   indexpage: "index"

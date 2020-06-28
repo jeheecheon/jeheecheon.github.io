@@ -2,9 +2,9 @@
   {% for post in paginator.posts %}
   {% assign lastCate = post.categories | last %}
   {% assign lastTag = post.tags | last %}
-  <a class="post-item" href="{{ post.url | relative_url }}">
+  <a class="post-item" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
     <div class="img-container post-item__img-container">
-      <img class="img" src="{{post.image}}" alt="Post Image" />
+      <img class="img" src="{{post.image | prepend: site.baseurl | prepend: site.url}}" alt="Post Image" />
       <h1 class="title img-container__title">{{ post.title }}</h1>
     </div>
     <div class="text post-item__text">
@@ -24,7 +24,7 @@
     {% if paginator.previous_page %}
     <a
       class="link item__link"
-      href="{{ paginator.previous_page_path | relative_url }}"
+      href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}"
       ><i class="fas fa-chevron-left"></i
     ></a>
     {% else %}
@@ -38,7 +38,7 @@
   >
     <a
       class="link item__link"
-      href="{{ trail.path | relative_url }}"
+      href="{{ trail.path | prepend: site.baseurl | prepend: site.url }}"
       title="{{trail.title}}"
       >{{ trail.num }}</a
     >
@@ -49,7 +49,7 @@
     {% if paginator.next_page %}
     <a
       class="link item__link"
-      href="{{ paginator.next_page_path | relative_url }}"
+      href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}"
       ><i class="fas fa-chevron-right"></i
     ></a>
     {% else %}

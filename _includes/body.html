@@ -5,8 +5,8 @@
     <div class="page">
       <header class="header">
         <div class="bar header__bar">
-          <a href="/" class="logo--container bar__logo--container">
-            <img src="{{site.logo}}" alt="logo image" class="logo logo--container__logo">
+          <a href="{{"/"| prepend: site.baseurl | prepend: site.url}}" class="logo--container bar__logo--container">
+            <img src="{{site.logo | prepend: site.baseurl | prepend: site.url }}" alt="logo image" class="logo logo--container__logo">
           </a>
           <!-- <i class="far fa-user-circle logo bar__logo"></i> -->
           <a href="#top" class="title bar__title">
@@ -34,18 +34,18 @@
 
       <footer class="footer page__footer">
         <ul class="menu1 footer__menu1">
-          <li class="item menu__item"><a class="link item__link" href="/">Blog</a></li>
-          <li class="item menu__item"><a class="link item__link" href="/about">About</a></li>
-          <li class="item menu__item"><a class="link item__link" href="/Contact">Contact</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">Blog</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/about" | prepend: site.baseurl | prepend: site.url }}">About</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ " /contact" | prepend: site.baseurl | prepend: site.url }}">Contact</a></li>
         </ul>
         <ul class="menu2 footer__menu2">
-          <li class="item menu__item"><a class="link item__link" href="/portfolio">Portfolio</a></li>
-          <li class="item menu__item"><a class="link item__link" href="/Daily Life">Daily Life</a></li>
-          <li class="item menu__item"><a class="link item__link" href="/Tags">Tags</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/portfolio" | prepend: site.baseurl | prepend: site.url }}">Portfolio</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/daily_life" | prepend: site.baseurl | prepend: site.url }}">Daily Life</a></li>
+          <li class="item menu__item"><a class="link item__link" href="{{ "/tags" | prepend: site.baseurl | prepend: site.url }}">Tags</a></li>
         </ul>
         <div class="site-info footer__site-info">
           <div class="designer site-info__designer">Designed by Jehee Cheon</div>
-          <img src="{{site.logo}}" alt="logo image" class="logo author__logo">
+          <img src="{{site.logo | prepend: site.baseurl | prepend: site.url}}" alt="logo image" class="logo author__logo">
           <div class="text site-info__text">
             <p class="title text__title">{{site.title}}</p>
             {% assign year = "now" | date: "%Y" %}

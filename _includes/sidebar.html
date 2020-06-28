@@ -1,15 +1,15 @@
-<script src="/assets/js/sidebar.js" defer></script>
+<script src="{{ "/assets/js/sidebar.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
 
 <div class="sidebar">
   <i
     class="hamburger sidebar__hamburger fas fa-bars"
     onclick="toggleSidebar(0)"
   ></i>
-  <a href="/" class="profile sidebar__profile">
+  <a href="{{ "/" | prepend: site.baseurl | prepend: site.url}}" class="profile sidebar__profile">
     <div class="profile-img profile__profile-img">
       <div class="img-container profile-img__img-container">
         <img
-          src="{{site.profile}}"
+          src="{{site.profile | prepend: site.baseurl | prepend: site.url}}"
           alt="Profile Image"
           class="img img-container__img"
         />
@@ -32,7 +32,7 @@
     <i class="fas fa-search search-icon"></i>
   </div> -->
   <!-- <form action="/search">
-    <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
+    <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | prepend: site.baseurl | prepend: site.url }}" class="tipue_search_icon"></div>
     <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
     <div style="clear: both;"></div>
   </form> -->

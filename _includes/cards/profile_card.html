@@ -1,6 +1,6 @@
 <section class="profile-card">
     <div class="img-container profile-card__img-container">
-        <img src="{{site.profile}}" alt="Profile Image" class="img img-container__img">
+        <img src="{{site.profile | prepend: site.baseurl | prepend: site.url}}" alt="Profile Image" class="img img-container__img">
     </div>
     <div class="text profile__card">
         <div class="author text__author">{{site.title}}</div>

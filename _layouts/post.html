@@ -3,23 +3,23 @@ layout: default
 comments: true
 ---
 
-<script src="/assets/js/post.js" defer></script>
+<script src="{{ "/assets/js/post.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
 
 {% assign lastCate = page.categories | last %}
 {% assign lastTag = page.tags | last %}
 <section class="post main__post">
   <div class="post-cover post__post-cover">
-    <img class="img post-cover__img" src="{{page.image}}" alt="Cover Image of Post" />
+    <img class="img post-cover__img" src="{{page.image | prepend: site.baseurl | prepend: site.url}}" alt="Cover Image of Post" />
     <div class="background post-cover__background">
-      <a href="/" class="button--goToIndex">
+      <a href="{{"/"| prepend: site.baseurl | prepend: site.url}}" class="button--goToIndex">
         <pre>Click Here To Go To Index!</pre>
       </a>
     </div>
     <div class="text post-cover__text">
-      <a href="{{ site.autopages.categories.dir | relative_url }}/{{ lastCate | downcase }}/" class="category text__category">{{ lastCate }}</a>
+      <a href="{{ lastCate | downcase | prepend: "/" | prepend: site.autopages.categories.dir | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" class="category text__category">{{ lastCate }}</a>
       <h1 class="title text__title">{{page.title}}</h1>
       <a href="/" class="author text__author">
-        <img src="{{site.logo}}" alt="logo image" class="logo author__logo">
+        <img src="{{site.logo | prepend: site.baseurl | prepend: site.url}}" alt="logo image" class="logo author__logo">
         <p class="name author__name">{{site.author}}</p>
       </a>
       <p class="date text__date">{{page.date | date: "%b %d %Y, %H:%M"}}</p>
@@ -35,7 +35,7 @@ comments: true
         {{content}}
         <div class="tags main-content__tags">
           {% for tag in page.tags %}
-          <a href="{{ site.autopages.tags.dir | relative_url }}/{{ tag | downcase }}/" class="tag tags__tag">
+          <a href="{{ tag | downcase | prepend: "/" | prepend: site.autopages.tags.dir | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" class="tag tags__tag">
             #{{tag}}
           </a>
           {% endfor %}
@@ -53,10 +53,10 @@ comments: true
 
     <div class="inner related-posts__inner">
       {% for related_post in site.related_posts limit: 4 %}
-      <a href="{{ related_post.url | relative_url }}" class="related-post">
+      <a href="{{ related_post.url | prepend: site.baseurl | prepend: site.url }}" class="related-post">
         <img
           class="post-img"
-          src="{{ related_post.image }}"
+          src="{{ related_post.image | prepend: site.baseurl | prepend: site.url}}"
           alt="related_post.image"
         />
         <p class="post-title">{{ related_post.title }}</p>
@@ -74,7 +74,7 @@ comments: true
        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
       var disqus_config = function () {
-        this.page.url = "{{ page.url | relative_url | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
