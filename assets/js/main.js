@@ -1,119 +1,70 @@
-var getScrolled = false;
+var headerBar = document.querySelector(".header__bar");
 var lastScrollTop = window.scrollY;
 const delta = 40;
-var postCover = document.querySelector(".post-cover");
-var postContent = document.querySelector(".post__content");
-var mainContent = document.querySelector(".main-content");
-var goToIndexBtn = document.querySelector(".button--goToIndex");
-
-var sidebar = document.querySelector(".sidebar");
-var navs = document.getElementsByClassName("subnav");
-var sidebarHamburger = document.querySelector(".sidebar__hamburger");
-
-var page = document.querySelector(".page");
-
-var header = document.querySelector(".header");
-var headerBar = document.querySelector(".header__bar");
-var scrollIndicator = document.querySelector(".scroll-indicator");
-//
-//
-//
-//
-//
-
-if (!window.getComputedStyle) {
-  window.getComputedStyle = function (element) {
-    return element.currentStyle;
-  };
-}
-
-sidebar.style.right = window.getComputedStyle(sidebar, null).right;
-sidebar.style.width = window.getComputedStyle(sidebar, null).width;
-//
-//
-//
-//
-//
+var getScrolled = false;
 
 window.addEventListener("scroll", function () {
   getScrolled = true;
 });
 
-window.addEventListener("resize", initializeLayout);
-//
-//
-//
-//
-//
-function initializeLayout() {
-  var pageWidth =
-    document.body.clientWidth || document.documentElement.clientWidth;
+//respon when scrolling
+//In post
+if (document.querySelector(".post-cover")) {
+  var postCover = document.querySelector(".post-cover");
+  var postContent = document.querySelector(".post-content");
+  var scrollIndicator = document.querySelector(".scroll-indicator");
+  var goToIndexBtn = document.querySelector(".button--goToIndex");
 
-  if (pageWidth < 1068) toggleSidebar(1);
-  else toggleSidebar(2);
-}
-
-function resizeLayout() {
-  var pageWidth =
-    document.body.clientWidth || document.documentElement.clientWidth;
-
-  if (pageWidth < 1068) {
-    if (sidebar.style.right == "-300px") {
-      sidebar.style.width = "300px";
-      page.style.display = "block";
-      // header.style.display = "block";
-    } else {
-      sidebar.style.width = pageWidth + "px";
-      page.style.display = "none";
-      // header.style.display = "none";
+  //make reponsive header
+  modifyHeader();
+  setInterval(function () {
+    if (getScrolled) {
+      indicateProgress();
+      modifyHeader();
+      getScrolled = false;
     }
+  }, 100);
 
-    sidebarHamburger.style.display = "inline-block";
-  } else {
-    sidebar.style.width = "300px";
+  //display goToIndexBtn when header is clicked
+  headerBar.addEventListener("click", function () {
+    goToIndexBtn.style.visibility = "visible";
+    window.addEventListener("scroll", hideGoToIndexBtn);
+  });
+} //In Page
+else {
+  //toggle header
+  setInterval(function () {
+    if (getScrolled) {
+      toggleHeader(window.scrollY);
+      getScrolled = false;
+    }
+  }, 100);
+}
 
-    sidebarHamburger.style.display = "none";
+//It could Invoke function toggleHeader
+function modifyHeader() {
+  var nowScrollTop = window.scrollY;
+  //in post cover
+  if (nowScrollTop < postCover.clientHeight - headerBar.clientHeight) {
+    //remove background color, change color of hamburger to white
+    headerBar.style.backgroundColor = "initial";
+    headerBar.childNodes[1].style.color = "white"; //hamburger
+    //hide title
+    headerBar.childNodes[3].style.visibility = "hidden"; //title
   }
+  //in post content or others, except post cover
+  else {
+    //add background-color, change color of humburger to black
+    headerBar.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+    headerBar.childNodes[1].style.color = "black"; //hamburger
+    //display title
+    headerBar.childNodes[3].style.visibility = "visible"; //title
 
-  if (sidebar.style.right == "0px") {
-    header.style.width = page.style.width =
-      pageWidth - parseInt(sidebar.style.width) + "px";
-  } else header.style.width = page.style.width = "100%";
-}
-
-//
-//
-//
-//
-//
-//if control value is 1, sidebar will appear and the value is 2, sidebar will disappear
-function toggleSidebar(control) {
-  if (control) {
-    sidebar.style.right = control == 1 ? "-300px" : "0px";
-  } else {
-    if (sidebar.style.right == "0px") sidebar.style.right = "-300px";
-    //(sidebar.style.right == "-300px")
-    else sidebar.style.right = "0px";
+    toggleHeader(nowScrollTop);
   }
-  resizeLayout();
 }
 
-function toggleSubnav(i) {
-  if (i.parentNode.nextElementSibling.nodeName == "UL") {
-    i.parentNode.nextElementSibling.classList.toggle("subnav--hide");
-    i.parentNode.children[2].classList.toggle("fa-caret-square-down");
-    i.parentNode.children[2].classList.toggle("fa-caret-square-up");
-  } else i.nextElementSibling.click();
-}
-//
-//
-//
-//
-//
-function toggleHeader() {
-  var nowScrollTop =
-    document.body.scrollTop || document.documentElement.scrollTop;
-
+function toggleHeader(nowScrollTop) {
   if (Math.abs(lastScrollTop - nowScrollTop) <= delta) return;
 
   //when scrolling down
@@ -126,17 +77,19 @@ function toggleHeader() {
   }
   lastScrollTop = nowScrollTop;
 }
-//
-//
-//
-//
-//
 
-function includeJs(jsFilePath) {
-  var js = document.createElement("script");
+function indicateProgress() {
+  var winScroll = window.scrollY - postCover.clientHeight; //Skip post-cover's height
+  var height = postContent.clientHeight - window.innerHeight;
+  var scrolled = (winScroll / height) * 100;
 
-  js.type = "text/javascript";
-  js.src = jsFilePath;
+  if (winScroll < 0 || scrolled > 100) scrollIndicator.style.width = 0;
+  else scrollIndicator.style.width = scrolled + "%";
+}
 
-  document.body.appendChild(js);
+function hideGoToIndexBtn() {
+  if (window.scrollY > delta) {
+    goToIndexBtn.style.visibility = "hidden";
+    window.removeEventListener("scroll", hideGoToIndexBtn);
+  }
 }
