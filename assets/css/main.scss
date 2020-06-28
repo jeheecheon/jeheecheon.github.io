@@ -157,9 +157,12 @@ $backgroundColor2: rgb(245, 245, 245);
           .main-title {
             font-size: 1.2rem;
             font-weight: 700;
+            height: 30px;
+            overflow: hidden;
           }
           .sub-title {
             font-size: 0.8rem;
+            height: 20px;
           }
         }
       }
