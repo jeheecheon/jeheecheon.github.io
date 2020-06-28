@@ -214,9 +214,12 @@ pre {
         text-decoration: none; }
         .layout .page .header .bar .title .main-title {
           font-size: 1.2rem;
-          font-weight: 700; }
+          font-weight: 700;
+          height: 30px;
+          overflow: hidden; }
         .layout .page .header .bar .title .sub-title {
-          font-size: 0.8rem; }
+          font-size: 0.8rem;
+          height: 20px; }
     .layout .page .header .scroll-indicator {
       height: 6px;
       transition: width 0.1s ease-out;
@@ -259,7 +262,7 @@ pre {
             position: relative;
             display: block;
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 1.7rem;
             font-weight: 500;
             color: #464646;
             margin: 3vh auto; }
@@ -509,7 +512,7 @@ pre {
           transition: top 0.5s ease-in-out;
           position: relative;
           border-radius: 5px;
-          padding: 10px 10px 50px;
+          padding: 10px 10px 130px;
           width: 768px;
           font-size: 1rem;
           word-break: break-all;
@@ -517,14 +520,13 @@ pre {
           .layout .page .main .post .content .inner .main-content .tags {
             display: block;
             position: absolute;
-            bottom: 0;
-            padding-bottom: 10px; }
+            bottom: 0; }
             .layout .page .main .post .content .inner .main-content .tags .tag {
+              display: inline-block;
               background-color: rgba(224, 224, 224, 0.5);
-              margin-right: 10px;
+              margin: 0 10px 10px 0;
               text-decoration: none;
               color: #464646;
-              margin-top: 100%;
               padding: 3px; }
               .layout .page .main .post .content .inner .main-content .tags .tag:hover {
                 background-color: rgba(206, 206, 206, 0.5); }
