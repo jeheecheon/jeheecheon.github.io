@@ -60,7 +60,7 @@ function resizeLayout() {
   if (pageWidth < 1068) {
     if (sidebar.style.right == "-300px") {
       sidebar.style.width = "300px";
-      // page.style.display = "block";
+      //  page.style.display = "block";
       // header.style.display = "block";
     } else {
       sidebar.style.width = pageWidth + "px";
