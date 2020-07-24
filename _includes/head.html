@@ -53,6 +53,7 @@
     <script src="https://kit.fontawesome.com/941e1d3500.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    {% include codex/new-window-fix.html %}
 <!--  -->
 <!--  -->
 <!--  -->
@@ -66,9 +67,9 @@
 <!--  -->
     {% if page.tipue_search_active or layout.tipue_search_active %}    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="{{ "/assets/css/tipuesearch.css" | prepend: site.baseurl | prepend: site.url }}">
-    <script src="{{ "/assets/js/tipuesearch_content.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    <script src="{{ "/assets/js/tipuesearch_set.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    <script src="{{ "/assets/js/tipuesearch.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+    <link rel="stylesheet" href="{{ "/assets/tipuesearch/tipuesearch.css" | prepend: site.baseurl | prepend: site.url }}">
+    <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+    <script src="{{ "/assets/tipuesearch/tipuesearch.js" | prepend: site.baseurl | prepend: site.url }}"></script>
     {% endif %}
 </head>

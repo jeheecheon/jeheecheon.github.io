@@ -70,8 +70,8 @@ $backgroundColor2: rgb(245, 245, 245);
 .layout {
   .page {
     background-color: $backgroundColor2;
-    float: left;
     width: 100%;
+    position: relative;
     transition: width 0.9s ease-in-out;
     -moz-transition: width 0.9s ease-in-out;
     -o-transition: width 0.9s ease-in-out;
@@ -254,11 +254,11 @@ $backgroundColor2: rgb(245, 245, 245);
 }
 
 //clear
-.layout::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+// .layout::after {
+//   content: "";
+//   display: block;
+//   clear: both;
+// }
 
 /////////////////////////////////////////////////
 @media screen and (max-width: 768px) {
