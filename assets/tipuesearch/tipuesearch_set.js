@@ -1,4 +1,3 @@
-
 /*
 Tipue Search 7.1
 Copyright (c) 2019 Tipue

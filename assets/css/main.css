@@ -41,11 +41,6 @@ pre {
   overflow-x: hidden;
   background-color: #bddaf1;
   box-shadow: 3px 3px 5px 5px #aaaaaa; }
-  .sidebar .hamburger {
-    display: none;
-    font-size: 30px;
-    padding: 0 10px;
-    cursor: pointer; }
   .sidebar .profile {
     display: block;
     text-decoration: none;
@@ -53,7 +48,14 @@ pre {
     margin: 13px 10px;
     padding: 15px;
     border: 2px solid #95bfe2; }
+    .sidebar .profile .hamburger {
+      cursor: pointer;
+      position: absolute;
+      font-size: 30px;
+      color: #464646;
+      border-radius: 5px; }
     .sidebar .profile .profile-img .img-container {
+      display: inline-block;
       width: 100px;
       height: 100px;
       position: relative;
@@ -176,7 +178,10 @@ pre {
         box-sizing: border-box;
         font-size: 30px;
         padding: 3px 10px;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #464646;
+        margin-right: 10px;
+        border-radius: 5px; }
       .layout .page .header .bar .logo--container {
         margin-left: 10px;
         width: 35px;
@@ -186,10 +191,6 @@ pre {
         .layout .page .header .bar .logo--container .logo {
           width: 100%;
           height: auto; }
-      .layout .page .header .bar .hamburger {
-        color: #464646;
-        margin-right: 10px;
-        border-radius: 5px; }
       .layout .page .header .bar .title {
         color: #464646;
         -webkit-box-flex: 1;
@@ -242,6 +243,25 @@ pre {
           float: left;
           width: 768px;
           padding: 0 10px; }
+          .layout .page .main .content .inner .main-content .search {
+            height: 60px;
+            box-shadow: 3px 3px 5px 2px #aaaaaa;
+            margin-bottom: 80px; }
+            .layout .page .main .content .inner .main-content .search .search-bar {
+              height: 100%;
+              width: calc(100% - 50px);
+              background-color: white;
+              color: #296697; }
+            .layout .page .main .content .inner .main-content .search .search-button {
+              width: 50px;
+              height: 100%;
+              font-size: 20px;
+              background-color: white;
+              color: #296697; }
+            .layout .page .main .content .inner .main-content .search::after {
+              content: "";
+              display: block;
+              clear: both; }
           .layout .page .main .content .inner .main-content .text--recent-posts, .layout .page .main .content .inner .main-content .text--category-posts, .layout .page .main .content .inner .main-content .text--tag-posts {
             position: relative;
             display: block;
@@ -257,7 +277,7 @@ pre {
           height: fit-content;
           float: left; }
         .layout .page .main .content .inner .l-content .profile-card {
-          padding: 15px 15px 30px;
+          padding: 15px 15px 15px;
           margin-bottom: 25px;
           box-shadow: 3px 3px 5px 2px #aaaaaa;
           border-radius: 5px;
@@ -327,6 +347,23 @@ pre {
                 background-color: #464646; }
             .layout .page .main .content .inner .l-content .profile-card .social-media .linkedin {
               margin: 0 5%; }
+          .layout .page .main .content .inner .l-content .profile-card .search {
+            margin-top: 20px;
+            height: 60px; }
+            .layout .page .main .content .inner .l-content .profile-card .search .search-bar {
+              height: 100%;
+              width: calc(100% - 50px);
+              background-color: whitesmoke;
+              color: #296697; }
+            .layout .page .main .content .inner .l-content .profile-card .search .search-button {
+              width: 50px;
+              height: 100%;
+              background-color: whitesmoke;
+              color: #296697; }
+            .layout .page .main .content .inner .l-content .profile-card .search::after {
+              content: "";
+              display: block;
+              clear: both; }
         .layout .page .main .content .inner .r-content .category-card {
           padding: 15px 15px;
           margin-bottom: 25px;
@@ -523,7 +560,7 @@ pre {
           width: 300px;
           height: fit-content; }
         .layout .page .main .post .content .inner .l-content .profile-card {
-          padding: 15px 15px 30px;
+          padding: 15px 15px 15px;
           margin-bottom: 25px;
           box-shadow: 3px 3px 5px 2px #aaaaaa;
           border-radius: 5px;
@@ -593,6 +630,23 @@ pre {
                 background-color: #464646; }
             .layout .page .main .post .content .inner .l-content .profile-card .social-media .linkedin {
               margin: 0 5%; }
+          .layout .page .main .post .content .inner .l-content .profile-card .search {
+            margin-top: 20px;
+            height: 60px; }
+            .layout .page .main .post .content .inner .l-content .profile-card .search .search-bar {
+              height: 100%;
+              width: calc(100% - 50px);
+              background-color: whitesmoke;
+              color: #296697; }
+            .layout .page .main .post .content .inner .l-content .profile-card .search .search-button {
+              width: 50px;
+              height: 100%;
+              background-color: whitesmoke;
+              color: #296697; }
+            .layout .page .main .post .content .inner .l-content .profile-card .search::after {
+              content: "";
+              display: block;
+              clear: both; }
         .layout .page .main .post .content .inner .r-content .category-card {
           padding: 15px 15px;
           margin-bottom: 25px;
@@ -800,27 +854,31 @@ pre {
       text-align: center;
       margin-bottom: 20px; }
       .layout .page .main .trail .item {
+        font: 15px 'Source Code Pro', sans-serif;
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 3.5px;
+        font-size: 1rem;
+        text-transform: uppercase;
         list-style-type: none;
         background-color: rgba(189, 218, 241, 0.7);
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        border-radius: 3px;
+        transition: 0.3s;
         transition: transform 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out; }
         .layout .page .main .trail .item .link {
+          display: block;
+          padding: 10px 17px 11px 17px;
           text-decoration: none;
-          color: #464646; }
+          color: white; }
         .layout .page .main .trail .item:hover {
-          transform: scale(1.3, 1.3); }
+          background-color: #296697; }
       .layout .page .main .trail .selected {
-        transform: scale(1.3, 1.3); }
+        background-color: #296697; }
         .layout .page .main .trail .selected .link {
           cursor: none;
-          color: #bb406f; }
+          color: white; }
       .layout .page .main .trail .null {
         cursor: none; }
   .layout .page .footer {

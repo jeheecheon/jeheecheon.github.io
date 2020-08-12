@@ -109,32 +109,27 @@
     <script src="https://jeheecheon.github.io/assets/js/sidebar.js" defer></script>
 
 <div class="sidebar">
-  <i
+  <span class="profile sidebar__profile">
+
+    <i
     class="hamburger sidebar__hamburger fas fa-bars"
     onclick="toggleSidebar(0)"
   ></i>
-  <a href="https://jeheecheon.github.io/" class="profile sidebar__profile">
+
     <div class="profile-img profile__profile-img">
-      <div class="img-container profile-img__img-container">
+      <a href="https://jeheecheon.github.io/" class="img-container profile-img__img-container">
         <img
           src="https://jeheecheon.github.io/assets/img/site/20181205_211335_971.jpg"
           alt="Profile Image"
           class="img img-container__img"
         />
-      </div>
+      </a>
     </div>
     <div class="text profile__text">
       <p class="author text__author">Jehee Cheon</p>
       <p class="description text__description">Jehee Cheons's blog</p>
     </div>
-  </a>
-
-  <form class="search" action="/search">
-    <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
-    <button class="search-button" type="submit" class="tipue_search_button">
-      <i class="fas fa-search search-icon"></i>
-    </button>
-  </form>
+  </span>
 
   <div class="navigation sidebar__navigation">
     <div class="categories-container">
@@ -274,7 +269,7 @@
                 Post
             </div>
             <div class="info s1__info">
-                2
+                22
             </div>
         </div>
 
@@ -311,14 +306,20 @@
 
   <form class="search" action="/search">
     <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
-    <button class="search-button" type="submit" class="tipue_search_button">
+    <button class="search-button tipue_search_button" type="submit">
       <i class="fas fa-search search-icon"></i>
     </button>
   </form>
 </section>
     </div>
     <div class="main-content inner__main-content">
-      <div id="tipue_search_content"></div>
+      <form class="search" action="/search">
+  <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
+  <button class="search-button tipue_search_button" type="submit">
+    <i class="fas fa-search search-icon"></i>
+  </button>
+</form>
+<div id="tipue_search_content"></div>
 
 <script>
 $(document).ready(function() {

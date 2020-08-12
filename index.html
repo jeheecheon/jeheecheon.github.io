@@ -109,32 +109,27 @@
     <script src="https://jeheecheon.github.io/assets/js/sidebar.js" defer></script>
 
 <div class="sidebar">
-  <i
+  <span class="profile sidebar__profile">
+
+    <i
     class="hamburger sidebar__hamburger fas fa-bars"
     onclick="toggleSidebar(0)"
   ></i>
-  <a href="https://jeheecheon.github.io/" class="profile sidebar__profile">
+
     <div class="profile-img profile__profile-img">
-      <div class="img-container profile-img__img-container">
+      <a href="https://jeheecheon.github.io/" class="img-container profile-img__img-container">
         <img
           src="https://jeheecheon.github.io/assets/img/site/20181205_211335_971.jpg"
           alt="Profile Image"
           class="img img-container__img"
         />
-      </div>
+      </a>
     </div>
     <div class="text profile__text">
       <p class="author text__author">Jehee Cheon</p>
       <p class="description text__description">Jehee Cheons's blog</p>
     </div>
-  </a>
-
-  <form class="search" action="/search">
-    <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
-    <button class="search-button" type="submit" class="tipue_search_button">
-      <i class="fas fa-search search-icon"></i>
-    </button>
-  </form>
+  </span>
 
   <div class="navigation sidebar__navigation">
     <div class="categories-container">
@@ -271,7 +266,7 @@
                 Post
             </div>
             <div class="info s1__info">
-                2
+                22
             </div>
         </div>
 
@@ -308,7 +303,7 @@
 
   <form class="search" action="/search">
     <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
-    <button class="search-button" type="submit" class="tipue_search_button">
+    <button class="search-button tipue_search_button" type="submit">
       <i class="fas fa-search search-icon"></i>
     </button>
   </form>
@@ -335,22 +330,130 @@
   
   
   
-  <a class="post-item" href="https://jeheecheon.github.io/programming/web/jekyll/2020/01/01/asd/">
+  <a class="post-item" href="https://jeheecheon.github.io/daily-life/2020/01/02/aaa-copy/">
     <div class="img-container post-item__img-container">
       <img class="img" src="https://jeheecheon.github.io/assets/img/background/default.jpg" alt="Post Image" />
-      <h1 class="title img-container__title">Asd</h1>
+      <h1 class="title img-container__title">Aaa copy</h1>
     </div>
     <div class="text post-item__text">
-      <p class="tag text__tag">#testing, #post, #blog, #jehee, #cheon</p>
-      <p class="excerpt text_excerpt">블로그 포스트 테스트 중입니다.</p>
-      <p class="date text__date">Jan 01 2020, 00:00</p>
-      <p class="categories text__categories">Categories: programming, web, jekyll</p>
+      <p class="tag text__tag">#daily, #life</p>
+      <p class="excerpt text_excerpt">my life</p>
+      <p class="date text__date">Jan 02 2020, 00:00</p>
+      <p class="categories text__categories">Categories: daily-life</p>
+    </div>
+  </a>
+  
+  
+  
+  <a class="post-item" href="https://jeheecheon.github.io/daily-life/2020/01/02/aaa-copy-9/">
+    <div class="img-container post-item__img-container">
+      <img class="img" src="https://jeheecheon.github.io/assets/img/background/default.jpg" alt="Post Image" />
+      <h1 class="title img-container__title">Aaa copy 9</h1>
+    </div>
+    <div class="text post-item__text">
+      <p class="tag text__tag">#daily, #life</p>
+      <p class="excerpt text_excerpt">my life</p>
+      <p class="date text__date">Jan 02 2020, 00:00</p>
+      <p class="categories text__categories">Categories: daily-life</p>
+    </div>
+  </a>
+  
+  
+  
+  <a class="post-item" href="https://jeheecheon.github.io/daily-life/2020/01/02/aaa-copy-8/">
+    <div class="img-container post-item__img-container">
+      <img class="img" src="https://jeheecheon.github.io/assets/img/background/default.jpg" alt="Post Image" />
+      <h1 class="title img-container__title">Aaa copy 8</h1>
+    </div>
+    <div class="text post-item__text">
+      <p class="tag text__tag">#daily, #life</p>
+      <p class="excerpt text_excerpt">my life</p>
+      <p class="date text__date">Jan 02 2020, 00:00</p>
+      <p class="categories text__categories">Categories: daily-life</p>
+    </div>
+  </a>
+  
+  
+  
+  <a class="post-item" href="https://jeheecheon.github.io/daily-life/2020/01/02/aaa-copy-7/">
+    <div class="img-container post-item__img-container">
+      <img class="img" src="https://jeheecheon.github.io/assets/img/background/default.jpg" alt="Post Image" />
+      <h1 class="title img-container__title">Aaa copy 7</h1>
+    </div>
+    <div class="text post-item__text">
+      <p class="tag text__tag">#daily, #life</p>
+      <p class="excerpt text_excerpt">my life</p>
+      <p class="date text__date">Jan 02 2020, 00:00</p>
+      <p class="categories text__categories">Categories: daily-life</p>
     </div>
   </a>
   
 </nav>
 
 <!-- Pagination links -->
+
+<ul class="trail">
+  <li class="item trail__item">
+    
+    <span class="link item__link">&#60;</span>
+    
+  </li>
+
+  
+  <li
+    class="item trail__item selected"
+  >
+    <a
+      class="link item__link"
+      href="https://jeheecheon.github.io/index.html"
+      title="Jehee Cheon"
+      >1</a
+    >
+  </li>
+  
+  <li
+    class="item trail__item "
+  >
+    <a
+      class="link item__link"
+      href="https://jeheecheon.github.io/page-2/index.html"
+      title="Jehee Cheon"
+      >2</a
+    >
+  </li>
+  
+  <li
+    class="item trail__item "
+  >
+    <a
+      class="link item__link"
+      href="https://jeheecheon.github.io/page-3/index.html"
+      title="Jehee Cheon"
+      >3</a
+    >
+  </li>
+  
+  <li
+    class="item trail__item "
+  >
+    <a
+      class="link item__link"
+      href="https://jeheecheon.github.io/page-4/index.html"
+      title="Jehee Cheon"
+      >4</a
+    >
+  </li>
+  
+
+  <li class="item trail__item">
+    
+    <a
+      class="link item__link"
+      href="https://jeheecheon.github.io/page-2/index.html"
+      >&#62;</a>
+    
+  </li>
+</ul>
 
 
     </div>
