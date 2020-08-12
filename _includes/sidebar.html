@@ -1,32 +1,27 @@
 <script src="{{ "/assets/js/sidebar.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
 
 <div class="sidebar">
-  <i
+  <span class="profile sidebar__profile">
+
+    <i
     class="hamburger sidebar__hamburger fas fa-bars"
     onclick="toggleSidebar(0)"
   ></i>
-  <a href="{{ "/" | prepend: site.baseurl | prepend: site.url}}" class="profile sidebar__profile">
+
     <div class="profile-img profile__profile-img">
-      <div class="img-container profile-img__img-container">
+      <a href="{{ "/" | prepend: site.baseurl | prepend: site.url}}" class="img-container profile-img__img-container">
         <img
           src="{{site.profile | prepend: site.baseurl | prepend: site.url}}"
           alt="Profile Image"
           class="img img-container__img"
         />
-      </div>
+      </a>
     </div>
     <div class="text profile__text">
       <p class="author text__author">{{site.title}}</p>
       <p class="description text__description">{{site.description}}</p>
     </div>
-  </a>
-
-  <form class="search" action="/search">
-    <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
-    <button class="search-button" type="submit" class="tipue_search_button">
-      <i class="fas fa-search search-icon"></i>
-    </button>
-  </form>
+  </span>
 
   <div class="navigation sidebar__navigation">
     <div class="categories-container">

@@ -25,10 +25,9 @@
     <a
       class="link item__link"
       href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}"
-      ><i class="fas fa-chevron-left"></i
-    ></a>
+      >&#60;</a>
     {% else %}
-    <i class="link item__link fas fa-chevron-left"></i>
+    <span class="link item__link">&#60;</span>
     {% endif %}
   </li>
 
@@ -50,10 +49,9 @@
     <a
       class="link item__link"
       href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}"
-      ><i class="fas fa-chevron-right"></i
-    ></a>
+      >&#62;</a>
     {% else %}
-    <i class="link item__link fas fa-chevron-right"></i>
+    <span class="link item__link">&#62;</span>
     {% endif %}
   </li>
 </ul>

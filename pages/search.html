@@ -6,6 +6,13 @@ permalink: /search/
 tipue_search_active: true
 exclude_from_search: true
 ---
+
+<form class="search" action="/search">
+  <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
+  <button class="search-button tipue_search_button" type="submit">
+    <i class="fas fa-search search-icon"></i>
+  </button>
+</form>
 <div id="tipue_search_content"></div>
 
 <script>

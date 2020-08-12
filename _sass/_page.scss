@@ -30,6 +30,9 @@
       float: left;
       width: 768px;
       padding: 0 10px;
+
+      @import "search";
+
       
       .text--recent-posts, .text--category-posts, .text--tag-posts {
         position: relative;

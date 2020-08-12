@@ -60,19 +60,14 @@ function resizeLayout() {
   if (pageWidth < 1068) {
     if (sidebar.style.right == "-300px") {
       sidebar.style.width = "300px";
-      //  page.style.display = "block";
-      // header.style.display = "block";
+        sidebarHamburger.style.visibility = "hidden";
     } else {
       sidebar.style.width = pageWidth + "px";
-      // page.style.display = "none";
-      // header.style.display = "none";
+      sidebarHamburger.style.visibility = "visible";
     }
-
-    sidebarHamburger.style.display = "inline-block";
   } else {
+    sidebarHamburger.style.visibility = "hidden";
     sidebar.style.width = "300px";
-
-    sidebarHamburger.style.display = "none";
   }
 
   if (sidebar.style.right == "0px") {
@@ -91,9 +86,12 @@ function toggleSidebar(control) {
   if (control) {
     sidebar.style.right = control == 1 ? "-300px" : "0px";
   } else {
-    if (sidebar.style.right == "0px") sidebar.style.right = "-300px";
-    //(sidebar.style.right == "-300px")
-    else sidebar.style.right = "0px";
+    if (sidebar.style.right == "0px") {
+      sidebar.style.right = "-300px";
+    }
+    else {
+      sidebar.style.right = "0px";
+    }
   }
   resizeLayout();
 }

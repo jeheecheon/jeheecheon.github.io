@@ -123,6 +123,9 @@ $backgroundColor2: rgb(245, 245, 245);
           font-size: 30px;
           padding: 3px 10px;
           cursor: pointer;
+          color: $baseColor5;
+          margin-right: 10px;
+          border-radius: 5px;
         }
 
         .logo--container {
@@ -136,12 +139,6 @@ $backgroundColor2: rgb(245, 245, 245);
             width: 100%;
             height: auto;
           }
-        }
-
-        .hamburger {
-          color: $baseColor5;
-          margin-right: 10px;
-          border-radius: 5px;
         }
 
         .title {
