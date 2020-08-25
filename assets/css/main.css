@@ -855,8 +855,9 @@ pre {
       margin-bottom: 20px; }
       .layout .page .main .trail .item {
         font: 15px 'Source Code Pro', sans-serif;
+        cursor: pointer;
         display: inline-block;
-        margin: 0 3.5px;
+        margin: 0 0.8px;
         font-size: 1rem;
         text-transform: uppercase;
         list-style-type: none;
@@ -877,7 +878,7 @@ pre {
       .layout .page .main .trail .selected {
         background-color: #296697; }
         .layout .page .main .trail .selected .link {
-          cursor: none;
+          cursor: unset;
           color: white; }
       .layout .page .main .trail .null {
         cursor: none; }
@@ -916,7 +917,7 @@ pre {
       display: inline-block;
       list-style: none;
       margin: 0 20px;
-      text-align: left;
+      text-align: center;
       width: 150px; }
       .layout .page .footer .menu1 .item,
       .layout .page .footer .menu2 .item {
