@@ -6,7 +6,6 @@ locale: "en_US"
 twitter_url: "https://twitter.com/JeheeCheon"
 ############################################################
 ############################################################
-# gems
 # tipue_search
 tipue_search:
     include:
@@ -85,6 +84,13 @@ autopages:
 autolink_email:
   link_attr: class='email-link' # attributes to add to the link
   skip_tags: ['div']            # tags to skip
+
+facebook_url: 
+twitter_url: 
+linkedin_url: 
+googleplus_url:
+pinterest_url:
+instagram_url: https://www.instagram.com/jeheecheon/
 ############################################################
 ############################################################
 # source:

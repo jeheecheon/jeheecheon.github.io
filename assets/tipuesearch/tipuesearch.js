@@ -353,20 +353,20 @@ http://www.tipue.com/search
                     "</div>";
                 }
 
-                if (set.showURL) {
-                  var s_u = found[i].url.toLowerCase();
-                  if (s_u.indexOf("http://") == 0) {
-                    s_u = s_u.slice(7);
-                  }
-                  out +=
-                    '<div class="tipue_search_content_url"><a href="' +
-                    found[i].url +
-                    '"' +
-                    tipue_search_w +
-                    ">" +
-                    s_u +
-                    "</a></div>";
-                }
+                // if (set.showURL) {
+                //   var s_u = found[i].url.toLowerCase();
+                //   if (s_u.indexOf("http://") == 0) {
+                //     s_u = s_u.slice(7);
+                //   }
+                //   out +=
+                //     '<div class="tipue_search_content_url"><a href="' +
+                //     found[i].url +
+                //     '"' +
+                //     tipue_search_w +
+                //     ">" +
+                //     "READ MORE" +
+                //     "</a></div>";
+                // }
 
                 if (found[i].img) {
                   if (set.imageZoom) {
@@ -455,6 +455,22 @@ http://www.tipue.com/search
                     '<div class="tipue_search_note">' +
                     found[i].note +
                     "</div>";
+                }
+
+                //Its place has been changed
+                if (set.showURL) {
+                  var s_u = found[i].url.toLowerCase();
+                  if (s_u.indexOf("http://") == 0) {
+                    s_u = s_u.slice(7);
+                  }
+                  out +=
+                    '<div class="tipue_search_content_url"><a href="' +
+                    found[i].url +
+                    '"' +
+                    tipue_search_w +
+                    ">" +
+                    "READ MORE" +
+                    "</a></div>";
                 }
 
                 out += "</div>";

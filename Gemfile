@@ -8,6 +8,5 @@ group :jekyll_plugins do
     gem "jekyll-paginate-v2"
     gem "jekyll-tagging-related_posts"
     gem 'jekyll-autolink_email'
-    gem "jekyll-youtube"
     gem "kramdown-parser-gfm"
 end
