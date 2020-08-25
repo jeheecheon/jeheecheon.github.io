@@ -1,6 +1,6 @@
 <section class="profile-card">
     <div class="img-container profile-card__img-container">
-        <img src="{{site.profile | prepend: site.baseurl | prepend: site.url}}" alt="Profile Image" class="img img-container__img">
+        <a href="{{ "/" | prepend: site.baseurl | prepend: site.url}}"><img src="{{site.profile | prepend: site.baseurl | prepend: site.url}}" alt="Profile Image" class="img img-container__img"></a>
     </div>
     <div class="text profile__card">
         <div class="author text__author">{{site.title}}</div>
@@ -45,19 +45,6 @@
             </div>
         </div>
     </div>
-
-
-
-      <!-- <div class="search">
-    <input
-      class="search-btn sidebar__search"
-      id="search"
-      type="text"
-      name="search"
-      placeholder="Search posts"
-    />
-    <i class="fas fa-search search-icon"></i>
-  </div> -->
 
   <form class="search" action="/search">
     <input class="search-bar" type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" placeholder="Search this blog" required>
