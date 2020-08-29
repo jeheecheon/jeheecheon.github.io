@@ -1,8 +1,8 @@
 - title: Home
   url: ""
   icon: "far fa-building"
-- title: About
-  url: "about"
+- title: About Me
+  url: "about-me"
   icon: "far fa-id-card"
 - title: Daily life
   category: daily-life
