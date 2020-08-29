@@ -7,16 +7,16 @@
 - title: Daily life
   category: daily-life
   icon: "far fa-grin-beam"
-- title: Programming
-  category: programming
-  icon: "far fa-file-code"
-  hidden: false
-  subnav:
-    - title: Web
-      category: web
-      hidden: true
-      icon: "far fa-file-code"
-      subnav:
-        - title: Jekyll
-          category: jekyll
-          icon: "far fa-file-code"
+# - title: Programming
+#   category: programming
+#   icon: "far fa-file-code"
+#   hidden: false
+#   subnav:
+#     - title: Web
+#       category: web
+#       hidden: true
+#       icon: "far fa-file-code"
+#       subnav:
+#         - title: Jekyll
+#           category: jekyll
+#           icon: "far fa-file-code"
