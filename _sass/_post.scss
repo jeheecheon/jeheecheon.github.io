@@ -188,7 +188,7 @@
             background-color: rgba(224, 224, 224, 0.5);
             margin: 0 10px 10px 0;
             text-decoration: none;
-            color: $baseColor5;
+            color: $baseColor5;          
             font-size: 14px;
             padding: 3px;
             &:hover {
@@ -247,12 +247,11 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 0 30px;
+    margin: 0 10px 30px;
     padding: 10px;
     background-color: $backgroundColor1;
     border-radius: 5px;
     max-width: 1428px;
-    width: 100%;
     color: $baseColor2;
   }
 }

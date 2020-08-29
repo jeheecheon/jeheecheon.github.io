@@ -7,6 +7,10 @@ twitter_url: "https://twitter.com/JeheeCheon"
 instagram_url: "https://www.instagram.com/jeheecheon/"
 github_url: "https://github.com/jeheecheon"
 linkedin_url: "https://www.linkedin.com/in/jehee-cheon-93a3081b0/"
+facebook_url: 
+twitter_url: 
+googleplus_url:
+pinterest_url:
 ############################################################
 ############################################################
 # tipue_search
@@ -87,13 +91,6 @@ autopages:
 autolink_email:
   link_attr: class='email-link' # attributes to add to the link
   skip_tags: ['div']            # tags to skip
-
-facebook_url: 
-twitter_url: 
-linkedin_url: 
-googleplus_url:
-pinterest_url:
-instagram_url: https://www.instagram.com/jeheecheon/
 ############################################################
 ############################################################
 # source:

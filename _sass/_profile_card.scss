@@ -40,8 +40,8 @@
     .s1,
     .s2,
     .s3 {
-      width: 28%;
-      display: inline-block;
+      float: left;
+      width: 30%;
 
       .text {
         display: inline-block;
@@ -53,6 +53,15 @@
 
       }
     }
+    .s2 {
+      margin: 0 5%;
+    }
+    //clear
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 
   .social-media {
@@ -63,15 +72,15 @@
     .github,
     .linkedin,
     .instagram {
+      float: left;
       cursor: pointer;
-      display: inline-block;
       font-size: 2rem;
 
       color: $baseColor5;
       transition: color 0.5s ease-in-out;
 
       text-align: center;
-      width: 28%;
+      width: 30%;
       box-shadow: 3px 3px 5px 2px $shadowColor;
       border-radius: 5px;
 
@@ -83,6 +92,12 @@
     }
     .linkedin {
       margin: 0 5%;
+    }
+    //clear
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
     }
   }
 
