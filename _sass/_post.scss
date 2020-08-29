@@ -247,11 +247,12 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 10px 30px;
+    margin-bottom: 30px;
     padding: 10px;
     background-color: $backgroundColor1;
     border-radius: 5px;
     max-width: 1428px;
+    width: 100%;
     color: $baseColor2;
   }
 }
