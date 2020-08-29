@@ -5,9 +5,52 @@
     <description>Jehee Cheons's blog</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Aug 2020 05:51:18 +0000</pubDate>
-    <lastBuildDate>Tue, 25 Aug 2020 05:51:18 +0000</lastBuildDate>
+    <pubDate>Sat, 29 Aug 2020 11:02:58 +0000</pubDate>
+    <lastBuildDate>Sat, 29 Aug 2020 11:02:58 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>jekyll로 개인 블로그 개설!</title>
+        <description>&lt;h1 id=&quot;jekyll-블로그-개설&quot;&gt;&lt;center&gt;jekyll 블로그 개설!&lt;/center&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/post/ant.gif&quot; alt=&quot;춤추는 엔트 사진&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;블로그 이주했습니다!&lt;br /&gt;
+우연히 &lt;strong&gt;jekyll(static site generator)&lt;/strong&gt; 를 알게됐고 마침 프론트엔드를 막 공부하던 중이었어서
+직접 블로그 theme 을 코딩했보게 됐습니다.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/post/blog-code.png&quot; alt=&quot;블로그 코드 스크린샷&quot; width=&quot;100%&quot; /&gt;
+근데 이게.. 그냥 네이버, 다음 블로그처럼 클릭 몇 번 하면 똿! 하고 만들어 지던거 생각하면서 가볍게 시작했는데 생각보다 
+코드도 꽤 길어지고 쉽지 않더라구요..&lt;br /&gt;
+&lt;br /&gt;
+예를 들자면..&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;html에서 태그 네이밍, 구성&lt;/li&gt;
+  &lt;li&gt;css에서는 float, 익스플로러 호환.. , 메뉴바, 사이드 바(프로필 바, 카테고리 바)&lt;/li&gt;
+  &lt;li&gt;js 는 event listenr, 윈도우 크기 변경 시 메뉴바 크기 재조정.., 메뉴바 클릭 구현&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;등등 뭐,,,, 버그도 많았고 삽질도 몇 번 해보게 됐지만.. 그래도 이렇게 직접 만들어보면서 html, js, css 틀이 전반적으로 잡혔네요.&lt;br /&gt;
+그리고 군대 사지방에서 공부하면서 만들게 된거라서 개인적으로 좀 뿌듯하네요 ㅎㅎ&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://blog.naver.com/0511cjh&quot;&gt;이주 전 네이버 블로그&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/daily-life/2020/08/29/my-blog/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/daily-life/2020/08/29/my-blog/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>blog</category>
+        
+        <category>블로그</category>
+        
+        <category>개설</category>
+        
+        
+        <category>daily-life</category>
+        
+      </item>
     
   </channel>
 </rss>
