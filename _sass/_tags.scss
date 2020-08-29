@@ -1,0 +1,28 @@
+.tag-content {
+    box-shadow: 3px 3px 5px 2px $shadowColor;
+    border-radius: 5px;
+    width: 100%;
+    background-color: $backgroundColor1;
+    padding: 10px;
+    min-height: 415.33px;
+
+    .text {
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        font-size: 1.7rem;
+        padding: 20px 0;
+        color: $baseColor5;
+    }
+
+    .tag-cloud {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 15px; 
+        border-radius: 40%; 
+        background-color: $baseColor1;
+        color: white;
+        margin: 5px 0;
+    }
+}
+

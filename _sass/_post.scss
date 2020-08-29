@@ -232,8 +232,9 @@
 
     .text {
       text-align: center;
-      font-weight: 200;
+      font-weight: 400;
       color: $baseColor5;
+      margin-bottom: 15px;
     }
 
     .inner {
@@ -245,14 +246,22 @@
 
   .comment {
     position: relative;
+    float: left;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 10px 30px;
     padding: 10px;
     background-color: $backgroundColor1;
     border-radius: 5px;
     max-width: 1428px;
+    width: 100%;
     color: $baseColor2;
+  }
+
+  //clear
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 
@@ -304,6 +313,7 @@
         color: $baseColor3;
         font-size: 1.5rem;
         font-weight: 700;
+        min-height: 70px;
       }
 
       .post-date {
