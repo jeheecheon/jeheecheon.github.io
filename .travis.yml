@@ -33,5 +33,5 @@ deploy:
   local_dir: _site/  # deploy this directory containing final build
   target_branch: master
   on:
-    branch: develop
+    branch: release
    
