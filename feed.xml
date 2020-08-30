@@ -5,19 +5,19 @@
     <description>Jehee Cheons's blog</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Aug 2020 02:03:01 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Aug 2020 02:03:01 +0000</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2020 02:15:40 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2020 02:15:40 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>jekyll로 개인 블로그 개설!</title>
         <description>&lt;h1 id=&quot;jekyll-블로그-개설&quot;&gt;&lt;center&gt;jekyll 블로그 개설!&lt;/center&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/post/ant.gif&quot; alt=&quot;춤추는 엔트 사진&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/gif/ant.gif&quot; alt=&quot;춤추는 엔트 사진&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;블로그 이주했습니다!&lt;br /&gt;
 &lt;strong&gt;jekyll(static site generator)&lt;/strong&gt; 을 프론트엔드 공부 중에 알게돼서 공부도할겸 블로그 theme 을 직접 만들어봤습니다.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/post/blog-code.png&quot; alt=&quot;블로그 코드 스크린샷&quot; width=&quot;100%&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog-code.png&quot; alt=&quot;블로그 코드 스크린샷&quot; width=&quot;100%&quot; /&gt;
 근데 이게.. 그냥 네이버, 다음 블로그처럼 클릭 몇 번 하면 똿! 하고 만들어지던거 생각하면서 가볍게 시작했는데 생각보다 
 코드도 꽤 길어지고 쉽지 않았습니다..&lt;br /&gt;
 &lt;br /&gt;
