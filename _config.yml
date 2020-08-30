@@ -122,7 +122,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "/assets/img/background/default.jpg"
+      image: "/assets/img/default.jpg"
       
 ############################################################
 # Filtering Content
