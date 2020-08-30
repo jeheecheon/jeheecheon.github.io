@@ -15,7 +15,7 @@ http://www.tipue.com/search
 #tipue_search_input
 {
      float: left;
-     font: 15px 'Open Sans', sans-serif;
+     font: 15px "Noto Sans KR", 'Open Sans', Helvetica, Arial, sans-serif;;
      -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
      border: none;
@@ -79,12 +79,11 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-     font: 300 32px/1.4 Merriweather, serif;
-	color: #111;
+  font: 300 32px/1.4 "Noto Sans KR", Merriweather, Helvetica, Arial, sans-serif;
+  color: rgb(41, 102, 151);
 }
 .tipue_search_content_title a
 {
-     color: #111;
      text-decoration: none;
 }
 .tipue_search_content_title a:hover

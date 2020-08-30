@@ -130,7 +130,7 @@ pre {
           padding: 8px 0;
           display: inline-block;
           text-decoration: none;
-          font-weight: 600; }
+          font-weight: 400; }
         .sidebar .navigation .categories-container .categories .category:hover {
           background-color: #95bfe2; }
       .sidebar .navigation .categories-container .subnav {
@@ -201,8 +201,8 @@ pre {
         flex-grow: 1;
         text-decoration: none; }
         .layout .page .header .bar .title .main-title {
-          font-size: 1.2rem;
-          font-weight: 700;
+          font-size: 1.1rem;
+          font-weight: 500;
           height: 30px;
           overflow: hidden; }
         .layout .page .header .bar .title .sub-title {
@@ -265,6 +265,44 @@ pre {
               content: "";
               display: block;
               clear: both; }
+          .layout .page .main .content .inner .main-content .tag-content {
+            box-shadow: 3px 3px 5px 2px #aaaaaa;
+            border-radius: 5px;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            min-height: 415.33px; }
+            .layout .page .main .content .inner .main-content .tag-content .text {
+              text-align: center;
+              display: block;
+              padding: 20px 0;
+              color: #464646;
+              font-weight: 800;
+              font-size: 1.5rem; }
+            .layout .page .main .content .inner .main-content .tag-content .tag-cloud {
+              display: inline-block;
+              text-decoration: none;
+              padding: 5px 15px;
+              border-radius: 40%;
+              background-color: rgba(189, 218, 241, 0.7);
+              color: white;
+              margin: 5px 0; }
+          .layout .page .main .content .inner .main-content {
+            font-size: 1.1rem;
+            word-break: break-all;
+            line-height: 1.6; }
+          .layout .page .main .content .inner .main-content hr {
+            border: dashed #f0efef;
+            border-radius: 1px;
+            margin: 40px 0; }
+          .layout .page .main .content .inner .main-content h1, .layout .page .main .content .inner .main-content h2 {
+            padding: 30px 0; }
+          .layout .page .main .content .inner .main-content h3, .layout .page .main .content .inner .main-content h4 {
+            padding: 20px 0; }
+          .layout .page .main .content .inner .main-content h5, .layout .page .main .content .inner .main-content h6 {
+            padding: 15px 0; }
+          .layout .page .main .content .inner .main-content ol, .layout .page .main .content .inner .main-content ul {
+            margin-left: 30px; }
           .layout .page .main .content .inner .main-content .text--recent-posts, .layout .page .main .content .inner .main-content .text--category-posts, .layout .page .main .content .inner .main-content .text--tag-posts {
             position: relative;
             display: block;
@@ -315,8 +353,8 @@ pre {
             .layout .page .main .content .inner .l-content .profile-card .blog-info .s1,
             .layout .page .main .content .inner .l-content .profile-card .blog-info .s2,
             .layout .page .main .content .inner .l-content .profile-card .blog-info .s3 {
-              width: 28%;
-              display: inline-block; }
+              float: left;
+              width: 30%; }
               .layout .page .main .content .inner .l-content .profile-card .blog-info .s1 .text,
               .layout .page .main .content .inner .l-content .profile-card .blog-info .s2 .text,
               .layout .page .main .content .inner .l-content .profile-card .blog-info .s3 .text {
@@ -327,6 +365,12 @@ pre {
               .layout .page .main .content .inner .l-content .profile-card .blog-info .s2 .info,
               .layout .page .main .content .inner .l-content .profile-card .blog-info .s3 .info {
                 color: #464646; }
+            .layout .page .main .content .inner .l-content .profile-card .blog-info .s2 {
+              margin: 0 5%; }
+            .layout .page .main .content .inner .l-content .profile-card .blog-info::after {
+              content: "";
+              display: block;
+              clear: both; }
           .layout .page .main .content .inner .l-content .profile-card .social-media {
             margin-top: 20px;
             width: 100%;
@@ -334,13 +378,13 @@ pre {
             .layout .page .main .content .inner .l-content .profile-card .social-media .github,
             .layout .page .main .content .inner .l-content .profile-card .social-media .linkedin,
             .layout .page .main .content .inner .l-content .profile-card .social-media .instagram {
+              float: left;
               cursor: pointer;
-              display: inline-block;
               font-size: 2rem;
               color: #464646;
               transition: color 0.5s ease-in-out;
               text-align: center;
-              width: 28%;
+              width: 30%;
               box-shadow: 3px 3px 5px 2px #aaaaaa;
               border-radius: 5px; }
               .layout .page .main .content .inner .l-content .profile-card .social-media .github:hover,
@@ -350,6 +394,10 @@ pre {
                 background-color: #464646; }
             .layout .page .main .content .inner .l-content .profile-card .social-media .linkedin {
               margin: 0 5%; }
+            .layout .page .main .content .inner .l-content .profile-card .social-media::after {
+              content: "";
+              display: block;
+              clear: both; }
           .layout .page .main .content .inner .l-content .profile-card .search {
             margin-top: 20px;
             height: 60px; }
@@ -566,6 +614,7 @@ pre {
               margin: 0 10px 10px 0;
               text-decoration: none;
               color: #464646;
+              font-size: 14px;
               padding: 3px; }
               .layout .page .main .post .content .inner .main-content .tags .tag:hover {
                 background-color: rgba(206, 206, 206, 0.5); }
@@ -613,8 +662,8 @@ pre {
             .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s1,
             .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s2,
             .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s3 {
-              width: 28%;
-              display: inline-block; }
+              float: left;
+              width: 30%; }
               .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s1 .text,
               .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s2 .text,
               .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s3 .text {
@@ -625,6 +674,12 @@ pre {
               .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s2 .info,
               .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s3 .info {
                 color: #464646; }
+            .layout .page .main .post .content .inner .l-content .profile-card .blog-info .s2 {
+              margin: 0 5%; }
+            .layout .page .main .post .content .inner .l-content .profile-card .blog-info::after {
+              content: "";
+              display: block;
+              clear: both; }
           .layout .page .main .post .content .inner .l-content .profile-card .social-media {
             margin-top: 20px;
             width: 100%;
@@ -632,13 +687,13 @@ pre {
             .layout .page .main .post .content .inner .l-content .profile-card .social-media .github,
             .layout .page .main .post .content .inner .l-content .profile-card .social-media .linkedin,
             .layout .page .main .post .content .inner .l-content .profile-card .social-media .instagram {
+              float: left;
               cursor: pointer;
-              display: inline-block;
               font-size: 2rem;
               color: #464646;
               transition: color 0.5s ease-in-out;
               text-align: center;
-              width: 28%;
+              width: 30%;
               box-shadow: 3px 3px 5px 2px #aaaaaa;
               border-radius: 5px; }
               .layout .page .main .post .content .inner .l-content .profile-card .social-media .github:hover,
@@ -648,6 +703,10 @@ pre {
                 background-color: #464646; }
             .layout .page .main .post .content .inner .l-content .profile-card .social-media .linkedin {
               margin: 0 5%; }
+            .layout .page .main .post .content .inner .l-content .profile-card .social-media::after {
+              content: "";
+              display: block;
+              clear: both; }
           .layout .page .main .post .content .inner .l-content .profile-card .search {
             margin-top: 20px;
             height: 60px; }
@@ -718,20 +777,26 @@ pre {
       margin: 0 10px 8vh; }
       .layout .page .main .post .related-posts .text {
         text-align: center;
-        font-weight: 200;
-        color: #464646; }
+        font-weight: 400;
+        color: #464646;
+        margin-bottom: 15px; }
       .layout .page .main .post .related-posts .inner .related-post {
         text-decoration: none; }
     .layout .page .main .post .comment {
       position: relative;
+      float: left;
       left: 50%;
       transform: translateX(-50%);
-      margin: 0 10px 30px;
       padding: 10px;
       background-color: white;
       border-radius: 5px;
       max-width: 1428px;
+      width: 100%;
       color: #95bfe2; }
+    .layout .page .main .post::after {
+      content: "";
+      display: block;
+      clear: both; }
     @media screen and (min-width: 750px) {
       .layout .page .main .related-posts__text {
         font-size: 2.5rem; }
@@ -764,7 +829,8 @@ pre {
             text-decoration: none;
             color: #296697;
             font-size: 1.5rem;
-            font-weight: 700; }
+            font-weight: 700;
+            min-height: 70px; }
           .layout .page .main .related-posts__inner .related-post .post-date {
             display: none; }
         .layout .page .main .related-posts__inner::after {
