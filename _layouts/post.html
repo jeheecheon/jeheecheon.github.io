@@ -52,6 +52,7 @@ comments: true
     <div class="text related-posts__text">Related Posts</div>
 
     <div class="inner related-posts__inner">
+    <div class="text inner__text">Related Posts</div>
       {% for related_post in site.related_posts limit: 4 %}
       <a href="{{ related_post.url | prepend: site.baseurl | prepend: site.url }}" class="related-post">
         <img

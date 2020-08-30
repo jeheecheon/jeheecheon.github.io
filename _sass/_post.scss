@@ -138,7 +138,7 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     max-width: 1428px; //768px(main-content) + 600px(l,rcontent) + 60px(margin)
     z-index: 2;
 
@@ -170,11 +170,12 @@
 
         padding: 10px 10px 130px;
         
-        width: 768px;
+        width: 768px !important;
         font-size: 1rem;
 
         margin-bottom: 25px;
 
+        @include card();
         @import "style";
 
 
@@ -228,14 +229,7 @@
   }
 
   .related-posts {
-    margin: 0 10px 8vh;
-
-    .text {
-      text-align: center;
-      font-weight: 400;
-      color: $baseColor5;
-      margin-bottom: 15px;
-    }
+    margin: 0 10px 25px;
 
     .inner {
       .related-post {
@@ -255,6 +249,8 @@
     max-width: 1428px;
     width: 100%;
     color: $baseColor2;
+
+    @include card();
   }
 
   //clear
@@ -267,9 +263,13 @@
 
 ////////////////////////////////////////////////////////////////
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 749px) {
   .related-posts__text {
     font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: $baseColor5;
+    margin-bottom: 15px;
   }
 
   .related-posts__inner {
@@ -280,6 +280,10 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    .inner__text {
+      display: none;
+    }
 
     .related-post {
       float: left;
@@ -321,6 +325,7 @@
       }
     }
 
+    //clear
     &::after {
       display: block;
       content: "";
@@ -331,7 +336,7 @@
 
 @media screen and (max-width: 749px) {
   .related-posts__text {
-    font-size: 1.5rem;
+    display: none;
   }
 
   .related-posts__inner {
@@ -340,10 +345,18 @@
     padding: 5px 10px;
     background-color: $backgroundColor1;
 
+    .inner__text {
+      text-align: center;
+      color: $baseColor5;
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
     .related-post {
       position: relative;
       display: block;
-      border-bottom: 2px solid $baseColor2;
+      border-top: 2px solid $baseColor2;
 
       transition: background-color 0.5s ease-in-out;
       overflow: hidden;
