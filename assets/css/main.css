@@ -222,7 +222,7 @@ pre {
     /*In main-----------------------------------*/
     /*post layout-----------------------------------*/
     /*In main-----------------------------------*/
-    /*index.html-----------------------------------*/ }
+    /*pagination.html-----------------------------------*/ }
     .layout .page .main .content {
       position: relative;
       left: 50%;
@@ -307,10 +307,10 @@ pre {
             position: relative;
             display: block;
             text-align: center;
-            font-size: 1.7rem;
-            font-weight: 500;
-            color: #464646;
-            margin: 3vh auto; }
+            margin: 3vh auto;
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #464646; }
         .layout .page .main .content .inner .l-content,
         .layout .page .main .content .inner .r-content {
           margin: 0 10px;
