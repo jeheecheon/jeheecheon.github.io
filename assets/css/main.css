@@ -291,6 +291,11 @@ pre {
             font-size: 1.1rem;
             word-break: break-all;
             line-height: 1.6; }
+          .layout .page .main .content .inner .main-content .mid-img {
+            display: block;
+            margin: 0px auto;
+            width: 80%;
+            height: auto; }
           .layout .page .main .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;
@@ -597,6 +602,11 @@ pre {
             font-size: 1.1rem;
             word-break: break-all;
             line-height: 1.6; }
+          .layout .page .main .post .content .inner .main-content .mid-img {
+            display: block;
+            margin: 0px auto;
+            width: 80%;
+            height: auto; }
           .layout .page .main .post .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;
