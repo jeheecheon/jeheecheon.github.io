@@ -5,8 +5,8 @@
     <description>Jehee Cheons's blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Sep 2020 08:24:02 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Sep 2020 08:24:02 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Sep 2020 08:36:03 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Sep 2020 08:36:03 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -41,15 +41,15 @@ AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중�
 &lt;br /&gt;
 그런데, 객체 주소를 다른 포인터 변수에 저장하는 이유는 무엇일까? 두 가지 이유가 있다.&lt;br /&gt;
 첫 번째, structur 나 list 에 저장하기를 원할 때.
-두 번째, 포인터 current scope 을 넘어서 사용하고 싶을 때. - [전역변수]&lt;br /&gt;
-&lt;br /&gt;
-\&lt;/p&gt;
+두 번째, 포인터 current scope 을 넘어서 사용하고 싶을 때. - [전역변수]&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;전역 후에 오랜만에 win32를 다시 훑는 중인데 확실히 원어로 접하는게 내용수준도 깊고 좋은 것 같다. 다만 아직 읽는데 아직 좀 버거워서 힘들지만 ㅋㅋ 영어 공부도 병행하면서 틈틈히 전공지식도 늘려가는게 좋은 것 같다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
         <link>https://jeheecheon.github.io/memo/win32/2020/09/13/</link>
         <guid isPermaLink="true">https://jeheecheon.github.io/memo/win32/2020/09/13/</guid>
+        
+        <category>memo</category>
         
         <category>win32</category>
         
