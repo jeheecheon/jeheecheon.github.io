@@ -9,7 +9,8 @@ comments: true
 {% assign lastTag = page.tags | last %}
 <section class="post main__post">
   <div class="post-cover post__post-cover">
-    <img class="img post-cover__img" src="{{page.image | prepend: site.baseurl | prepend: site.url}}" alt="Cover Image of Post" />
+    <img class="img post-cover__img" src="{{page.image}}" alt="Cover Image of Post" />
+    <!-- <img class="img post-cover__img" src="{{page.image | prepend: site.baseurl | prepend: site.url}}" alt="Cover Image of Post" /> -->
     <div class="background post-cover__background">
       <a href="{{"/"| prepend: site.baseurl | prepend: site.url}}" class="button--goToIndex">
         <pre>Click Here To Go To Index!</pre>
