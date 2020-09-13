@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jehee Cheon</title>
-    <description>Jehee Cheons's blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
+    <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Sep 2020 08:36:37 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Sep 2020 08:36:37 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Sep 2020 09:20:05 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Sep 2020 09:20:05 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>win32 의 COM Reference Counting</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/managing-the-lifetime-of-an-object&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;
-COM Interfaces 에 한가지 중요한 규칙이 엤는데 이는 IUnknown 이라는 인터페이스를 반드시 상속받는 다는 것이다.&lt;br /&gt;
+COM Interfaces 에 한가지 중요한 규칙이 있는데 이는 IUnknown 이라는 인터페이스를 반드시 상속받는 다는 것이다.&lt;br /&gt;
 IUnknown 는 밑에 언급되는 세 가지 Methods를 가지고 있다.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;QueryInterface&lt;/li&gt;
