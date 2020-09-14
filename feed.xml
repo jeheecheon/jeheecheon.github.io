@@ -5,13 +5,15 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Sep 2020 09:20:05 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Sep 2020 09:20:05 +0000</lastBuildDate>
+    <pubDate>Mon, 14 Sep 2020 06:59:15 +0000</pubDate>
+    <lastBuildDate>Mon, 14 Sep 2020 06:59:15 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>win32 의 COM Reference Counting</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/managing-the-lifetime-of-an-object&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+공부하면서 중요한 부분만 발췌했기 때문에 문맥이 매끄럽지 못하고 부정확한 부분이 있음.&lt;br /&gt;
 &lt;br /&gt;
 COM Interfaces 에 한가지 중요한 규칙이 있는데 이는 IUnknown 이라는 인터페이스를 반드시 상속받는 다는 것이다.&lt;br /&gt;
 IUnknown 는 밑에 언급되는 세 가지 Methods를 가지고 있다.&lt;/p&gt;
@@ -25,12 +27,12 @@ IUnknown 는 밑에 언급되는 세 가지 Methods를 가지고 있다.&lt;/p&g
 AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중요한 녀석이다.&lt;br /&gt;
 &lt;br /&gt;
 모든 COM object는 내부 카운트를 유지한다. 이것을 &lt;strong&gt;reference count&lt;/strong&gt;라고 부르고 이는 해당 객체를 참고하는 녀석이 몇 개나 활성화 되어있는가를 보여주는 거를 일겉는다.&lt;br /&gt;
-그 숫자가 0에 달했을 시 그 object는 스스로 삭제시킨다. 중요한 부분은 스스로 프로그램이 명시적으로 삭제하는 것이 아니라 객체 스스로 없어진다는 것이다.&lt;br /&gt;
+그 숫자가 0에 달했을 시 그 object는 스스로 삭제시킨다. 중요한 부분은 프로그램이 명시적으로 삭제하는 것이 아니라 객체 스스로 없어진다는 것이다.&lt;br /&gt;
 &lt;br /&gt;
 &lt;img src=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/images/com04.png&quot; alt=&quot;&quot; class=&quot;mid-img&quot; /&gt;&lt;br /&gt;
 프로그램이 처음 만들어지면 reference count는 1이 된다.&lt;br /&gt;
 그리고 해당 프로그램의 사용을 마친 후 반드시 release를 통해 reference count 를 1감소 시켜야 한다. 이를 통해 
-객체의 포인터를 무효화(정지?비스무리) 를 시킬 수 있다.&lt;br /&gt;
+객체의 포인터를 무효화(정지) 를 시킬 수 있다.&lt;br /&gt;
 만약 객체의 주소를 다른 포인터 변수에 저장할 일이 있을 때는 AddRef 함수를 통해 reference count를 1 증가시켜줘야만 한다.&lt;br /&gt;
 다음 사진과 같이&lt;br /&gt;
 &lt;br /&gt;
