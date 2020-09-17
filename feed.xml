@@ -5,22 +5,22 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2020 02:00:39 +0000</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2020 02:00:39 +0000</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2020 02:06:06 +0000</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2020 02:06:06 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>DPI</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/dpi-and-device-independent-pixels&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Dots per inch (DPI)&lt;br /&gt;
+        <description>&lt;p&gt;Dots per inch (DPI)&lt;br /&gt;
 In typography, the size of type is measured in units called points. One point equals 1/72 of an inch.
 physical inches are not a useful measure, because there is no fixed relation between physical inches and pixels. Instead, fonts are measured in logical units. A 72-point font is defined to be one logical inch tall. Logical inches are then converted to pixels. or many years, Windows used the following conversion: One logical inch equals 96 pixels.
 12 points = 12/72 logical inch = 1/6 logical inch = 96/6 pixels = 16 pixels
 This scaling factor is described as 96 dots per inch (DPI).&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;The following illustration shows a 72-point font. The solid lines show a 1” tall bounding box around the text. The dashed line is called the baseline. Most of the characters in a font rest on the baseline. The height of the font includes the portion above the baseline (the ascent) and the portion below the baseline (the descent). In the font shown here, the ascent is 56 points and the descent is 16 points. &lt;br /&gt;
-&lt;img src=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/images/graphics11.png&quot; alt=&quot;1 inch&quot; class=&quot;mid-img&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/images/graphics11.png&quot; alt=&quot;1 inch&quot; class=&quot;mid-img&quot; /&gt;&lt;br /&gt;
+—
+&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/dpi-and-device-independent-pixels&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
         <link>https://jeheecheon.github.io/memo/win32/2020/09/17/win32/</link>
@@ -43,8 +43,7 @@ This scaling factor is described as 96 dots per inch (DPI).&lt;/p&gt;
     
       <item>
         <title>win32 의 COM Reference Counting</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/managing-the-lifetime-of-an-object&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;br /&gt;
-&lt;br /&gt;
+        <description>&lt;p&gt;&lt;br /&gt;
 공부하면서 중요한 부분만 발췌했기 때문에 문맥이 매끄럽지 못하고 부정확한 부분이 있음.&lt;br /&gt;
 &lt;br /&gt;
 COM Interfaces 에 한가지 중요한 규칙이 있는데 이는 IUnknown 이라는 인터페이스를 반드시 상속받는 다는 것이다.&lt;br /&gt;
@@ -77,7 +76,9 @@ AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중�
 첫 번째, structur 나 list 에 저장하기를 원할 때.
 두 번째, 포인터 current scope 을 넘어서 사용하고 싶을 때. - [전역변수]&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;전역 후에 오랜만에 win32를 다시 훑는 중인데 확실히 원어로 접하는게 내용수준도 깊고 좋은 것 같다. 다만 읽는데 아직 좀 버거워서 힘들지만 ㅋㅋ 영어 공부도 병행하면서 틈틈히 전공지식도 늘려가는게 좋을 것 같다.&lt;/p&gt;
+&lt;p&gt;전역 후에 오랜만에 win32를 다시 훑는 중인데 확실히 원어로 접하는게 내용수준도 깊고 좋은 것 같다. 다만 읽는데 아직 좀 버거워서 힘들지만 ㅋㅋ 영어 공부도 병행하면서 틈틈히 전공지식도 늘려가는게 좋을 것 같다.
+—
+&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/managing-the-lifetime-of-an-object&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
         <link>https://jeheecheon.github.io/memo/win32/2020/09/13/win32/</link>
