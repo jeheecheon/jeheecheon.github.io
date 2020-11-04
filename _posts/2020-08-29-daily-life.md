@@ -2,7 +2,7 @@
 title: jekyll 개인 블로그 개설!
 category: daily-life
 tags: jekyll blog 블로그 개설
-image: /assets/img/blog-code.png
+image: /assets/img/memo/win32/blog-code.png
 description: 블로그 이주했습니다!  jekyll(static site generator) 을 프론트엔드 공부 중에 알게돼서 공부도할겸 블로그 theme 을 직접 만들어봤습니다. 근데 이게.. 그냥 네이버, 다음 블로그처럼 클릭 몇 번 하면 똿! 하고 만들어지던거 생각하면서 가볍게 시작했는데 생각보다 코드도 꽤 길어지고 쉽지 않았습니다..  
 ---
 
@@ -12,7 +12,7 @@ description: 블로그 이주했습니다!  jekyll(static site generator) 을 �
 블로그 이주했습니다!  
 __jekyll(static site generator)__ 을 프론트엔드 공부 중에 알게돼서 공부도할겸 블로그 theme 을 직접 만들어봤습니다.  
 - - -
-<img src="/assets/img/blog-code.png" alt="블로그 코드 스크린샷" width="100%" >
+<img src="/assets/img/memo/win32/blog-code.png" alt="블로그 코드 스크린샷" width="100%" >
 근데 이게.. 그냥 네이버, 다음 블로그처럼 클릭 몇 번 하면 똿! 하고 만들어지던거 생각하면서 가볍게 시작했는데 생각보다 
 코드도 꽤 길어지고 쉽지 않았습니다..  
 \
