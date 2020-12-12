@@ -59,13 +59,13 @@
       float: left;
     }
 
+    @import "profile_card";
+    @import "dictionary_card";
+    @import "category_card";
+    
     .l-content {
-      @import "profile_card";
-      @import "dictionary_card";
     }
-
     .r-content {
-      @import "category_card";
       // @import "tag_card";
     }
 
