@@ -13,7 +13,10 @@ before_script:
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./script/cibuild
+script:
+   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/run_on_pull_requests; fi'
+   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis/run_on_non_pull_requests; fi'
+   - './script/cibuild'
 
 env:
   global:
@@ -41,6 +44,3 @@ branches:
   only:
   - release
 
-script:
-   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/run_on_pull_requests; fi'
-   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis/run_on_non_pull_requests; fi'
