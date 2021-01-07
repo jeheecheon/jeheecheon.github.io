@@ -2,6 +2,8 @@
   {% for post in paginator.posts %}
   {% assign lastCate = post.categories | last %}
   {% assign lastTag = post.tags | last %}
+
+  {% if lastCate != "diary" or include.diary %}
   <a class="post-item" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
     <div class="img-container post-item__img-container">
       <img class="img" src="{{post.image}}" alt="Post Image" />
@@ -15,6 +17,8 @@
       <p class="categories text__categories">Categories: {% for cate in post.categories %}{{cate | downcase}}{% if cate != lastCate %}, {% endif %}{% endfor %}</p>
     </div>
   </a>
+  {% endif %}
+
   {% endfor %}
 </nav>
 
