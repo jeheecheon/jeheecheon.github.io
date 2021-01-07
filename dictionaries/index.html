@@ -16,7 +16,7 @@
     <meta name="description" content="Blog</br>공부하고나서 끄적이는 곳">
     <meta property="og:locale" content="en_US" />
     <meta name="robots" content="All" />
-    <meta name="copyright" content="(C) 2020. Jehee Cheon All rights reserved." />
+    <meta name="copyright" content="(C) 2021. Jehee Cheon All rights reserved." />
     <meta name="subject" content="IT" />
     
 
@@ -253,7 +253,7 @@
   </form>
 </section>
       <div class="dictionary-card">
-    <p class="card-title">Dictionary</p>
+    <p class="card-title">Integrated Dictionary</p>
     <form class="word-search">
         <input class="search-bar" type="text" title="Any english word you want" id= "wordInput" placeholder="" required autofocus>
         <button class="search-button" type="button" id="wordButton">
@@ -295,6 +295,15 @@
     <form class="word-search">
         <input class="search-bar" type="text" title="Any english word you want" id= "cambridgeWordInput" placeholder="" required>
         <button class="search-button" type="button" id="cambridgeWordButton">
+          <i class="fas fa-search search-icon"></i>
+        </button>
+    </form>
+    </br>
+
+    <p class="card-title">Cambridge learner's dictionary</p>
+    <form class="word-search">
+        <input class="search-bar" type="text" title="Any english word you want" id= "cambridgeLDWordInput" placeholder="" required>
+        <button class="search-button" type="button" id="cambridgeLDWordButton">
           <i class="fas fa-search search-icon"></i>
         </button>
     </form>
@@ -475,6 +484,41 @@ if (x.addEventListener) {
         var word = document.getElementById("cambridgeWordInput").value;
         window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
         document.getElementById("cambridgeWordInput").value = "";		
+    });
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////cambridge learner's dictionry
+x = document.getElementById("cambridgeLDWordInput");
+if (x.addEventListener) {                  
+    x.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("cambridgeLDWordInput").value;
+        window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+        document.getElementById("cambridgeLDWordInput").value = "";		
+    }
+});
+} else if (x.attachEvent) {               
+    x.attachEvent("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("cambridgeLDWordInput").value;
+        window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+        document.getElementById("cambridgeLDWordInput").value = "";	
+    }
+});
+}
+x = document.getElementById("cambridgeLDWordButton");
+if (x.addEventListener) {                  
+    x.addEventListener("click", function(event) {
+        var word = document.getElementById("cambridgeLDWordInput").value;
+        window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+        document.getElementById("cambridgeLDWordInput").value = "";	
+    });
+} else if (x.attachEvent) {               
+    x.attachEvent("click", function(event) {
+        var word = document.getElementById("cambridgeLDWordInput").value;
+        window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+        document.getElementById("cambridgeLDWordInput").value = "";		
     });
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////m-w
@@ -708,7 +752,7 @@ if (x.addEventListener) {
           <div class="text site-info__text">
             <p class="title text__title">Jehee Cheon</p>
             
-            <p class="copyright text__copyright">(C) 2020. Jehee Cheon All rights reserved.</p>
+            <p class="copyright text__copyright">(C) 2021. Jehee Cheon All rights reserved.</p>
           </div>
         </div>
       </footer>
