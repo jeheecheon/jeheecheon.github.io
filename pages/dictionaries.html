@@ -59,6 +59,15 @@ permalink: /dictionaries/
     </form>
     </br>
 
+    <p class="card-title">Lexico</p>
+    <form class="word-search">
+        <input class="search-bar" type="text" title="Any english word you want" id= "LWordInput" placeholder="" required>
+        <button class="search-button" type="button" id="LWordButton">
+          <i class="fas fa-search search-icon"></i>
+        </button>
+    </form>
+    </br>
+
     <p class="card-title">Naver Eng-Eng</p>
     <form class="word-search">
         <input class="search-bar" type="text" title="Any english word you want" id= "naverEnglishWordInput" placeholder="" required>
@@ -297,7 +306,43 @@ if (x.addEventListener) {
         document.getElementById("MWWordInput").value = "";		
     });
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////naver e-e
+//////////////////////////////////////////////////////////////////////////////////////////////////////lexico
+x = document.getElementById("LWordInput");
+if (x.addEventListener) {                  
+    x.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";		
+    }
+});
+} else if (x.attachEvent) {               
+    x.attachEvent("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";	
+    }
+});
+}
+x = document.getElementById("LWordButton");
+if (x.addEventListener) {                  
+    x.addEventListener("click", function(event) {
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";	
+    });
+} else if (x.attachEvent) {               
+    x.attachEvent("click", function(event) {
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";		
+    });
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////naver e-e    
+
 x = document.getElementById("naverEnglishWordInput");
 if (x.addEventListener) {                   
     x.addEventListener("keydown", function(event) {
