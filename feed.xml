@@ -5,9 +5,263 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2021 04:58:32 +0000</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2021 04:58:32 +0000</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2021 06:55:46 +0000</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2021 06:55:46 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>I made a snake game</title>
+        <description>&lt;p&gt;Last year during studying web-languages, I made a game called snake game following youtube video tutorial.&lt;br /&gt;
+It was not actially easy for me from the beginning but it quite helped with me studying basis things.&lt;br /&gt;
+I..think :D
+\&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;canvas id=&quot;game_area&quot;&gt;&lt;/canvas&gt;&lt;br /&gt;
+    &lt;button class=&quot;btn up&quot;&gt;UP&lt;/button&gt;&lt;br /&gt;
+    &lt;button class=&quot;btn left&quot;&gt;LEFT&lt;/button&gt;
+    &lt;button class=&quot;btn right&quot;&gt;RIGHT&lt;/button&gt;&lt;br /&gt;
+    &lt;button class=&quot;btn down&quot;&gt;DOWN&lt;/button&gt;&lt;br /&gt;
+    &lt;button id=&quot;start&quot;&gt;START&lt;/button&gt;&lt;br /&gt;
+    &lt;span id=&quot;author&quot;&gt;Made by jeheecheon&lt;/span&gt;&lt;br /&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+var canvas = document.getElementById(&quot;game_area&quot;);
+var ctx = canvas.getContext(&quot;2d&quot;);
+var startBtn = document.getElementById('start');
+var direction = &quot; &quot;;
+var bestScore = 0;
+var score;
+const width = 450;
+const height = 350;
+const snakeSize = 10;
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+(function() {
+  upBtn = document.getElementsByClassName(&quot;btn&quot;);
+  upBtn[0].onmousedown=upBtn[0].ontouchstart=function() {
+    if (direction!=&quot;down&quot;)
+      direction=&quot;up&quot;;
+  };
+  upBtn[1].onmousedown=upBtn[1].ontouchstart=function() {
+    if (direction!=&quot;right&quot;)
+      direction=&quot;left&quot;;
+  };
+  upBtn[2].onmousedown=upBtn[2].ontouchstart=function() {
+    if (direction!=&quot;left&quot;)
+      direction=&quot;right&quot;; 
+  };
+  upBtn[3].onmousedown=upBtn[3].ontouchstart=function() {
+    if (direction!=&quot;up&quot;)
+      direction=&quot;down&quot;;
+  };
+  
+  window.onkeydown = function(event) {
+    switch (event.keyCode) {
+    case 37:  //left arrow key
+    case 65:  //a key
+      if (direction != &quot;rignt&quot;)
+        direction = &quot;left&quot;;
+      break;
+    case 38:  //up arrow key
+    case 87:  //w key
+      if (direction != &quot;down&quot;)
+        direction = &quot;up&quot;;
+      break; 
+    case 39:  //right arrow key
+    case 68:  //d key
+      if (direction != &quot;left&quot;)
+        direction = &quot;right&quot;;
+      break;
+    case 40:  //left arrow key
+    case 83:  //s key
+      if (direction != &quot;up&quot;)
+        direction = &quot;down&quot;;
+      break;
+    default:
+      break;
+    }
+  }
+  window.onload = function() {snakeGame.init();};
+  startBtn.addEventListener(&quot;click&quot;, function() {snakeGame.start();});
+}());
+
+var snakeGame = (function() {
+  var init = function() {
+    canvas.width = width;
+    canvas.height = height;
+    areaClear();
+  }
+  
+  var areaClear = function() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'lightgrey';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = 'black';
+    ctx.strokeRect(0, 0, canvas.width, canvas.height);
+  }
+  
+  var start = function() {
+    startBtn.disabled = true;
+    score = 0;
+    direction = &quot;down&quot;;
+    mySnake = new makeSnake(3);
+    createFood();
+    gameInterval = setInterval(updateGame, 100);
+  }
+  
+  var stop = function() {
+    clearInterval(gameInterval);
+    bestScore = (score &gt; bestScore) ? score : bestScore;
+    startBtn.disabled = false;
+  }
+  
+  var makeSnake = function(tail_length) {
+    this.snake = [];
+    for (var i = tail_length; i &gt;= 0; i--)
+      this.snake.push({x: i, y: 0})
+          
+    this.newPos = function() {
+      posX = this.snake[0].x;
+      posY = this.snake[0].y;
+      switch (direction) {
+      case &quot;left&quot;:
+        posX--;
+        break;
+      case &quot;right&quot;:
+        posX++;
+        break;
+      case &quot;up&quot;:
+        posY--;
+        break;
+      case &quot;down&quot;:
+        posY++;
+        break;
+      default:
+        break;
+      }
+      if (checkCollision(posX, posY, this.snake))
+        stop();
+      this.snake.unshift({x: posX,y: posY});  
+      if (isThereFood(posX, posY)) {
+        score++;
+        createFood();
+      }
+      else
+        this.snake.pop();
+    }
+
+    this.display = function() {
+      for (var i = 0; i &lt; this.snake.length; i++)
+        draw.snakeBody(this.snake[i].x, this.snake[i].y)
+    }
+  }
+  
+  var draw = {
+    snakeBody: function(x, y) {
+      ctx.fillStyle = 'green';
+      ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+      ctx.strokeStyle = 'darkgreen';
+      ctx.strokeRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+    },
+    food: function(x, y) {
+      ctx.fillStyle='brown';
+      ctx.fillRect(x * snakeSize,y * snakeSize, snakeSize, snakeSize);
+      ctx.strokeStyle ='black';
+      ctx.strokeRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+    },
+    scoreText: function(x, y, font, color) {
+      text = &quot;BEST SCORE: &quot; + bestScore + &quot;   MY SCORE: &quot; + score;
+      ctx.font = font;
+      ctx.fillStyle = color;
+      ctx.fillText(text, x, y);
+    }
+  }
+  
+  var checkCollision = function(x, y, arr) {
+    if (x &lt; 0 || y &lt; 0 || x &gt;= width/10 || y &gt;= height/10)
+      return true;
+    for (i = 0; i &lt; arr.length; i++)
+      if (x == arr[i].x &amp;&amp; y == arr[i].y) 
+        return true;
+    return false;
+  }
+    
+  var createFood = function() {
+    do {
+      foodX=Math.round(Math.random()*(width/10));
+      foodY=Math.round(Math.random()*(height/10));
+    } while(checkCollision(foodX, foodY, mySnake.snake));
+  }
+  
+  var isThereFood = function(headX, headY) {
+    return headX == foodX &amp;&amp; headY == foodY;
+  }
+  
+  var updateGame = function() {
+    areaClear();
+    mySnake.newPos();
+    mySnake.display();
+    draw.food(foodX, foodY);
+    draw.scoreText(10, height - 10, &quot;15px Georgia&quot;, &quot;black&quot;);
+  }
+  
+  return {init: init, start: start};
+}());
+
+&lt;/script&gt;
+
+&lt;style&gt;
+      #start {
+        background-color: skyblue;
+        color: white;
+        border: none;
+        margin: 20px 0px 0px 0px;
+        width: 200px;
+        height: 30px;
+      }
+      #start:hover {
+        background-color: orange;
+      }
+      #start:disabled {
+        background-color: grey;
+      }
+      #author {
+        color: lightblue;
+        text-shadow: 3px 1px blue;
+        font: italic normal bold 30px/30px &quot;Helvetica&quot;;
+      }
+      #desc {
+        font: normal normal bold 20px/20px &quot;Helvetica&quot;;
+      }
+      #blog {
+        font: normal normal bold 15px/15px &quot;Helvetica&quot;;
+      }
+      .btn {
+        background-color:skyblue;
+        border:none;
+        color:white;
+        width:50px;
+        height:35px;
+        margin:5px 2px 0px 2px;
+      }
+      .btn:active {
+        background-color:blue;
+      }
+&lt;/style&gt;
+
+</description>
+        <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/daily-life/2021/01/20/daily-life/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/daily-life/2021/01/20/daily-life/</guid>
+        
+        
+        <category>daily-life</category>
+        
+      </item>
     
       <item>
         <title>could I succeed in my goal?</title>
