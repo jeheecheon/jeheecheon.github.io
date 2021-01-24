@@ -42,12 +42,13 @@ function lookUp()
     var word = document.getElementById("wordInput").value;
     // document.getElementById("wordInput").value = "";		
     window.open("http://www.forvo.com/word/" + word + "/#jp");
-    // window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+    window.open("https://www.lexico.com/definition/" + word);
     window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
-    window.open("https://www.merriam-webster.com/dictionary/" + word + "");
+    // window.open("https://dictionary.cambridge.org/dictionary/learner-english/" + word);
+    // window.open("https://www.merriam-webster.com/dictionary/" + word + "");
+    window.open("https://learnersdictionary.com/definition/" + word + "");
     // window.open("https://dict.naver.com/enendict/#/search?query=" + word + "");
     window.open("http://endic.naver.com/search.nhn?sLn=kr&isOnlyViewEE=N&query=" + word + "");
-    window.open("https://www.lexico.com/definition/" + word);
     window.open("https://www.google.com/search?q=" + word + " meaning");
     window.open("https://www.google.com/search?q=" + word + "&tbm=isch&ved=2ahUKEwi814qdp_PtAhUSHqYKHcpLDE8Q2-cCegQIABAA&oq=" + word + "&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyBAgAEEMyBAgAEEMyBAgAEEMyAggAMgQIABBDMgIIADICCABQzIoBWJuPAWCokAFoAHAAeACAAeEBiAGOBpIBBTAuNC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bDDrX7zxGpK8mAXKl7H4BA");
     window.open("https://www.google.com/search?q=" + word + " gif" + "&tbm=isch&ved=2ahUKEwi814qdp_PtAhUSHqYKHcpLDE8Q2-cCegQIABAA&oq=" + word + " gif" + "&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyBAgAEEMyBAgAEEMyBAgAEEMyAggAMgQIABBDMgIIADICCABQzIoBWJuPAWCokAFoAHAAeACAAeEBiAGOBpIBBTAuNC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bDDrX7zxGpK8mAXKl7H4BA");
