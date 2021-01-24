@@ -264,7 +264,7 @@
     </div>
     <div class="main-content inner__main-content">
       <div class="dictionary-card">
-    <p class="card-title">Google</p>
+    <p class="card-title">Google Dictionary</p>
     <form class="word-search">
         <input class="search-bar" type="text" title="Any english word you want" id= "googleWordInput" placeholder="" required>
         <button class="search-button" type="button" id="googleWordButton">
@@ -291,19 +291,28 @@
     </form>
     </br>
 
-    <p class="card-title">Cambridge</p>
+    <p class="card-title">merriam-webster learner's Dictionary</p>
     <form class="word-search">
-        <input class="search-bar" type="text" title="Any english word you want" id= "cambridgeWordInput" placeholder="" required>
-        <button class="search-button" type="button" id="cambridgeWordButton">
+        <input class="search-bar" type="text" title="Any english word you want" id= "MWLDWordInput" placeholder="" required>
+        <button class="search-button" type="button" id="MWLDWordButton">
           <i class="fas fa-search search-icon"></i>
         </button>
     </form>
     </br>
 
-    <p class="card-title">Cambridge learner's dictionary</p>
+    <p class="card-title">Cambridge learner's Dictionary</p>
     <form class="word-search">
         <input class="search-bar" type="text" title="Any english word you want" id= "cambridgeLDWordInput" placeholder="" required>
         <button class="search-button" type="button" id="cambridgeLDWordButton">
+          <i class="fas fa-search search-icon"></i>
+        </button>
+    </form>
+    </br>
+
+    <p class="card-title">Lexico</p>
+    <form class="word-search">
+        <input class="search-bar" type="text" title="Any english word you want" id= "LWordInput" placeholder="" required>
+        <button class="search-button" type="button" id="LWordButton">
           <i class="fas fa-search search-icon"></i>
         </button>
     </form>
@@ -318,10 +327,10 @@
     </form>
     </br>
 
-    <p class="card-title">Lexico</p>
+    <p class="card-title">Cambridge</p>
     <form class="word-search">
-        <input class="search-bar" type="text" title="Any english word you want" id= "LWordInput" placeholder="" required>
-        <button class="search-button" type="button" id="LWordButton">
+        <input class="search-bar" type="text" title="Any english word you want" id= "cambridgeWordInput" placeholder="" required>
+        <button class="search-button" type="button" id="cambridgeWordButton">
           <i class="fas fa-search search-icon"></i>
         </button>
     </form>
@@ -460,39 +469,39 @@ if (x.addEventListener) {
         document.getElementById("googleGifWordInput").value = "";		
     });
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////cambridge
-x = document.getElementById("cambridgeWordInput");
+//////////////////////////////////////////////////////////////////////////////////////////////////////m-w learner's dictionary
+x = document.getElementById("MWLDWordInput");
 if (x.addEventListener) {                  
     x.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        var word = document.getElementById("cambridgeWordInput").value;
-        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
-        document.getElementById("cambridgeWordInput").value = "";		
+        var word = document.getElementById("MWLDWordInput").value;
+        window.open("https://learnersdictionary.com/definition/" + word + "");
+        document.getElementById("MWLDWordInput").value = "";		
     }
 });
 } else if (x.attachEvent) {               
     x.attachEvent("keydown", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        var word = document.getElementById("cambridgeWordInput").value;
-        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
-        document.getElementById("cambridgeWordInput").value = "";	
+        var word = document.getElementById("MWLDWordInput").value;
+        window.open("https://learnersdictionary.com/definition/" + word + "");
+        document.getElementById("MWLDWordInput").value = "";	
     }
 });
 }
-x = document.getElementById("cambridgeWordButton");
+x = document.getElementById("MWLDWordButton");
 if (x.addEventListener) {                  
     x.addEventListener("click", function(event) {
-        var word = document.getElementById("cambridgeWordInput").value;
-        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
-        document.getElementById("cambridgeWordInput").value = "";	
+        var word = document.getElementById("MWLDWordInput").value;
+        window.open("https://learnersdictionary.com/definition/" + word + "");
+        document.getElementById("MWLDWordInput").value = "";	
     });
 } else if (x.attachEvent) {               
     x.attachEvent("click", function(event) {
-        var word = document.getElementById("cambridgeWordInput").value;
-        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
-        document.getElementById("cambridgeWordInput").value = "";		
+        var word = document.getElementById("MWLDWordInput").value;
+        window.open("https://learnersdictionary.com/definition/" + word + "");
+        document.getElementById("MWLDWordInput").value = "";		
     });
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////cambridge learner's dictionry
@@ -530,6 +539,41 @@ if (x.addEventListener) {
         document.getElementById("cambridgeLDWordInput").value = "";		
     });
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////lexico
+x = document.getElementById("LWordInput");
+if (x.addEventListener) {                  
+    x.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";		
+    }
+});
+} else if (x.attachEvent) {               
+    x.attachEvent("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";	
+    }
+});
+}
+x = document.getElementById("LWordButton");
+if (x.addEventListener) {                  
+    x.addEventListener("click", function(event) {
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";	
+    });
+} else if (x.attachEvent) {               
+    x.attachEvent("click", function(event) {
+        var word = document.getElementById("LWordInput").value;
+        window.open("https://www.lexico.com/definition/" + word);
+        document.getElementById("LWordInput").value = "";		
+    });
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////m-w
 x = document.getElementById("MWWordInput");
 if (x.addEventListener) {                  
@@ -565,39 +609,39 @@ if (x.addEventListener) {
         document.getElementById("MWWordInput").value = "";		
     });
 }
-//////////////////////////////////////////////////////////////////////////////////////////////////////lexico
-x = document.getElementById("LWordInput");
+//////////////////////////////////////////////////////////////////////////////////////////////////////cambridge
+x = document.getElementById("cambridgeWordInput");
 if (x.addEventListener) {                  
     x.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        var word = document.getElementById("LWordInput").value;
-        window.open("https://www.lexico.com/definition/" + word);
-        document.getElementById("LWordInput").value = "";		
+        var word = document.getElementById("cambridgeWordInput").value;
+        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
+        document.getElementById("cambridgeWordInput").value = "";		
     }
 });
 } else if (x.attachEvent) {               
     x.attachEvent("keydown", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        var word = document.getElementById("LWordInput").value;
-        window.open("https://www.lexico.com/definition/" + word);
-        document.getElementById("LWordInput").value = "";	
+        var word = document.getElementById("cambridgeWordInput").value;
+        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
+        document.getElementById("cambridgeWordInput").value = "";	
     }
 });
 }
-x = document.getElementById("LWordButton");
+x = document.getElementById("cambridgeWordButton");
 if (x.addEventListener) {                  
     x.addEventListener("click", function(event) {
-        var word = document.getElementById("LWordInput").value;
-        window.open("https://www.lexico.com/definition/" + word);
-        document.getElementById("LWordInput").value = "";	
+        var word = document.getElementById("cambridgeWordInput").value;
+        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
+        document.getElementById("cambridgeWordInput").value = "";	
     });
 } else if (x.attachEvent) {               
     x.attachEvent("click", function(event) {
-        var word = document.getElementById("LWordInput").value;
-        window.open("https://www.lexico.com/definition/" + word);
-        document.getElementById("LWordInput").value = "";		
+        var word = document.getElementById("cambridgeWordInput").value;
+        window.open("http://dictionary.cambridge.org/dictionary/english/" + word + "");
+        document.getElementById("cambridgeWordInput").value = "";		
     });
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////naver e-e    
