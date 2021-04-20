@@ -1,10 +1,10 @@
 var tipuesearch = {"pages": [{
     "title": "I made a snake game",
-    "text": "Last year during studying web-languages, I made a game called snake game following youtube video tutorial. It was not actially easy for me from the beginning but it quite helped with me studying basis things. I..think :D \\ UP LEFT RIGHT DOWN START Made by jeheecheon",
+    "text": "Last year, I made a game called snake game following youtube video tutorial. It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. \\ UP LEFT RIGHT DOWN START Made by jeheecheon",
     "tags": "daily-life",
     "url": "https://jeheecheon.github.io/daily-life/2021/01/20/daily-life/"
   },{
-    "title": "could I succeed in my goal?",
+    "title": "DIART#1",
     "text": "DIARY TEST",
     "tags": "diary",
     "url": "https://jeheecheon.github.io/diary/2020/12/08/diary/"

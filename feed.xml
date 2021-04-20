@@ -5,15 +5,14 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Apr 2021 00:42:35 +0000</pubDate>
-    <lastBuildDate>Tue, 20 Apr 2021 00:42:35 +0000</lastBuildDate>
+    <pubDate>Tue, 20 Apr 2021 02:32:20 +0000</pubDate>
+    <lastBuildDate>Tue, 20 Apr 2021 02:32:20 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
         <title>I made a snake game</title>
-        <description>&lt;p&gt;Last year during studying web-languages, I made a game called snake game following youtube video tutorial.&lt;br /&gt;
-It was not actially easy for me from the beginning but it quite helped with me studying basis things.&lt;br /&gt;
-I..think :D
+        <description>&lt;p&gt;Last year, I made a game called snake game following youtube video tutorial.&lt;br /&gt;
+It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. 
 \&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
     &lt;canvas id=&quot;game_area&quot;&gt;&lt;/canvas&gt;&lt;br /&gt;
@@ -264,7 +263,7 @@ var snakeGame = (function() {
       </item>
     
       <item>
-        <title>could I succeed in my goal?</title>
+        <title>DIART#1</title>
         <description>&lt;p&gt;DIARY TEST&lt;/p&gt;
 </description>
         <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
