@@ -3,9 +3,8 @@ title: I made a snake game
 category: daily-life
 image: /assets/img/diary/default.jpg
 ---
-Last year during studying web-languages, I made a game called snake game following youtube video tutorial.  
-It was not actially easy for me from the beginning but it quite helped with me studying basis things.  
-I..think :D
+Last year, I made a game called snake game following youtube video tutorial.  
+It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. 
 \
 <div style="text-align:center;">
     <canvas id="game_area"></canvas><br />
