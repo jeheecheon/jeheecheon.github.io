@@ -16,6 +16,10 @@
       category: win32
       hidden: true
       icon: "far fa-file-code"
+    - title: OpenGL
+      category: OpenGL
+      hidden: true
+      icon: "far fa-file-code"
       # subnav:
       #   - title: Jekyll
       #     category: jekyll
