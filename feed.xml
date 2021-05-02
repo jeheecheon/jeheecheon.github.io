@@ -5,8 +5,8 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Apr 2021 02:32:20 +0000</pubDate>
-    <lastBuildDate>Tue, 20 Apr 2021 02:32:20 +0000</lastBuildDate>
+    <pubDate>Sun, 02 May 2021 15:42:11 +0000</pubDate>
+    <lastBuildDate>Sun, 02 May 2021 15:42:11 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
@@ -368,27 +368,13 @@ AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중�
       <item>
         <title>jekyll 개인 블로그 개설!</title>
         <description>&lt;h1 id=&quot;jekyll-블로그-개설&quot;&gt;&lt;center&gt;jekyll 블로그 개설!&lt;/center&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/gif/ant.gif&quot; alt=&quot;춤추는 엔트 사진&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/post/daily-life/2020-08-29/ant.gif&quot; alt=&quot;춤추는 엔트 사진&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;블로그 이주했습니다!&lt;br /&gt;
-&lt;strong&gt;jekyll(static site generator)&lt;/strong&gt; 을 프론트엔드 공부 중에 알게돼서 공부도할겸 블로그 theme 을 직접 만들어봤습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;jekyll(static site generator)&lt;/strong&gt; 을 이용해서 블로그를 새로 만들어 이주했습니다.&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/memo/win32/blog-code.png&quot; alt=&quot;블로그 코드 스크린샷&quot; width=&quot;100%&quot; /&gt;
-근데 이게.. 그냥 네이버, 다음 블로그처럼 클릭 몇 번 하면 똿! 하고 만들어지던거 생각하면서 가볍게 시작했는데 생각보다 
-코드도 꽤 길어지고 쉽지 않았습니다..&lt;br /&gt;
-&lt;br /&gt;
-예를 들자면..&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;html에서 태그 네이밍, 구성&lt;/li&gt;
-  &lt;li&gt;css에서는 float, 익스플로러 호환.. , 메뉴바, 사이드 바(프로필 바, 카테고리 바)&lt;/li&gt;
-  &lt;li&gt;js 는 event listenr, 윈도우 크기 변경 시 메뉴바 크기 재조정.., 메뉴바 클릭 구현, 카테고리 구현&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;등등 뭐,,,, 버그도 많았고 삽질도 몇 번 하며 &lt;em&gt;개고생&lt;/em&gt; 한 감이 없지않아 있지만.. 그래도 이렇게 직접 만들어보면서 html, js, css 
-틀이 머릿속에 전반적으로 잡히게 된 점은 좋았네요.&lt;br /&gt;
-그리고 이게 군대 사지방에서 공부하면서 만들게 된거라서 개인적으로 좀 뿌듯하기도 하구요.&lt;/p&gt;
-
-&lt;p&gt;게시물 주제는 앞으로도 마찬가지로 &lt;strong&gt;프로그래밍 공부 기록&lt;/strong&gt; 및 &lt;strong&gt;정보 공유&lt;/strong&gt; 위주 포스팅이 될 것 같습니다.&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/post/daily-life/2020-08-29/blog-code.png&quot; alt=&quot;블로그 코드 스크린샷&quot; width=&quot;100%&quot; /&gt;  &lt;br /&gt;
+게시물 주제는 앞으로도 마찬가지로 &lt;strong&gt;프로그래밍 공부 기록&lt;/strong&gt; 및 &lt;strong&gt;정보 공유&lt;/strong&gt; 위주 포스팅이 될 것 같습니다.&lt;br /&gt;
 &lt;a href=&quot;https://blog.naver.com/0511cjh&quot;&gt;이주 전 네이버 블로그&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>

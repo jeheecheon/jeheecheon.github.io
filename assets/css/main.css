@@ -294,7 +294,7 @@ pre {
           .layout .page .main .content .inner .main-content .mid-img {
             display: block;
             margin: 0px auto;
-            width: 80%;
+            width: 100%;
             height: auto; }
           .layout .page .main .content .inner .main-content hr {
             border: dashed #f0efef;
@@ -655,7 +655,7 @@ pre {
           .layout .page .main .post .content .inner .main-content .mid-img {
             display: block;
             margin: 0px auto;
-            width: 80%;
+            width: 100%;
             height: auto; }
           .layout .page .main .post .content .inner .main-content hr {
             border: dashed #f0efef;
