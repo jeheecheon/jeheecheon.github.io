@@ -6,7 +6,7 @@ image: /assets/img/daily-life/2020-11-04/20201104_122639_533.jpg
 description: 어떻게 하면 나도 싸게 좋은 노트북을 건질 수 있을까하며 고민끝에! 대망의 빅스마일데이 이벤트를 통해 ASUS의 이쁘고 깐지쩌는 노트북!! 저도 갖게 되었네요 ㅠㅠ 사실 구입 전부터 저의 희망사항이 1. 가성비 깡패 르누아르 cpu
 published: false
 ---
-<img class="mid-img" src="/assets/img/daily-life/2020-11-04/20201104_122743_494.jpg" alt="notebook">
+<img class="mid-img" src="/assets/img/post/daily-life/2020-11-04/20201104_122743_494.jpg" alt="notebook">
 어떻게 하면 나도 싸게 좋은 노트북을 건질 수 있을까하며 고민끝에! 대망의 빅스마일데이 이벤트를 통해 ASUS의 이쁘고 깐지쩌는 노트북!! 저도 갖게 되었네요 ㅠㅠ 사실 구입 전부터 저의 희망사항이
 1. 가성비 깡패 르누아르 cpu
 2. RAM 16

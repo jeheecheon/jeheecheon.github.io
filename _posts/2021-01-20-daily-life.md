@@ -1,7 +1,8 @@
 ---
 title: I made a snake game
 category: daily-life
-image: /assets/img/diary/default.jpg
+image: /assets/img/post/diary/default.jpg
+description: Last year, I made a game called snake game following youtube video tutorial. It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. 
 ---
 Last year, I made a game called snake game following youtube video tutorial.  
 It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. 
