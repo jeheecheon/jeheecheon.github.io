@@ -1,4 +1,9 @@
 var tipuesearch = {"pages": [{
+    "title": "OpenGL memo",
+    "text": "Source",
+    "tags": "OpenGL memo opengl",
+    "url": "https://jeheecheon.github.io/memo/opengl/2021/05/03/opengl/"
+  },{
     "title": "I made a snake game",
     "text": "Last year, I made a game called snake game following youtube video tutorial. It was not easy for me from the beginning but it quite helped me with understanding basic sutff about CSS and JS. \\ UP LEFT RIGHT DOWN START Made by jeheecheon",
     "tags": "daily-life",
