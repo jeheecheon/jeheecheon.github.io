@@ -17,7 +17,7 @@
       hidden: true
       icon: "far fa-file-code"
     - title: OpenGL
-      category: OpenGL
+      category: opengl
       hidden: true
       icon: "far fa-file-code"
       # subnav:
