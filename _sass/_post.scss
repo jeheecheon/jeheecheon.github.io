@@ -15,7 +15,7 @@
       transform: translateX(-50%);
       height: 100%;
       width: auto;
-      
+
       border-radius: 15px;
       box-shadow: 3px 3px 5px 2px $shadowColor;
 
@@ -53,7 +53,7 @@
         text-align: center;
         font-size: 3.5rem;
       }
-  
+
       .author {
         display: inline-block;
         text-decoration: none;
@@ -91,7 +91,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      
+
       .button--goToIndex {
         position: absolute;
         top: 50px;
@@ -169,17 +169,14 @@
         border-radius: 5px;
 
         padding: 10px 10px 130px;
-        
+
         width: 768px !important;
         font-size: 1rem;
 
         margin-bottom: 25px;
 
-
-
         @include card();
         @import "style";
-
 
         .tags {
           display: block;
@@ -191,7 +188,7 @@
             background-color: rgba(224, 224, 224, 0.5);
             margin: 0 10px 10px 0;
             text-decoration: none;
-            color: $baseColor5;          
+            color: $baseColor5;
             font-size: 14px;
             padding: 3px;
             &:hover {
@@ -217,7 +214,7 @@
       @import "profile_card";
       @import "dictionary_card";
       @import "category_card";
-      
+
       .l-content {
       }
       .r-content {
@@ -316,7 +313,7 @@
         text-align: center;
 
         text-decoration: none;
-        
+
         color: $baseColor3;
         font-size: 1.5rem;
         font-weight: 700;
