@@ -296,6 +296,12 @@ pre {
             margin: 0px auto;
             width: 100%;
             height: auto; }
+          .layout .page .main .content .inner .main-content code {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            position: relative; }
           .layout .page .main .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;
@@ -657,6 +663,12 @@ pre {
             margin: 0px auto;
             width: 100%;
             height: auto; }
+          .layout .page .main .post .content .inner .main-content code {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            position: relative; }
           .layout .page .main .post .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;

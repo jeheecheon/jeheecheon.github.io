@@ -2,6 +2,11 @@ var tipuesearch = {"pages": [{
     "title": "OpenGL memo",
     "text": "Source",
     "tags": "OpenGL memo opengl",
+    "url": "https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/"
+  },{
+    "title": "OpenGL memo",
+    "text": "Source",
+    "tags": "OpenGL memo opengl",
     "url": "https://jeheecheon.github.io/memo/opengl/2021/05/03/opengl/"
   },{
     "title": "I made a snake game",

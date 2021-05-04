@@ -5,9 +5,31 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 May 2021 17:06:25 +0000</pubDate>
-    <lastBuildDate>Mon, 03 May 2021 17:06:25 +0000</lastBuildDate>
+    <pubDate>Tue, 04 May 2021 16:39:57 +0000</pubDate>
+    <lastBuildDate>Tue, 04 May 2021 16:39:57 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
+    
+      <item>
+        <title>OpenGL memo</title>
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Creating-a-window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 May 2021 01:20:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/</guid>
+        
+        <category>OpenGL</category>
+        
+        
+        <category>memo</category>
+        
+        <category>opengl</category>
+        
+      </item>
     
       <item>
         <title>OpenGL memo</title>
