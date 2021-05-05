@@ -296,6 +296,11 @@ pre {
             margin: 0px auto;
             width: 100%;
             height: auto; }
+          .layout .page .main .content .inner .main-content img {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            height: auto; }
           .layout .page .main .content .inner .main-content code {
             display: block;
             width: 100%;
@@ -306,13 +311,17 @@ pre {
             border: dashed #f0efef;
             border-radius: 1px;
             margin: 40px 0; }
-          .layout .page .main .content .inner .main-content h1, .layout .page .main .content .inner .main-content h2 {
+          .layout .page .main .content .inner .main-content h1,
+          .layout .page .main .content .inner .main-content h2 {
             padding: 30px 0; }
-          .layout .page .main .content .inner .main-content h3, .layout .page .main .content .inner .main-content h4 {
+          .layout .page .main .content .inner .main-content h3,
+          .layout .page .main .content .inner .main-content h4 {
             padding: 20px 0; }
-          .layout .page .main .content .inner .main-content h5, .layout .page .main .content .inner .main-content h6 {
+          .layout .page .main .content .inner .main-content h5,
+          .layout .page .main .content .inner .main-content h6 {
             padding: 15px 0; }
-          .layout .page .main .content .inner .main-content ol, .layout .page .main .content .inner .main-content ul {
+          .layout .page .main .content .inner .main-content ol,
+          .layout .page .main .content .inner .main-content ul {
             margin-left: 30px; }
           .layout .page .main .content .inner .main-content .text--recent-posts, .layout .page .main .content .inner .main-content .text--category-posts, .layout .page .main .content .inner .main-content .text--tag-posts {
             position: relative;
@@ -663,6 +672,11 @@ pre {
             margin: 0px auto;
             width: 100%;
             height: auto; }
+          .layout .page .main .post .content .inner .main-content img {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            height: auto; }
           .layout .page .main .post .content .inner .main-content code {
             display: block;
             width: 100%;
@@ -673,13 +687,17 @@ pre {
             border: dashed #f0efef;
             border-radius: 1px;
             margin: 40px 0; }
-          .layout .page .main .post .content .inner .main-content h1, .layout .page .main .post .content .inner .main-content h2 {
+          .layout .page .main .post .content .inner .main-content h1,
+          .layout .page .main .post .content .inner .main-content h2 {
             padding: 30px 0; }
-          .layout .page .main .post .content .inner .main-content h3, .layout .page .main .post .content .inner .main-content h4 {
+          .layout .page .main .post .content .inner .main-content h3,
+          .layout .page .main .post .content .inner .main-content h4 {
             padding: 20px 0; }
-          .layout .page .main .post .content .inner .main-content h5, .layout .page .main .post .content .inner .main-content h6 {
+          .layout .page .main .post .content .inner .main-content h5,
+          .layout .page .main .post .content .inner .main-content h6 {
             padding: 15px 0; }
-          .layout .page .main .post .content .inner .main-content ol, .layout .page .main .post .content .inner .main-content ul {
+          .layout .page .main .post .content .inner .main-content ol,
+          .layout .page .main .post .content .inner .main-content ul {
             margin-left: 30px; }
           .layout .page .main .post .content .inner .main-content .tags {
             display: block;
