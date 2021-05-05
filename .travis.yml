@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.6.3
 
-# exclude: [vendor]
+exclude: [vendor]
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
@@ -15,9 +15,9 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild
 
-# env:
-#   global:
-#     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 addons:
   apt:
@@ -32,10 +32,11 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: _site/ # deploy this directory containing final build
+  local_dir: _site/  # deploy this directory containing final build
   target_branch: master
   on:
     branch: release
-# branches:
-#   only:
-#   - release
+   
+branches:
+  only:
+  - release
