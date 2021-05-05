@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.6.3
 
-exclude: [vendor]
+# exclude: [vendor]
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
