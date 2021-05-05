@@ -5,12 +5,120 @@
     <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 May 2021 16:45:21 +0000</pubDate>
-    <lastBuildDate>Tue, 04 May 2021 16:45:21 +0000</lastBuildDate>
+    <pubDate>Wed, 05 May 2021 02:47:48 +0000</pubDate>
+    <lastBuildDate>Wed, 05 May 2021 02:47:48 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
-        <title>OpenGL memo</title>
+        <title>OpenGL</title>
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;#include &amp;lt;glad/glad.h&amp;gt;
+#include &amp;lt;GLFW/glfw3.h&amp;gt;
+
+#include &amp;lt;iostream&amp;gt;
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void processInput(GLFWwindow* window);
+
+// settings
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+
+int main(void) {
+    // glfw: initialize and configure
+    // ------------------------------
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
+
+    // glfw window creation
+    // --------------------
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, &quot;LearnOpenGL&quot;, NULL, NULL);
+    if (window == NULL)
+    {
+        std::cout &amp;lt;&amp;lt; &quot;Failed to create GLFW window&quot; &amp;lt;&amp;lt; std::endl;
+        glfwTerminate();
+        return -1;
+    }
+    glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+
+    // glad: load all OpenGL function pointers
+    // ---------------------------------------
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout &amp;lt;&amp;lt; &quot;Failed to initialize GLAD&quot; &amp;lt;&amp;lt; std::endl;
+        return -1;
+    }
+
+    // render loop
+    // -----------
+    while (!glfwWindowShouldClose(window))
+    {
+        // input
+        // -----
+        processInput(window);
+
+        // render
+        // ------
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
+        // -------------------------------------------------------------------------------
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    // glfw: terminate, clearing all previously allocated GLFW resources.
+    // ------------------------------------------------------------------
+    glfwTerminate();
+
+    return 0;
+}
+
+// glfw: whenever the window size changed (by OS or user resize) this callback function executes
+// ---------------------------------------------------------------------------------------------
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
+// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
+// ---------------------------------------------------------------------------------------------------------
+void processInput(GLFWwindow* window)
+{
+    // make sure the viewport matches the new window dimensions; note that width and 
+    // height will be significantly larger than specified on retina displays.
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Hello-Window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 May 2021 01:37:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/05/OpenGL/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/05/OpenGL/</guid>
+        
+        <category>OpenGL</category>
+        
+        
+        <category>memo</category>
+        
+        <category>OpenGL</category>
+        
+      </item>
+    
+      <item>
+        <title>OpenGL</title>
         <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
@@ -32,7 +140,7 @@
       </item>
     
       <item>
-        <title>OpenGL memo</title>
+        <title>OpenGL</title>
         <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
