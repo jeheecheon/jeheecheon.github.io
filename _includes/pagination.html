@@ -12,7 +12,7 @@
     </div>
     <div class="text post-item__text">
       <p class="tag text__tag">{% for tag in post.tags %}#{{tag}}{% if tag != lastTag %}, {% endif %}{% endfor %}</p>
-      <p class="excerpt text_excerpt">{{ post.description | truncate: 120 }}</p>
+      <p class="excerpt text_excerpt">{{ post.description | truncate: 175 }}</p>
       <p class="date text__date">{{ post.date | date: "%b %d %Y" }}</p>
       <!-- <p class="date text__date">{{ post.date | date: "%b-%d-%Y, %H:%M %p" }}</p> -->
 
