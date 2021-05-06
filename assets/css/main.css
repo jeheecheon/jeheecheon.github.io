@@ -306,7 +306,8 @@ pre {
             width: 100%;
             height: 100%;
             overflow: auto;
-            position: relative; }
+            position: relative;
+            font-size: 12px; }
           .layout .page .main .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;
@@ -682,7 +683,8 @@ pre {
             width: 100%;
             height: 100%;
             overflow: auto;
-            position: relative; }
+            position: relative;
+            font-size: 12px; }
           .layout .page .main .post .content .inner .main-content hr {
             border: dashed #f0efef;
             border-radius: 1px;
