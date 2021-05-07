@@ -10,39 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta http-equiv="Reply-To" content="jeheecheon@gmail.com" />
     <meta http-equiv="Email" content="jeheecheon@gmail.com" />
-    <meta name="title" content="OpenGL | Jehee Cheon" />
-    <title>OpenGL | Jehee Cheon</title>
+    <meta name="title" content="Shaders | Jehee Cheon" />
+    <title>Shaders | Jehee Cheon</title>
     <meta name="author" content="Jehee Cheon" />
-    <meta name="description" content="Blog</br>공부하고나서 끄적이는 곳">
+    <meta name="description" content="꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 이해했는데, 내부적으로 어떻게 돌아가는지 궁금함.">
     <meta property="og:locale" content="en_US" />
     <meta name="robots" content="All" />
     <meta name="copyright" content="(C) 2021. Jehee Cheon All rights reserved." />
     <meta name="subject" content="IT" />
     
-    <meta name="keywords" content="OpenGL, memo, opengl" />
-    <meta name="classification" content="memo, opengl" />
+    <meta name="keywords" content="OpenGL, memo, OpenGL" />
+    <meta name="classification" content="memo, OpenGL" />
     
 
 <!-- Facebook integration -->
-    <meta property="og:title" content="OpenGL"/>
-    <meta property="og:image" content="https://jeheecheon.github.io/assets/img/site/default.jpg"/>
-    <meta property="og:url" content="https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/"/>
+    <meta property="og:title" content="Shaders"/>
+    <meta property="og:image" content="https://jeheecheon.github.io/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20011407.png"/>
+    <meta property="og:url" content="https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/"/>
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Jehee Cheon"/>
-    <meta property="og:description" content="Blog</br>공부하고나서 끄적이는 곳"/>
+    <meta property="og:description" content="꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 이해했는데, 내부적으로 어떻게 돌아가는지 궁금함."/>
 <!-- Twitter integration -->
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="OpenGL" />
-    <meta name="twitter:image" content="https://jeheecheon.github.io/assets/img/site/default.jpg" />
-    <meta name="twitter:url" content="https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/" />
-    <meta name="twitter:description" content="Blog</br>공부하고나서 끄적이는 곳" />
+    <meta name="twitter:title" content="Shaders" />
+    <meta name="twitter:image" content="https://jeheecheon.github.io/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20011407.png" />
+    <meta name="twitter:url" content="https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/" />
+    <meta name="twitter:description" content="꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 이해했는데, 내부적으로 어떻게 돌아가는지 궁금함." />
 
     <link rel="shortcut icon" type="image/png" href="https://jeheecheon.github.io/assets/img/site/logo.png">
     <link rel="shortcut icon" sizes="196x196" href="https://jeheecheon.github.io/assets/img/site/logo.png">
     <link rel="apple-touch-icon" href="https://jeheecheon.github.io/assets/img/site/logo.png">
     <link rel="shortcut icon" href="https://jeheecheon.github.io/assets/img/site/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/">
+    <link rel="canonical" href="https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/">
     <link rel="alternate" type="application/rss+xml" title="Jehee Cheon" href="https://jeheecheon.github.io/feed.xml">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://jeheecheon.github.io/sitemap.xml" />
     <link rel="stylesheet" href="https://jeheecheon.github.io/assets/css/main.css" />
@@ -101,7 +101,7 @@
     </div>
     <div class="text profile__text">
       <p class="author text__author">Jehee Cheon</p>
-      <p class="description text__description">Blog</br>공부하고나서 끄적이는 곳</p>
+      <p class="description text__description">공부하고나서 끄적이는 곳</p>
     </div>
   </span>
 
@@ -192,7 +192,7 @@
           <a href="#top" class="title bar__title">
             
             <div class="main-title">
-              OpenGL
+              Shaders
             </div>
             <div class="sub-title">
               Jehee Cheon
@@ -211,21 +211,21 @@
 
 <section class="post main__post">
   <div class="post-cover post__post-cover">
-    <img class="img post-cover__img" src="/assets/img/site/default.jpg" alt="Cover Image of Post" />
-    <!-- <img class="img post-cover__img" src="https://jeheecheon.github.io/assets/img/site/default.jpg" alt="Cover Image of Post" /> -->
+    <img class="img post-cover__img" src="/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20011407.png" alt="Cover Image of Post" />
+    <!-- <img class="img post-cover__img" src="https://jeheecheon.github.io/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20011407.png" alt="Cover Image of Post" /> -->
     <div class="background post-cover__background">
       <a href="https://jeheecheon.github.io/" class="button--goToIndex">
         <pre>Click Here To Go To Index!</pre>
       </a>
     </div>
     <div class="text post-cover__text">
-      <a href="https://jeheecheon.github.io/categories/opengl" class="category text__category">opengl</a>
-      <h1 class="title text__title">OpenGL</h1>
+      <a href="https://jeheecheon.github.io/categories/opengl" class="category text__category">OpenGL</a>
+      <h1 class="title text__title">Shaders</h1>
       <a href="/" class="author text__author">
         <img src="https://jeheecheon.github.io/assets/img/site/logo.png" alt="logo image" class="logo author__logo">
         <p class="name author__name">Jehee Cheon</p>
       </a>
-      <p class="date text__date">May 04 2021, 01:20</p>
+      <p class="date text__date">May 07 2021, 00:00</p>
     </div>
   </div>
 
@@ -238,7 +238,7 @@
     </div>
     <div class="text profile__card">
         <div class="author text__author">Jehee Cheon</div>
-        <p class="description text__description">Blog</br>공부하고나서 끄적이는 곳</p>
+        <p class="description text__description">공부하고나서 끄적이는 곳</p>
     </div>
     
     <div class="social-media profile-card__social-media">
@@ -258,7 +258,7 @@
                 Post
             </div>
             <div class="info s1__info">
-                9
+                11
             </div>
         </div>
 
@@ -275,7 +275,7 @@
                 Tag
             </div>
             <div class="info s3__info">
-                11
+                12
             </div>
         </div>
     </div>
@@ -298,12 +298,13 @@
 </div>
       </div>
       <div class="main-content inner__main-content">
-        <p><img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png" />
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png" />
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png" />
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png" /></p>
-
-<p><a href="https://learnopengl.com/Getting-started/Creating-a-window">Source</a></p>
+        <p>이해안되는 내용: 
+꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 
+이해했는데, 내부적으로 어떻게 돌아가는지 궁금함.<br />
+<br />
+<img src="/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png" alt="" />
+<br />
+<a href="https://learnopengl.com/Getting-started/Shaders">learnopengl</a></p>
 
         <div class="tags main-content__tags">
           
@@ -397,34 +398,44 @@
     <div class="inner related-posts__inner">
     <div class="text inner__text">Related Posts</div>
       
-      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/06/OpenGL/" class="related-post">
+      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/07/Textures/" class="related-post">
+        <img
+          class="post-img"
+          src="/assets/img/post/memo/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222220.png"
+          alt="related_post.image"
+        />
+        <p class="post-title">Textures</p>
+        <p class="post-date">May 07 2021, 00:00</p>
+      </a>
+      
+      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/06/Hello-Triangle/" class="related-post">
         <img
           class="post-img"
           src="/assets/img/post/memo/OpenGL/2021-05-06/Screenshot 2021-05-06 004205.png"
           alt="related_post.image"
         />
-        <p class="post-title">OpenGL</p>
+        <p class="post-title">Hello triangle</p>
         <p class="post-date">May 06 2021, 00:00</p>
       </a>
       
-      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/05/OpenGL/" class="related-post">
+      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/05/Hello-Window/" class="related-post">
         <img
           class="post-img"
           src="/assets/img/site/default.jpg"
           alt="related_post.image"
         />
-        <p class="post-title">OpenGL</p>
+        <p class="post-title">Hello window</p>
         <p class="post-date">May 05 2021, 01:37</p>
       </a>
       
-      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/03/OpenGL/" class="related-post">
+      <a href="https://jeheecheon.github.io/memo/opengl/2021/05/04/Creating-a-window/" class="related-post">
         <img
           class="post-img"
           src="/assets/img/site/default.jpg"
           alt="related_post.image"
         />
-        <p class="post-title">OpenGL</p>
-        <p class="post-date">May 03 2021, 00:40</p>
+        <p class="post-title">Creating a window</p>
+        <p class="post-date">May 04 2021, 01:20</p>
       </a>
       
     </div>
@@ -438,8 +449,8 @@
        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
       var disqus_config = function () {
-        this.page.url = "https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/"; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "/memo/opengl/2021/05/04/OpenGL"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/memo/opengl/2021/05/07/Shaders"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
       (function () {

@@ -2,15 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jehee Cheon</title>
-    <description>Blog&lt;/br&gt;공부하고나서 끄적이는 곳</description>
+    <description>공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 May 2021 16:26:57 +0000</pubDate>
-    <lastBuildDate>Thu, 06 May 2021 16:26:57 +0000</lastBuildDate>
+    <pubDate>Fri, 07 May 2021 13:54:26 +0000</pubDate>
+    <lastBuildDate>Fri, 07 May 2021 13:54:26 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
-        <title>OpenGL</title>
+        <title>Textures</title>
+        <description>&lt;p&gt;이해안되는 내용: 
+NEAREST 와 NEAREST 차이는 대충 어떤지 알겠는데 아래 4가지들 차이점은 잘 모르겠다. 나중에 mipmaps 사용할 기회생기면 
+직접 모두 출력해보면서 눈으로 확인해봐야 겠다.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222523.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://learnopengl.com/Getting-started/Textures&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/07/Textures/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/07/Textures/</guid>
+        
+        <category>OpenGL</category>
+        
+        <category>Textures</category>
+        
+        
+        <category>memo</category>
+        
+        <category>OpenGL</category>
+        
+      </item>
+    
+      <item>
+        <title>Shaders</title>
+        <description>&lt;p&gt;이해안되는 내용: 
+꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 
+이해했는데, 내부적으로 어떻게 돌아가는지 궁금함.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://learnopengl.com/Getting-started/Shaders&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/</guid>
+        
+        <category>OpenGL</category>
+        
+        
+        <category>memo</category>
+        
+        <category>OpenGL</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello triangle</title>
         <description>&lt;p&gt;I din’t know drawing a triangle on screen would be this hard :X&lt;br /&gt;
 I haven’t fully understood it yet but I think I’m getting almost there…&lt;br /&gt;
 &lt;br /&gt;
@@ -224,8 +272,8 @@ void processInput(GLFWwindow* window)
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Hello-Triangle&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/06/OpenGL/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/06/OpenGL/</guid>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/06/Hello-Triangle/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/06/Hello-Triangle/</guid>
         
         <category>OpenGL</category>
         
@@ -237,7 +285,7 @@ void processInput(GLFWwindow* window)
       </item>
     
       <item>
-        <title>OpenGL</title>
+        <title>Hello window</title>
         <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
@@ -332,8 +380,8 @@ void processInput(GLFWwindow* window)
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Hello-Window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 May 2021 01:37:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/05/OpenGL/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/05/OpenGL/</guid>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/05/Hello-Window/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/05/Hello-Window/</guid>
         
         <category>OpenGL</category>
         
@@ -345,7 +393,7 @@ void processInput(GLFWwindow* window)
       </item>
     
       <item>
-        <title>OpenGL</title>
+        <title>Creating a window</title>
         <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
@@ -354,8 +402,8 @@ void processInput(GLFWwindow* window)
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Creating-a-window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 May 2021 01:20:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/04/OpenGL/</guid>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/04/Creating-a-window/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/04/Creating-a-window/</guid>
         
         <category>OpenGL</category>
         
@@ -367,7 +415,7 @@ void processInput(GLFWwindow* window)
       </item>
     
       <item>
-        <title>OpenGL</title>
+        <title>Opengl</title>
         <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
 &lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
