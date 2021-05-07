@@ -1,5 +1,4 @@
 ---
-title: OpenGL
 categories: memo OpenGL
 tags: OpenGL
 image: "/assets/img/post/memo/OpenGL/2021-05-06/Screenshot 2021-05-06 004205.png"

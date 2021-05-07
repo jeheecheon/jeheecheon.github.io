@@ -1,5 +1,4 @@
 ---
-title: OpenGL
 categories: memo OpenGL
 tags: OpenGL
 image: 
