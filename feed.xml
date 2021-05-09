@@ -5,9 +5,57 @@
     <description>공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 May 2021 15:34:13 +0000</pubDate>
-    <lastBuildDate>Sat, 08 May 2021 15:34:13 +0000</lastBuildDate>
+    <pubDate>Sun, 09 May 2021 13:37:17 +0000</pubDate>
+    <lastBuildDate>Sun, 09 May 2021 13:37:17 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
+    
+      <item>
+        <title>Transformations</title>
+        <description>&lt;p&gt;vector roation 부분은 거의 기억이 나지가 않는다. 기본적인 2D 회전은 이해하겠지만 3D들어가면 힘들 것 같아서 추가로 이부분 공부하고 넘어가야할 것 같다.
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-09/Screenshot%202021-05-09%20002920.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://learnopengl.com/Getting-started/Transformations&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/09/Transformations/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/09/Transformations/</guid>
+        
+        <category>OpenGL</category>
+        
+        <category>Transformations</category>
+        
+        
+        <category>memo</category>
+        
+        <category>OpenGL</category>
+        
+      </item>
+    
+      <item>
+        <title>Coordinate systems</title>
+        <description>&lt;p&gt;좌표개념은 익숙하지 않은 내용이라 여러번 읽어봐야 겠다. 
+&lt;br /&gt;
+&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-09-2/Screenshot%202021-05-09%20223226.png&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://learnopengl.com/Getting-started/Coordinate-Systems&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/memo/opengl/2021/05/09/Coordinate-Systems/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/09/Coordinate-Systems/</guid>
+        
+        <category>OpenGL</category>
+        
+        <category>Coordinate</category>
+        
+        <category>Systems</category>
+        
+        
+        <category>memo</category>
+        
+        <category>OpenGL</category>
+        
+      </item>
     
       <item>
         <title>Textures</title>
