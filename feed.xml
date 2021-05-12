@@ -5,21 +5,61 @@
     <description>공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 May 2021 16:34:52 +0000</pubDate>
-    <lastBuildDate>Tue, 11 May 2021 16:34:52 +0000</lastBuildDate>
+    <pubDate>Wed, 12 May 2021 12:48:07 +0000</pubDate>
+    <lastBuildDate>Wed, 12 May 2021 12:48:07 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
+    
+      <item>
+        <title>OpenGL에 필요한 수학 공부하기 좋은 사이트</title>
+        <description>&lt;p&gt;opengl 공부 중에 삼각함수, 벡터 수식이 쓰일 때가 많은데(대부분…) &lt;br /&gt;
+벡터는 아직 커리큘럼상 2학기에 예정되어 있고, 삼각함수는 군대간사이 기억 안나는 부분이 너무 많다.&lt;br /&gt;
+그래서 찾은게 이 사이트들인데 정리가 정말 잘 되어있고 시각적으로 보여주는게 많아서&lt;br /&gt;
+꽤 쓸만한 것 같다.&lt;br /&gt;
+&lt;br /&gt;
+당분간 기본적인 것들 다지고 나서 OpenGL 깊게 파봐야겠다…
+&lt;br /&gt;
+&lt;br /&gt;
+아래는 삼각함수 튜토리얼 사이트들 개인적으로 첫번째가 더 낫다(시각자료가 많음)
+&lt;a href=&quot;https://www.mathsisfun.com/algebra/trigonometry-index.html&quot;&gt;mathsisfun&lt;/a&gt;
+&lt;a href=&quot;https://themathpage.com/aTrig/trigonometry.htm&quot;&gt;themathpage&lt;/a&gt;
+&lt;br /&gt;
+벡터 tutorial. 시각자료가 많음
+&lt;a href=&quot;http://immersivemath.com/ila/index.html&quot;&gt;immersivemath&lt;/a&gt;
+&lt;br /&gt;
+인도 대학 ccsu- 벡터 tutorial
+&lt;a href=&quot;https://chortle.ccsu.edu/vectorlessons/vectorindex.html&quot;&gt;immersivemath&lt;/a&gt;
+s&lt;/p&gt;
+</description>
+        <pubDate>Wed, 12 May 2021 00:00:00 +0000</pubDate>
+        <link>https://jeheecheon.github.io/notes/math/trigonometry/2021/05/12/daily-life/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/math/trigonometry/2021/05/12/daily-life/</guid>
+        
+        <category>OpenGL</category>
+        
+        <category>math</category>
+        
+        <category>trigonometry</category>
+        
+        
+        <category>notes</category>
+        
+        <category>math</category>
+        
+        <category>trigonometry</category>
+        
+      </item>
     
       <item>
         <title>Transformations</title>
         <description>&lt;p&gt;vector roation 부분은 거의 기억이 나지가 않는다. 기본적인 2D 회전은 이해하겠지만 3D들어가면 힘들 것 같아서 추가로 이부분 공부하고 넘어가야할 것 같다.
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-09/Screenshot%202021-05-09%20002920.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-09/Screenshot%202021-05-09%20002920.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Transformations&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/09/Transformations/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/09/Transformations/</guid>
+        <link>https://jeheecheon.github.io/memo/graphics/opengl/2021/05/09/Transformations/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/memo/graphics/opengl/2021/05/09/Transformations/</guid>
         
         <category>OpenGL</category>
         
@@ -27,6 +67,8 @@
         
         
         <category>memo</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -36,13 +78,13 @@
         <title>Coordinate systems</title>
         <description>&lt;p&gt;좌표개념은 익숙하지 않은 내용이라 여러번 읽어봐야 겠다. 
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-09-2/Screenshot%202021-05-09%20223226.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-09-2/Screenshot%202021-05-09%20223226.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Coordinate-Systems&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/09/Coordinate-Systems/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/09/Coordinate-Systems/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/09/Coordinate-Systems/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/09/Coordinate-Systems/</guid>
         
         <category>OpenGL</category>
         
@@ -51,7 +93,9 @@
         <category>Systems</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -63,20 +107,22 @@
 NEAREST 와 NEAREST 차이는 대충 어떤지 알겠는데 아래 4가지들 차이점은 잘 모르겠다. 나중에 mipmaps 사용할 기회생기면 
 직접 모두 출력해보면서 눈으로 확인해봐야 겠다.&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222523.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222523.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Textures&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/07/Textures/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/07/Textures/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/07/Textures/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/07/Textures/</guid>
         
         <category>OpenGL</category>
         
         <category>Textures</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -88,18 +134,20 @@ NEAREST 와 NEAREST 차이는 대충 어떤지 알겠는데 아래 4가지들 �
 꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 
 이해했는데, 내부적으로 어떻게 돌아가는지 궁금함.&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Shaders&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/07/Shaders/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/07/Shaders/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/07/Shaders/</guid>
         
         <category>OpenGL</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -113,8 +161,8 @@ I haven’t fully understood it yet but I think I’m getting almost there…&lt
 그리고 추가로 아직 책에서 설명 안된 부분 때문인지 뭔가 놓친 기분이 든다.&lt;br /&gt;
 특히 NDC는 어떻게 사용되는지는 알겠지만 왜 굳이 이 방법을 택했는지 모르겠다.&lt;br /&gt;
 그냥 처음부터 screen-space coordinates로 설정해서 사용하지 않는 이유가 너무 궁금하다.&lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/img/post/memo/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;#include &amp;lt;glad/glad.h&amp;gt;
 #include &amp;lt;GLFW/glfw3.h&amp;gt;
@@ -320,13 +368,15 @@ void processInput(GLFWwindow* window)
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Hello-Triangle&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/06/Hello-Triangle/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/06/Hello-Triangle/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/06/Hello-Triangle/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/06/Hello-Triangle/</guid>
         
         <category>OpenGL</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -334,9 +384,9 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Hello window</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;#include &amp;lt;glad/glad.h&amp;gt;
 #include &amp;lt;GLFW/glfw3.h&amp;gt;
@@ -428,13 +478,15 @@ void processInput(GLFWwindow* window)
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Hello-Window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 May 2021 01:37:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/05/Hello-Window/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/05/Hello-Window/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/05/Hello-Window/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/05/Hello-Window/</guid>
         
         <category>OpenGL</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>OpenGL</category>
         
@@ -442,21 +494,23 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Creating a window</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Creating-a-window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 May 2021 01:20:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/04/Creating-a-window/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/04/Creating-a-window/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/04/Creating-a-window/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/04/Creating-a-window/</guid>
         
         <category>OpenGL</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>opengl</category>
         
@@ -464,20 +518,22 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Opengl</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/memo/OpenGL/2021-05-03/Screenshot%202021-05-03%20003847.png&quot; /&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003847.png&quot; /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/OpenGL&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 May 2021 00:40:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/opengl/2021/05/03/OpenGL/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/opengl/2021/05/03/OpenGL/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/opengl/2021/05/03/OpenGL/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/opengl/2021/05/03/OpenGL/</guid>
         
         <category>OpenGL</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>opengl</category>
         
@@ -763,10 +819,10 @@ This scaling factor is described as 96 dots per inch (DPI).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/dpi-and-device-independent-pixels&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/win32/2020/09/17/win32/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/win32/2020/09/17/win32/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/win32/2020/09/17/win32/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/win32/2020/09/17/win32/</guid>
         
-        <category>memo</category>
+        <category>notes</category>
         
         <category>win32</category>
         
@@ -775,7 +831,9 @@ This scaling factor is described as 96 dots per inch (DPI).&lt;/p&gt;
         <category>graphic</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>win32</category>
         
@@ -821,10 +879,10 @@ AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중�
 &lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/win32/learnwin32/managing-the-lifetime-of-an-object&quot;&gt;출처: Microsoft&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
-        <link>https://jeheecheon.github.io/memo/win32/2020/09/13/win32/</link>
-        <guid isPermaLink="true">https://jeheecheon.github.io/memo/win32/2020/09/13/win32/</guid>
+        <link>https://jeheecheon.github.io/notes/graphics/win32/2020/09/13/win32/</link>
+        <guid isPermaLink="true">https://jeheecheon.github.io/notes/graphics/win32/2020/09/13/win32/</guid>
         
-        <category>memo</category>
+        <category>notes</category>
         
         <category>win32</category>
         
@@ -833,7 +891,9 @@ AddRef 와 Release 는 object의 라이프 타임을 결정하게 해주는 중�
         <category>COM</category>
         
         
-        <category>memo</category>
+        <category>notes</category>
+        
+        <category>graphics</category>
         
         <category>win32</category>
         
