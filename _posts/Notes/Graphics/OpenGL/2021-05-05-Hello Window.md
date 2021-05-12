@@ -1,13 +1,13 @@
 ---
-categories: memo OpenGL
+categories: notes graphics OpenGL
 tags: OpenGL
 image: 
 date: 2021-05-05 01:37
 description: 
 ---
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png">
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png">
-<img class="mid-img" src="/assets/img/post/memo/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png">
+<img class="mid-img" src="/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png">
+<img class="mid-img" src="/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png">
+<img class="mid-img" src="/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png">
 
 ~~~C++
 #include <glad/glad.h>

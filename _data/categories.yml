@@ -1,26 +1,36 @@
 - title: Home
   url: ""
-  icon: "far fa-building"
+  icon: "fas fa-home"
 - title: About Me
   url: "about-me"
   icon: "far fa-id-card"
 - title: Daily Life
   category: daily-life
   icon: "far fa-grin-beam"
-- title: Memo
-  category: memo
+- title: Notes
+  category: notes
   icon: "far fa-sticky-note"
   hidden: false
   subnav:
-    - title: Win32
-      category: win32
-      hidden: true
-      icon: "far fa-file-code"
-    - title: OpenGL
-      category: opengl
-      hidden: true
-      icon: "far fa-file-code"
-      # subnav:
-      #   - title: Jekyll
-      #     category: jekyll
-      #     icon: "far fa-file-code"
+    - title: Graphics
+      category: graphics
+      hidden: false
+      icon: "fas fa-gamepad"
+      subnav:
+      - title: Win32
+        category: win32
+        icon: "far fa-file-code"
+      - title: OpenGL
+        category: opengl
+        icon: "far fa-file-code"
+    - title: Math
+      category: math
+      hidden: false
+      icon: "fas fa-square-root-alt"
+      subnav:
+      - title: Trigonometry
+        category: trig
+        icon: "fas fa-chart-pie"
+      - title: Vector
+        category: vector
+        icon: "fas fa-long-arrow-alt-left"

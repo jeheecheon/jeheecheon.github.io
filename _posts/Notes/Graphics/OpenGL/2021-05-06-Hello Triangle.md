@@ -1,7 +1,7 @@
 ---
-categories: memo OpenGL
+categories: notes graphics OpenGL
 tags: OpenGL
-image: "/assets/img/post/memo/OpenGL/2021-05-06/Screenshot 2021-05-06 004205.png"
+image: "/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot 2021-05-06 004205.png"
 description: I din't know drawing a triangle on screen would be this hard :X I haven't fully understood it yet but I think I'm getting almost there...
 ---
 I din't know drawing a triangle on screen would be this hard :X  
@@ -10,8 +10,8 @@ I haven't fully understood it yet but I think I'm getting almost there...\
 그리고 추가로 아직 책에서 설명 안된 부분 때문인지 뭔가 놓친 기분이 든다.\
 특히 NDC는 어떻게 사용되는지는 알겠지만 왜 굳이 이 방법을 택했는지 모르겠다.\
 그냥 처음부터 screen-space coordinates로 설정해서 사용하지 않는 이유가 너무 궁금하다.\
-![](/assets/img/post/memo/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png)
-![](/assets/img/post/memo/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png)
+![](/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png)
+![](/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png)
 
 ~~~C++
 #include <glad/glad.h>
