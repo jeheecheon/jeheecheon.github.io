@@ -5,8 +5,8 @@
     <description>공부하고나서 끄적이는 곳</description>
     <link>https://jeheecheon.github.io/</link>
     <atom:link href="https://jeheecheon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 May 2021 13:03:49 +0000</pubDate>
-    <lastBuildDate>Wed, 12 May 2021 13:03:49 +0000</lastBuildDate>
+    <pubDate>Wed, 12 May 2021 14:06:37 +0000</pubDate>
+    <lastBuildDate>Wed, 12 May 2021 14:06:37 +0000</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
@@ -53,7 +53,7 @@ s&lt;/p&gt;
         <title>Transformations</title>
         <description>&lt;p&gt;vector roation 부분은 거의 기억이 나지가 않는다. 기본적인 2D 회전은 이해하겠지만 3D들어가면 힘들 것 같아서 추가로 이부분 공부하고 넘어가야할 것 같다.
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-09/Screenshot%202021-05-09%20002920.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-09/Screenshot%202021-05-09%20002920.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Transformations&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -78,7 +78,7 @@ s&lt;/p&gt;
         <title>Coordinate systems</title>
         <description>&lt;p&gt;좌표개념은 익숙하지 않은 내용이라 여러번 읽어봐야 겠다. 
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-09-2/Screenshot%202021-05-09%20223226.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-09-2/Screenshot%202021-05-09%20223226.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Coordinate-Systems&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -107,7 +107,7 @@ s&lt;/p&gt;
 NEAREST 와 NEAREST 차이는 대충 어떤지 알겠는데 아래 4가지들 차이점은 잘 모르겠다. 나중에 mipmaps 사용할 기회생기면 
 직접 모두 출력해보면서 눈으로 확인해봐야 겠다.&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222523.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-07-2/Screenshot%202021-05-07%20222523.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Textures&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -134,7 +134,7 @@ NEAREST 와 NEAREST 차이는 대충 어떤지 알겠는데 아래 4가지들 �
 꼭지점 3개의 색깔을 정하면 Fragment shader가 알아서 자연스럽게 색깔을 잇는다(?)는 건 
 이해했는데, 내부적으로 어떻게 돌아가는지 궁금함.&lt;br /&gt;
 &lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-07/Screenshot%202021-05-07%20012048.png&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/Shaders&quot;&gt;learnopengl&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -161,8 +161,8 @@ I haven’t fully understood it yet but I think I’m getting almost there…&lt
 그리고 추가로 아직 책에서 설명 안된 부분 때문인지 뭔가 놓친 기분이 든다.&lt;br /&gt;
 특히 NDC는 어떻게 사용되는지는 알겠지만 왜 굳이 이 방법을 택했는지 모르겠다.&lt;br /&gt;
 그냥 처음부터 screen-space coordinates로 설정해서 사용하지 않는 이유가 너무 궁금하다.&lt;br /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-06/Screenshot%202021-05-06%20005930.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/post/OpenGL/2021-05-06/Screenshot%202021-05-06%20005515.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;#include &amp;lt;glad/glad.h&amp;gt;
 #include &amp;lt;GLFW/glfw3.h&amp;gt;
@@ -384,9 +384,9 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Hello window</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-05/Screenshot%202021-05-05%20001546.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-05/Screenshot%202021-05-05%20003331.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-05/Screenshot%202021-05-05%20004558.png&quot; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;#include &amp;lt;glad/glad.h&amp;gt;
 #include &amp;lt;GLFW/glfw3.h&amp;gt;
@@ -494,10 +494,10 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Creating a window</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post//OpenGL/2021-05-04/Screenshot%202021-05-03%20234434.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-04/Screenshot%202021-05-03%20234458.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-04/Screenshot%202021-05-04%20015115.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/OpenGL/2021-05-04/Screenshot%202021-05-04%20014132.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://learnopengl.com/Getting-started/Creating-a-window&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -518,10 +518,10 @@ void processInput(GLFWwindow* window)
     
       <item>
         <title>Opengl</title>
-        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
-&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post/notes/graphics/OpenGL/2021-05-03/Screenshot%202021-05-03%20003847.png&quot; /&gt;
+        <description>&lt;p&gt;&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post//OpenGL/2021-05-03/Screenshot%202021-05-03%20001642.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post//OpenGL/2021-05-03/Screenshot%202021-05-03%20003257.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post//OpenGL/2021-05-03/Screenshot%202021-05-03%20003027.png&quot; /&gt;
+&lt;img class=&quot;mid-img&quot; src=&quot;/assets/img/post//OpenGL/2021-05-03/Screenshot%202021-05-03%20003847.png&quot; /&gt;
 &lt;a href=&quot;https://learnopengl.com/Getting-started/OpenGL&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 May 2021 00:40:00 +0000</pubDate>
