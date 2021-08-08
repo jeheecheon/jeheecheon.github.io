@@ -1,4 +1,5 @@
-군대 싸지방에서 만든 블로그
-
-Designed by Jehee Cheon.\
-Copyright 2020. Jehee Cheon. All rights reserved.
+군대 싸지방에서 만든 블로그  
+https://jeheecheon.github.io/  
+\
+\
+The theme is designed by Jehee Cheon.  
